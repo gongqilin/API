@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request for an Authorization Code | BGL API</title>
+        <title>Request : Fund Detail | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../getting_started/obtaining_request_token.html" />
+    <link rel="next" href="../resource_requests/request__trustees.html" />
     
     
-    <link rel="prev" href="../getting_started/obtaining_bgl_api_credentials.html" />
+    <link rel="prev" href="../resource_requests/request__fund_list.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1436497677374">
+    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436497677374">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="1.2" data-path="getting_started/request_for_an_authorization_code.html">
+        <li class="chapter " data-level="1.2" data-path="getting_started/request_for_an_authorization_code.html">
             
                 
                     <a href="../getting_started/request_for_an_authorization_code.html">
@@ -184,7 +184,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.2" data-path="resource_requests/request__fund_detail.html">
+        <li class="chapter active" data-level="2.2" data-path="resource_requests/request__fund_detail.html">
             
                 
                     <a href="../resource_requests/request__fund_detail.html">
@@ -325,127 +325,90 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_10661">
+                    <section class="normal" id="section-gitbook_10665">
                     
-                        <h1 id="request-for-an-authorization-code">Request for an Authorization Code</h1>
-<p>An Authorization Code is necessary to obtain an Access Token from BGL OATH 2.0 Server.  Obtaining an Authorization token is an imporantant step, as it provides assuarance to the client that appropriate permission is being granted to access the BGL API.</p>
-<p>To request an authorization code, the client must send a GET request to the BGL OATH 2.0 Server in the following manner.</p>
+                        <h1 id="request--fund-detail">Request : Fund Detail</h1>
 <table>
 <thead>
 <tr>
-<th>Request Type</th>
-<th>URL Pattern</th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>GET</td>
-<td><a href="https://api-uat.bgl360.com.au/oauth/authorize?response_type=code&amp;client_id={API-Client-ID}&amp;scope={fundList}" target="_blank">https://api-uat.bgl360.com.au/oauth/authorize?response_type=code&amp;client_id={API-Client-ID}&amp;scope={fundList}</a></td>
+<td>Description</td>
+<td>Allows you to retrieve details based on a Fund Id</td>
+</tr>
+<tr>
+<td>Sample Request</td>
+<td><a href="https://api-uat.bgl360.com.au/fund/detail" target="_blank">https://api-uat.bgl360.com.au/fund/detail</a></td>
+</tr>
+<tr>
+<td>Method support</td>
+<td>GET, POST</td>
 </tr>
 </tbody>
 </table>
-<p>The URL query parameters are as follows.</p>
+<h3 id="parameters">Parameters</h3>
+<p>The following parameters can be added into the http request or set in the Content-Type in the header.</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
-<th style="text-align:center">Required</th>
+<th style="text-align:center"></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>response_type</td>
-<td>The value of this should always be: code</td>
-<td style="text-align:center">YES</td>
+<td style="text-align:center">fundId</td>
+<td>The unique id to obtain the fund details.</td>
+<td>MANDATORY</td>
 </tr>
 <tr>
-<td>client_id</td>
-<td>A unique identifier to identify a client that will be using the BGL API, Provided by BGL</td>
-<td style="text-align:center">YES</td>
+<td style="text-align:center">format=json <br> or <br> .json</td>
+<td>This is the default. Will return the data in JSON format.</td>
+<td>OPTIONAL</td>
 </tr>
 <tr>
-<td>redirect_uri</td>
-<td>The URI your users will be sent back to after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2" target="_blank">Oauth2 Documentation</a>.  Example : <a href="https://www.example.com/auth/bgl" target="_blank">https://www.example.com/auth/bgl</a></td>
-<td style="text-align:center">OPTIONAL</td>
-</tr>
-<tr>
-<td>state</td>
-<td>An opaque value used by the client to maintain state between the request and callback. The authorization server includes this value when redirecting the user-agent back to the client. The parameter SHOULD be used for preventing cross-site request forgery as described in <a href="http://tools.ietf.org/html/rfc6749#section-10.12" target="_blank">Oauth2 Documentation</a>.  Example : state=DCEeFWf45A53sdfKef424</td>
-<td style="text-align:center">OPTIONAL</td>
-</tr>
-<tr>
-<td>scope</td>
-<td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3" target="_blank">Oauth2 Documentation</a>.</td>
-<td style="text-align:center">OPTIONAL</td>
+<td style="text-align:center">format=xml  <br> or <br> .xml</td>
+<td>Will return the data in XML format.</td>
+<td>OPTIONAL</td>
 </tr>
 </tbody>
 </table>
-<p>Once the request is processed one of the following will occur.</p>
-<ul>
-<li>
-<p>
-If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API&#39;s authorization screen as displayed below.
-</p>
-
-<p><img src="/images/APIAuthorizationScreen.png" alt="API Authorization" title="API Authorization"></p>
-
-
-<p>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.</p>
-</li>
-</ul>
-
-<ul>
-<li>
-<p>
-If a valid granted permission exists for the client, the authorization screen is by-passed and the user is immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request
-</p>
-<p>
-Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" target="_blank">http://www.client-url.com.au/oauth/authCode?code=LqAx2wO</a>
-</p>
-</li>
-</ul>
-
-<p>For security reasons, the authorization code has a very short lifespan ( about 5 - 10 mins ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL OATH 2.0 Server, as explained above.</p>
-<p>Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that has somehow slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack and you should throw an HTTP 401 error code in response.</p>
-<p>There may be instances where the request for a Authorization Code may fail.  The below table illustrates the causes of a bad request and the outcome the client sees.</p>
-<table>
-<thead>
-<tr>
-<th>Cause</th>
-<th>Description</th>
-<th style="text-align:center">Error</th>
-<th style="text-align:center">Error Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Invalid Client Id</td>
-<td>When an invalid client id is passed as a query parameter</td>
-<td style="text-align:center">INVALID CLIENT</td>
-<td style="text-align:center">BAD CLIENT CREDENTIALS</td>
-</tr>
-<tr>
-<td>Invalid Response Type</td>
-<td>If response type parameter contains anything apart from &quot;code&quot;</td>
-<td style="text-align:center">UNSUPPORTED_RESPONSE_TYPE</td>
-<td style="text-align:center">UNSUPPORTED RESPONSE TYPE {The passed invalid code}</td>
-</tr>
-<tr>
-<td>Invalid scope</td>
-<td>The current valid scope are &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;.  Appart from these, if the client passes anything else as scope BGL will return an error</td>
-<td style="text-align:center">INVALID_SCOPE</td>
-<td style="text-align:center">Invalid scope : {The invalid scope passed}</td>
-</tr>
-<tr>
-<td>Invalid redirect URI</td>
-<td>The client should pass the redirect uri that was registered with BGL, as explained in Section - Obtaining BGL API Credentials.  If an invalid redirect uri is passed as the redirect_uri parameter, the BGL system will respond with an error</td>
-<td style="text-align:center">INVALID GRANT</td>
-<td style="text-align:center">INVALID REDIRECT: {passed invalid uri} DOES NOT MATCH ONE OF THE REGISTERED VALUES: [{the url that is registered with the system}]</td>
-</tr>
-</tbody>
-</table>
-
+<p>If the format parameter is not set, the returned result will always be JSON.</p>
+<h3 id="sample-response">Sample Response</h3>
+<h4 id="json">JSON</h4>
+<pre><code>{
+    &quot;detail&quot;: {
+        &quot;activedDate&quot;: null,
+        &quot;postalAddress&quot;: {
+            &quot;streetLine1&quot;: &quot;L vlLel&quot;,
+            &quot;streetLine2&quot;: &quot;139 Macquarie Street&quot;,
+            &quot;city&quot;: &quot;Dubbo&quot;,
+            &quot;state&quot;: &quot;NEW_SOUTH_WALES&quot;,
+            &quot;country&quot;: &quot;AU&quot;,
+            &quot;postCode&quot;: &quot;2830&quot;
+        }
+    }
+}
+</code></pre><h4 id="xml">XML</h4>
+<pre><code>&lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
+  &lt;Detail&gt;
+    &lt;ActivedDate /&gt;
+    &lt;PostalAddress&gt;
+      &lt;StreetLine1&gt;L vlLel&lt;/StreetLine1&gt;
+      &lt;StreetLine2&gt;139 Macquarie Street&lt;/StreetLine2&gt;
+      &lt;City&gt;Dubbo&lt;/City&gt;
+      &lt;State&gt;NEW_SOUTH_WALES&lt;/State&gt;
+      &lt;Country&gt;AU&lt;/Country&gt;
+      &lt;PostCode&gt;2830&lt;/PostCode&gt;
+    &lt;/PostalAddress&gt;
+  &lt;/Detail&gt;
+&lt;/root&gt;
+</code></pre>
                     
                     </section>
                 
@@ -455,10 +418,10 @@ Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" tar
         </div>
 
         
-        <a href="../getting_started/obtaining_bgl_api_credentials.html" class="navigation navigation-prev " aria-label="Previous page: Obtaining BGL API Credentials"><i class="fa fa-angle-left"></i></a>
+        <a href="../resource_requests/request__fund_list.html" class="navigation navigation-prev " aria-label="Previous page: Request : Fund List"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../getting_started/obtaining_request_token.html" class="navigation navigation-next " aria-label="Next page: Obtaining Request Token"><i class="fa fa-angle-right"></i></a>
+        <a href="../resource_requests/request__trustees.html" class="navigation navigation-next " aria-label="Next page: Request : Trustees List"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

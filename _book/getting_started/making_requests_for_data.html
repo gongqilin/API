@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request for an Authorization Code | BGL API</title>
+        <title>Making requests for data | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../getting_started/obtaining_request_token.html" />
+    <link rel="next" href="../resource_requests/README.html" />
     
     
-    <link rel="prev" href="../getting_started/obtaining_bgl_api_credentials.html" />
+    <link rel="prev" href="../getting_started/obtaining_request_token.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1436497677374">
+    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1436497677374">
     
 
 <div class="book-summary">
@@ -98,7 +98,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="1.2" data-path="getting_started/request_for_an_authorization_code.html">
+        <li class="chapter " data-level="1.2" data-path="getting_started/request_for_an_authorization_code.html">
             
                 
                     <a href="../getting_started/request_for_an_authorization_code.html">
@@ -130,7 +130,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.4" data-path="getting_started/making_requests_for_data.html">
+        <li class="chapter active" data-level="1.4" data-path="getting_started/making_requests_for_data.html">
             
                 
                     <a href="../getting_started/making_requests_for_data.html">
@@ -325,90 +325,44 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_10661">
+                    <section class="normal" id="section-gitbook_10663">
                     
-                        <h1 id="request-for-an-authorization-code">Request for an Authorization Code</h1>
-<p>An Authorization Code is necessary to obtain an Access Token from BGL OATH 2.0 Server.  Obtaining an Authorization token is an imporantant step, as it provides assuarance to the client that appropriate permission is being granted to access the BGL API.</p>
-<p>To request an authorization code, the client must send a GET request to the BGL OATH 2.0 Server in the following manner.</p>
+                        <h1 id="making-requests-for-data">Making requests for data</h1>
+<p>This section explains on how we could obtain data from the BGL API.</p>
+<p>In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token, the client could use the following url to make the request for data.</p>
 <table>
 <thead>
 <tr>
 <th>Request Type</th>
-<th>URL Pattern</th>
+<th>URL</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>GET</td>
-<td><a href="https://api-uat.bgl360.com.au/oauth/authorize?response_type=code&amp;client_id={API-Client-ID}&amp;scope={fundList}" target="_blank">https://api-uat.bgl360.com.au/oauth/authorize?response_type=code&amp;client_id={API-Client-ID}&amp;scope={fundList}</a></td>
+<td>POST/GET</td>
+<td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
 </tr>
 </tbody>
 </table>
-<p>The URL query parameters are as follows.</p>
+<p>The above url will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the next section.</p>
+<p>However, the client needs to pass in the access token and token type as header information in the request, as per the following table</p>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
-<th style="text-align:center">Required</th>
+<th>Header Variable Name</th>
+<th>Value</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>response_type</td>
-<td>The value of this should always be: code</td>
-<td style="text-align:center">YES</td>
-</tr>
-<tr>
-<td>client_id</td>
-<td>A unique identifier to identify a client that will be using the BGL API, Provided by BGL</td>
-<td style="text-align:center">YES</td>
-</tr>
-<tr>
-<td>redirect_uri</td>
-<td>The URI your users will be sent back to after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2" target="_blank">Oauth2 Documentation</a>.  Example : <a href="https://www.example.com/auth/bgl" target="_blank">https://www.example.com/auth/bgl</a></td>
-<td style="text-align:center">OPTIONAL</td>
-</tr>
-<tr>
-<td>state</td>
-<td>An opaque value used by the client to maintain state between the request and callback. The authorization server includes this value when redirecting the user-agent back to the client. The parameter SHOULD be used for preventing cross-site request forgery as described in <a href="http://tools.ietf.org/html/rfc6749#section-10.12" target="_blank">Oauth2 Documentation</a>.  Example : state=DCEeFWf45A53sdfKef424</td>
-<td style="text-align:center">OPTIONAL</td>
-</tr>
-<tr>
-<td>scope</td>
-<td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3" target="_blank">Oauth2 Documentation</a>.</td>
-<td style="text-align:center">OPTIONAL</td>
+<td>Authorization</td>
+<td>{token_type} {access_token}</td>
+<td>bearer df2f0e40-606f-4311-8066-590732fd126b</td>
 </tr>
 </tbody>
 </table>
-<p>Once the request is processed one of the following will occur.</p>
-<ul>
-<li>
-<p>
-If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API&#39;s authorization screen as displayed below.
-</p>
-
-<p><img src="/images/APIAuthorizationScreen.png" alt="API Authorization" title="API Authorization"></p>
-
-
-<p>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.</p>
-</li>
-</ul>
-
-<ul>
-<li>
-<p>
-If a valid granted permission exists for the client, the authorization screen is by-passed and the user is immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request
-</p>
-<p>
-Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" target="_blank">http://www.client-url.com.au/oauth/authCode?code=LqAx2wO</a>
-</p>
-</li>
-</ul>
-
-<p>For security reasons, the authorization code has a very short lifespan ( about 5 - 10 mins ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL OATH 2.0 Server, as explained above.</p>
-<p>Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that has somehow slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack and you should throw an HTTP 401 error code in response.</p>
-<p>There may be instances where the request for a Authorization Code may fail.  The below table illustrates the causes of a bad request and the outcome the client sees.</p>
+<p>By any mean if the client passes an invalid access token or an invalid token type, the BGL API will provide an error, which is illustrated in the below table.</p>
 <table>
 <thead>
 <tr>
@@ -420,28 +374,16 @@ Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" tar
 </thead>
 <tbody>
 <tr>
-<td>Invalid Client Id</td>
-<td>When an invalid client id is passed as a query parameter</td>
-<td style="text-align:center">INVALID CLIENT</td>
-<td style="text-align:center">BAD CLIENT CREDENTIALS</td>
+<td>Invalid Access Token</td>
+<td>When an invalid or expired Access token is set in header</td>
+<td style="text-align:center">INVALID_TOKEN</td>
+<td style="text-align:center">Invalid access token: {passed access token}</td>
 </tr>
 <tr>
-<td>Invalid Response Type</td>
-<td>If response type parameter contains anything apart from &quot;code&quot;</td>
-<td style="text-align:center">UNSUPPORTED_RESPONSE_TYPE</td>
-<td style="text-align:center">UNSUPPORTED RESPONSE TYPE {The passed invalid code}</td>
-</tr>
-<tr>
-<td>Invalid scope</td>
-<td>The current valid scope are &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;.  Appart from these, if the client passes anything else as scope BGL will return an error</td>
-<td style="text-align:center">INVALID_SCOPE</td>
-<td style="text-align:center">Invalid scope : {The invalid scope passed}</td>
-</tr>
-<tr>
-<td>Invalid redirect URI</td>
-<td>The client should pass the redirect uri that was registered with BGL, as explained in Section - Obtaining BGL API Credentials.  If an invalid redirect uri is passed as the redirect_uri parameter, the BGL system will respond with an error</td>
-<td style="text-align:center">INVALID GRANT</td>
-<td style="text-align:center">INVALID REDIRECT: {passed invalid uri} DOES NOT MATCH ONE OF THE REGISTERED VALUES: [{the url that is registered with the system}]</td>
+<td>Invalid Token Type</td>
+<td>When an invalid token type is set in header</td>
+<td style="text-align:center">INVALID_TOKEN</td>
+<td style="text-align:center">Invalid access token: {passed access token}</td>
 </tr>
 </tbody>
 </table>
@@ -455,10 +397,10 @@ Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" tar
         </div>
 
         
-        <a href="../getting_started/obtaining_bgl_api_credentials.html" class="navigation navigation-prev " aria-label="Previous page: Obtaining BGL API Credentials"><i class="fa fa-angle-left"></i></a>
+        <a href="../getting_started/obtaining_request_token.html" class="navigation navigation-prev " aria-label="Previous page: Obtaining Request Token"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../getting_started/obtaining_request_token.html" class="navigation navigation-next " aria-label="Next page: Obtaining Request Token"><i class="fa fa-angle-right"></i></a>
+        <a href="../resource_requests/README.html" class="navigation navigation-next " aria-label="Next page: Resource Requests"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

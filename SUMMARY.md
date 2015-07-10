@@ -4,4 +4,11 @@
 * [Getting Started](getting_started/README.md)
    * [Obtaining BGL API Credentials](getting_started/obtaining_bgl_api_credentials.md)
    * [Request for an Authorization Code](getting_started/request_for_an_authorization_code.md)
+   * [Obtaining Request Token](getting_started/obtaining_request_token.md)
+   * [Making requests for data](getting_started/making_requests_for_data.md)
+* [Resource Requests](resource_requests/README.md)
+   * [Request : Fund List](resource_requests/request__fund_list.md)
+   * [Request : Fund Detail](resource_requests/request__fund_detail.md)
+   * [Request : Trustees List](resource_requests/request__trustees.md)
+   * [Request : Investment Summary](resource_requests/request__investment_summary.md)
 
