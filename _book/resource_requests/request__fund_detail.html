@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436497677374">
+    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436510592894">
     
 
 <div class="book-summary">
@@ -325,7 +325,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_10665">
+                    <section class="normal" id="section-gitbook_11035">
                     
                         <h1 id="request--fund-detail">Request : Fund Detail</h1>
 <table>
@@ -408,6 +408,18 @@
     &lt;/PostalAddress&gt;
   &lt;/Detail&gt;
 &lt;/root&gt;
+</code></pre><p>If the url does not contain the fundId parameter BGL API will notify us with the following error.</p>
+<pre><code>{
+    &quot;message&quot;: &quot;Failed to call detail&quot;,
+    &quot;errors&quot;: [&quot;Fund Id is required&quot;],
+    &quot;status&quot;: 400
+}
+</code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
+<pre><code>{
+    &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
+    &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
+    &quot;status&quot;: 401
+}
 </code></pre>
                     
                     </section>
