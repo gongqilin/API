@@ -21,6 +21,11 @@ The following parameters can be added into the http request or set in the Conten
 
 <table>
     <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
         <td align="center">format=json <br> or <br> .json</td>
         <td>This is the default. Will return the data in JSON format</td>
         <td  align="center">Optional</td>
@@ -34,9 +39,17 @@ The following parameters can be added into the http request or set in the Conten
 
 If the format parameter is not set, the returned result will always be JSON.
 
-### Sample Response
+### Sample Request and Response
 
-#### JSON
+#### cURL Request - JSON
+
+```
+
+curl -X POST https://api-uat.bgl360.com.au/user/detail --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+
+```
+
+#### Response - JSON
 
 ```
 
@@ -53,7 +66,15 @@ If the format parameter is not set, the returned result will always be JSON.
 
 ```
 
-#### XML
+#### cURL Request - XML
+
+```
+
+curl -X POST https://api-uat.bgl360.com.au/user/detail.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+
+```
+
+#### Response XML
 
 ```
 

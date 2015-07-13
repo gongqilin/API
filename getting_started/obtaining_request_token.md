@@ -1,6 +1,6 @@
 # Obtaining Request token
 
-Once the client has the Authorization code, as explained in the previous section, then the client can obtain a Request Token.
+Once the client has the [Authorization code](request_for_an_authorization_code.md), then the client can obtain a Request Token.
 
 The Request Token will contain vital information that will be need to access the BGL API.
 
@@ -54,7 +54,15 @@ The URL query parameters are as follows.
 
 If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.
 
-An example of a valid Request Token is as follows.
+An example of a request for the Request Token is as follows.
+
+```
+
+curl -X POST https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&code=x556T&scope=fundList&client_id=sampleClient360&client_secret=sampleClient360Secret
+
+```
+
+An example of a valid response of a Request Token is as follows.
 
 ```
 

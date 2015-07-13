@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.4" data-basepath=".." data-revision="1436764454903">
+    <div class="book"  data-level="2.4" data-basepath=".." data-revision="1436770112603">
     
 
 <div class="book-summary">
@@ -256,7 +256,7 @@
                         
                             <b>2.6.</b>
                         
-                         Request : Chart Accounts
+                         Request : Chart of Accounts
                     </a>
                 
             
@@ -389,7 +389,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13781">
+                    <section class="normal" id="section-gitbook_19366">
                     
                         <h1 id="request--investment-summary">Request : Investment Summary</h1>
 <table>
@@ -411,9 +411,14 @@
 <p>The following parameters can be added into the http request or set in the Content-Type in the header.</p>
 <p><table>
     <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
         <td align="center">fundId</td>
         <td>The unique fund id</td>
-        <td  align="center">Mandatory</td>
+        <td  align="center">Optional</td>
     </tr>
     <tr>
         <td align="center">start</td>
@@ -438,8 +443,11 @@
 <table>
 
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
-<h3 id="sample-response">Sample Response</h3>
-<h4 id="json">JSON</h4>
+<h3 id="sample-request-and-response">Sample Request and Response</h3>
+<h4 id="curl-request---json">cURL Request - JSON</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="response---json">Response - JSON</h4>
 <pre><code>
 {
     &quot;investmentSummary&quot;: [{
@@ -508,7 +516,10 @@
     &quot;offset&quot;: 0,
     &quot;max&quot;: 50
 }
-</code></pre><h4 id="xml">XML</h4>
+</code></pre><h4 id="curl-request---xml">cURL Request - XML</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary.xml?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="response---xml">Response - XML</h4>
 <pre><code>
 &lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
   &lt;InvestmentSummary&gt;
@@ -566,6 +577,34 @@
   &lt;Offset&gt;0&lt;/Offset&gt;
   &lt;Max&gt;50&lt;/Max&gt;
 &lt;/root&gt;
+</code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
+<pre><code>
+{
+    &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
+    &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
+    &quot;status&quot;: 401
+}
+</code></pre><p>If Start and End Date are not valid dates, the following error will be returned.</p>
+<pre><code>
+{
+    &quot;message&quot;: &quot;Failed to call investmentSummary&quot;,
+    &quot;errors&quot;: [&quot;The Start or End Dates are invalid&quot;],
+    &quot;status&quot;: 400
+}
+</code></pre><p>If only one date is present, the following error will be returned.</p>
+<pre><code>
+{
+    &quot;message&quot;: &quot;Failed to call investmentSummary&quot;,
+    &quot;errors&quot;: [&quot;The Start &amp; End Dates are invalid&quot;],
+    &quot;status&quot;: 400
+}
+</code></pre><p>If end date is greater than the start date, the following error will be returned.</p>
+<pre><code>
+{
+    &quot;message&quot;: &quot;Failed to call investmentSummary&quot;,
+    &quot;errors&quot;: [&quot;The Start &amp; End Dates are invalid&quot;],
+    &quot;status&quot;: 400
+}
 </code></pre>
                     
                     </section>

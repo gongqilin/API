@@ -30,12 +30,12 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>client_id</td>
-        <td>A unique identifier to identify a client that will be using the BGL API. This is Provided by BGL.</td>
+        <td>A unique identifier to identify a client that will be using the BGL API. This is Provided by BGL. See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>redirect_uri</td>
-        <td>The URI that will be used to redirect after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2">Oauth2 Documentation.</a></td>
+        <td>The URI that will be used to redirect after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2">Oauth2 Documentation.</a>  See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to set redirect uri.</td>
         <td>Optional</td>
     </tr>
     <tr>
@@ -109,7 +109,7 @@ There may be instances where the request for a Authorization Code may fail.  The
     </tr>
     <tr>
         <td>Invalid redirect URI</td>
-        <td>The client should pass the redirect uri that was registered with BGL, as explained in Section - [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.html). If an invalid redirect uri is passed as the redirect_uri parameter, the BGL system will respond with an error</td>
+        <td>The client should pass the redirect uri that was registered with BGL, as explained in Section - [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md). If an invalid redirect uri is passed as the redirect_uri parameter, the BGL system will respond with an error</td>
         <td>INVALID GRANT</td>
         <td>INVALID REDIRECT: &lt;passed invalid uri&gt; DOES NOT MATCH ONE OF THE REGISTERED VALUES: [&lt;the url that is registered with the system&gt;]</td>
     </tr>

@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request : Chart Accounts | BGL API</title>
+        <title>Request : Chart of Accounts | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.6" data-basepath=".." data-revision="1436764454903">
+    <div class="book"  data-level="2.6" data-basepath=".." data-revision="1436770112603">
     
 
 <div class="book-summary">
@@ -256,7 +256,7 @@
                         
                             <b>2.6.</b>
                         
-                         Request : Chart Accounts
+                         Request : Chart of Accounts
                     </a>
                 
             
@@ -389,9 +389,9 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13779">
+                    <section class="normal" id="section-gitbook_19363">
                     
-                        <h1 id="request--chart-accounts">Request : Chart Accounts</h1>
+                        <h1 id="request--chart-of-accounts">Request : Chart of Accounts</h1>
 <table>
     <tr>
         <td>Description</td>
@@ -411,6 +411,11 @@
 <p>The following parameters can be added into the http request or set in the Content-Type in the header.</p>
 <p><table>
     <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
         <td align="center">fundId</td>
         <td>The unique fund id</td>
         <td  align="center">Mandatory</td>
@@ -428,8 +433,11 @@
 <table>
 
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
-<h3 id="sample-response">Sample Response</h3>
-<h4 id="json">JSON</h4>
+<h3 id="sample-request-and-response">Sample Request and Response</h3>
+<h4 id="curl-request---json">cURL Request - JSON</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/fund/chartAccounts?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="response---json">Response - JSON</h4>
 <pre><code>
 {
     &quot;chartAccounts&quot;: [{
@@ -453,7 +461,10 @@
         &quot;name&quot;: &quot;Writeback of Deferred Tax&quot;
     }]
 }
-</code></pre><h4 id="xml">XML</h4>
+</code></pre><h4 id="curl-request---xml">cURL Request - XML</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/fund/chartAccounts.xml?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="response---xml">Response - XML</h4>
 <pre><code>
 &lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
   &lt;ChartAccounts&gt;
@@ -489,6 +500,13 @@
     &lt;/ChartAccount&gt;
   &lt;/ChartAccounts&gt;
 &lt;/root&gt;
+</code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
+<pre><code>
+{
+    &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
+    &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
+    &quot;status&quot;: 401
+}
 </code></pre>
                     
                     </section>

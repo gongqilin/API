@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.7" data-basepath=".." data-revision="1436764454903">
+    <div class="book"  data-level="2.7" data-basepath=".." data-revision="1436770112603">
     
 
 <div class="book-summary">
@@ -256,7 +256,7 @@
                         
                             <b>2.6.</b>
                         
-                         Request : Chart Accounts
+                         Request : Chart of Accounts
                     </a>
                 
             
@@ -389,7 +389,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13783">
+                    <section class="normal" id="section-gitbook_19369">
                     
                         <h1 id="request--user-detail">Request : User Detail</h1>
 <table>
@@ -411,6 +411,11 @@
 <p>The following parameters can be added into the http request or set in the Content-Type in the header.</p>
 <p><table>
     <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
         <td align="center">format=json <br> or <br> .json</td>
         <td>This is the default. Will return the data in JSON format</td>
         <td  align="center">Optional</td>
@@ -423,8 +428,11 @@
 <table>
 
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
-<h3 id="sample-response">Sample Response</h3>
-<h4 id="json">JSON</h4>
+<h3 id="sample-request-and-response">Sample Request and Response</h3>
+<h4 id="curl-request---json">cURL Request - JSON</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/user/detail --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="response---json">Response - JSON</h4>
 <pre><code>
 {
     &quot;userDetail&quot;: {
@@ -436,7 +444,10 @@
         &quot;title&quot;: null
     }
 }
-</code></pre><h4 id="xml">XML</h4>
+</code></pre><h4 id="curl-request---xml">cURL Request - XML</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/user/detail.xml --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="response-xml">Response XML</h4>
 <pre><code>
 &lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
   &lt;UserDetail&gt;
@@ -458,7 +469,7 @@
         </div>
 
         
-        <a href="../resource_requests/request__chart_accounts.html" class="navigation navigation-prev " aria-label="Previous page: Request : Chart Accounts"><i class="fa fa-angle-left"></i></a>
+        <a href="../resource_requests/request__chart_accounts.html" class="navigation navigation-prev " aria-label="Previous page: Request : Chart of Accounts"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../data_dictionary/README.html" class="navigation navigation-next " aria-label="Next page: Data Dictionary"><i class="fa fa-angle-right"></i></a>

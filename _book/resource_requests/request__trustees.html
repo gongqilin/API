@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1436764454903">
+    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1436770112603">
     
 
 <div class="book-summary">
@@ -256,7 +256,7 @@
                         
                             <b>2.6.</b>
                         
-                         Request : Chart Accounts
+                         Request : Chart of Accounts
                     </a>
                 
             
@@ -389,13 +389,13 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13782">
+                    <section class="normal" id="section-gitbook_19368">
                     
                         <h1 id="request--trustees-list">Request : Trustees List</h1>
 <table>
     <tr>
         <td>Description</td>
-        <td>Allows you to retrieve List of Individual Trustees and their details</td>
+        <td>Allows you to retrieve a List of Individual Trustees and their details</td>
     </tr>
     <tr>
         <td>Request URI</td>
@@ -411,6 +411,11 @@
 <p>The following parameters can be added into the http request or set in the Content-Type in the header.</p>
 <p><table>
     <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
         <td align="center">format=json <br> or <br> .json</td>
         <td>This is the default. Will return the data in JSON format</td>
         <td  align="center">Optional</td>
@@ -423,8 +428,11 @@
 <table>
 
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
-<h3 id="sample-response">Sample Response</h3>
-<h4 id="json">JSON</h4>
+<h3 id="sample-request-and-response">Sample Request and Response</h3>
+<h4 id="curl-request---json">cURL Request - JSON</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="response---json">Response - JSON</h4>
 <pre><code>
 {
     &quot;fundTrustees&quot;: [{
@@ -494,7 +502,10 @@
         }]
     }]
 }
-</code></pre><h4 id="xml">XML</h4>
+</code></pre><h4 id="curl-request---xml">cURL Request - XML</h4>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
+</code></pre><h4 id="reponse---xml">Reponse - XML</h4>
 <pre><code>
 &lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
   &lt;FundTrustees&gt;

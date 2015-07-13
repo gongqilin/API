@@ -1,8 +1,6 @@
 # Making requests for data
 
-This section explains on how we could obtain data from the BGL API.
-
-In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token, the client could use the following url to make the request for data.
+In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see [Obtaining Request Token code](obtaining_request_token.md)), the client could use the below URI to make the request for data.
 
 <table>
     <tr>
@@ -15,7 +13,7 @@ In order for the client to make a request for the data, the client needs to have
     </tr>
 </table>
 
-The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the [next section](../resource_requests/README.html).
+The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the [next section](../resource_requests/README.md).
 
 However, the client needs to pass in the access token and token type as header information in the request, as per the following table:
 

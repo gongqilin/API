@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.3" data-basepath=".." data-revision="1436764454903">
+    <div class="book"  data-level="1.3" data-basepath=".." data-revision="1436770112603">
     
 
 <div class="book-summary">
@@ -256,7 +256,7 @@
                         
                             <b>2.6.</b>
                         
-                         Request : Chart Accounts
+                         Request : Chart of Accounts
                     </a>
                 
             
@@ -389,10 +389,10 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13774">
+                    <section class="normal" id="section-gitbook_19360">
                     
                         <h1 id="obtaining-request-token">Obtaining Request token</h1>
-<p>Once the client has the Authorization code, as explained in the previous section, then the client can obtain a Request Token.</p>
+<p>Once the client has the <a href="request_for_an_authorization_code.html">Authorization code</a>, then the client can obtain a Request Token.</p>
 <p>The Request Token will contain vital information that will be need to access the BGL API.</p>
 <p>In order for the client to obtain a Request Token, the client should send a request to BGL OAUTH 2.0 Server as follows.</p>
 <table>
@@ -441,7 +441,10 @@
 </table>
 
 <p>If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.</p>
-<p>An example of a valid Request Token is as follows.</p>
+<p>An example of a request for the Request Token is as follows.</p>
+<pre><code>
+curl -X POST https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&amp;code=x556T&amp;scope=fundList&amp;client_id=sampleClient360&amp;client_secret=sampleClient360Secret
+</code></pre><p>An example of a valid response of a Request Token is as follows.</p>
 <pre><code>
 {
 access_token: &quot;df2f0e40-606f-4311-8066-590732fd126b&quot;

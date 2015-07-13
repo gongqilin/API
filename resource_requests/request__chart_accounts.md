@@ -1,4 +1,4 @@
-# Request : Chart Accounts
+# Request : Chart of Accounts
 
 <table>
     <tr>
@@ -21,6 +21,11 @@ The following parameters can be added into the http request or set in the Conten
 
 <table>
     <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
         <td align="center">fundId</td>
         <td>The unique fund id</td>
         <td  align="center">Mandatory</td>
@@ -39,9 +44,17 @@ The following parameters can be added into the http request or set in the Conten
 
 If the format parameter is not set, the returned result will always be JSON.
 
-### Sample Response
+### Sample Request and Response
 
-#### JSON
+#### cURL Request - JSON
+
+```
+
+curl -X POST https://api-uat.bgl360.com.au/fund/chartAccounts?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+
+```
+
+#### Response - JSON
 
 ```
 
@@ -70,7 +83,15 @@ If the format parameter is not set, the returned result will always be JSON.
 
 ```
 
-#### XML
+#### cURL Request - XML
+
+```
+
+curl -X POST https://api-uat.bgl360.com.au/fund/chartAccounts.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+
+```
+
+#### Response - XML
 
 ```
 
@@ -110,4 +131,17 @@ If the format parameter is not set, the returned result will always be JSON.
 </root>
 
 ```
+
+If the provided fund id is not found in BGL data, the following error will be returned.
+
+```
+
+{
+	"message": "The fund is not found/accessible",
+	"errors": ["The fund is not found/accessible"],
+	"status": 401
+}
+
+```
+
 
