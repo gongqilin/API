@@ -17,22 +17,22 @@
 
 ### Parameters
 
-
 The following parameters can be added into the http request or set in the Content-Type in the header.
-
 
 <table>
     <tr>
         <td align="center">format=json <br> or <br> .json</td>
-        <td>This is the default. Will return the data in JSON format.</td>
+        <td>This is the default. Will return the data in JSON format</td>
         <td  align="center">Optional</td>
     </tr>
     <tr>
         <td align="center">format=xml  <br> or <br> .xml</td>
-        <td>Will return the data in XML format.</td>
+        <td>Will return the data in XML format</td>
         <td  align="center">Optional</td>
     </tr>
 <table>
+
+If the format parameter is not set, the returned result will always be JSON.
 
 ### Sample Response
 
@@ -69,8 +69,3 @@ The following parameters can be added into the http request or set in the Conten
 </root>
 
 ```
-
-
-
-
-

@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1436754295591">
+    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1436758928356">
     
 
 <div class="book-summary">
@@ -389,68 +389,59 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_3459">
+                    <section class="normal" id="section-gitbook_12440">
                     
                         <h1 id="making-requests-for-data">Making requests for data</h1>
 <p>This section explains on how we could obtain data from the BGL API.</p>
 <p>In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token, the client could use the following url to make the request for data.</p>
 <table>
-<thead>
-<tr>
-<th>Request Type</th>
-<th>URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>POST/GET</td>
-<td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
-</tr>
-</tbody>
+    <tr>
+        <th>Method</th>
+        <th>URI</th>
+    </tr>
+    <tr>
+        <td>POST | GET</td>
+        <td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
+    </tr>
 </table>
-<p>The above url will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the next section.</p>
-<p>However, the client needs to pass in the access token and token type as header information in the request, as per the following table</p>
+
+<p>The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the next section.</p>
+<p>However, the client needs to pass in the access token and token type as header information in the request, as per the following table:</p>
 <table>
-<thead>
-<tr>
-<th>Header Variable Name</th>
-<th>Value</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Authorization</td>
-<td>{token_type} {access_token}</td>
-<td>bearer df2f0e40-606f-4311-8066-590732fd126b</td>
-</tr>
-</tbody>
+    <tr>
+        <th>Header variable name</th>
+        <th>Value</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Authorization</td>
+        <td>&lt;token_type&gt; &lt;access_token&gt;</td>
+        <td>bearer df2f0e40-606f-4311-8066-590732fd126b</td>
+    </tr>
 </table>
+
 <p>By any mean if the client passes an invalid access token or an invalid token type, the BGL API will provide an error, which is illustrated in the below table.</p>
 <table>
-<thead>
-<tr>
-<th>Cause</th>
-<th>Description</th>
-<th style="text-align:center">Error</th>
-<th style="text-align:center">Error Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Invalid Access Token</td>
-<td>When an invalid or expired Access token is set in header</td>
-<td style="text-align:center">INVALID_TOKEN</td>
-<td style="text-align:center">Invalid access token: {passed access token}</td>
-</tr>
-<tr>
-<td>Invalid Token Type</td>
-<td>When an invalid token type is set in header</td>
-<td style="text-align:center">INVALID_TOKEN</td>
-<td style="text-align:center">Invalid access token: {passed access token}</td>
-</tr>
-</tbody>
+    <tr>
+        <th>Cause</th>
+        <th>Description</th>
+        <th>Error</th>
+        <th>Error Description</th>
+    </tr>
+    <tr>
+        <td>Invalid Access Token</td>
+        <td>When an invalid or expired Access token is set in header</td>
+        <td>INVALID_TOKEN</td>
+        <td>Invalid access token: &lt;passed access token&gt;</td>
+    </tr>
+    <tr>
+        <td>Invalid Token Type</td>
+        <td>When an invalid token type is set in header</td>
+        <td>INVALID_TOKEN</td>
+        <td>Invalid access token: &lt;passed access token&gt;</td>
+    </tr>
 </table>
+
 
                     
                     </section>

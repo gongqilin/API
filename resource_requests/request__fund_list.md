@@ -1,20 +1,36 @@
 # Request : Fund List
 
-|  |  |
-| -- | -- |
-| Description | Allows you to retrieve a list of fund <br> Returns the FundID of each fund for subsequent API requests  |
-| Sample Request| https://api-uat.bgl360.com.au/fund/list |
-| Method support | GET, POST|
+<table>
+    <tr>
+        <td>Description</td>
+        <td>Allows you to retrieve a list of fund, which also returns the fund id, which could be used for subsequent API requests</td>
+    </tr>
+    <tr>
+        <td>Request URI</td>
+        <td>https://api-uat.bgl360.com.au/fund/list</td>
+    </tr>
+    <tr>
+        <td>Method</td>
+        <td>GET | POST</td>
+    </tr>
+</table>
 
 ### Parameters
 
-
 The following parameters can be added into the http request or set in the Content-Type in the header.
 
-|  |  |
-| :--: | -- |
-| format=json <br> or <br> .json | This is the default. Will return the data in JSON format. |
-| format=xml  <br> or <br> .xml | Will return the data in XML format. |
+<table>
+    <tr>
+        <td align="center">format=json <br> or <br> .json</td>
+        <td>This is the default. Will return the data in JSON format</td>
+        <td  align="center">Optional</td>
+    </tr>
+    <tr>
+        <td align="center">format=xml  <br> or <br> .xml</td>
+        <td>Will return the data in XML format</td>
+        <td  align="center">Optional</td>
+    </tr>
+<table>
 
 If the format parameter is not set, the returned result will always be JSON.
 
@@ -44,8 +60,6 @@ If the format parameter is not set, the returned result will always be JSON.
 	}]
 
 ```
-
-
 #### XML
 
 ```
@@ -74,12 +88,3 @@ If the format parameter is not set, the returned result will always be JSON.
 </root>
 
 ```
-
-
-
-
-
-
-
-
-

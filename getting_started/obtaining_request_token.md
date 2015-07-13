@@ -6,20 +6,51 @@ The Request Token will contain vital information that will be need to access the
 
 In order for the client to obtain a Request Token, the client should send a request to BGL OAUTH 2.0 Server as follows.
 
-| Request Type | URL Pattern |
-| -- | -- |
-| POST | https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&code={Auth Code}&scope={fundList}&client_id={API Client ID}&client_secret={API Client Secret} |
+<table>
+    <tr>
+        <th>Method</th>
+        <th>URI</th>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&code=&lt;Auth Code&gt;&scope=&lt;fundList&gt;&client_id=&lt;API Client ID&gt;&client_secret=&lt;API Client Secret&gt;</td>
+    </tr>
+</table>
 
 The URL query parameters are as follows.
 
-| Parameter | Description | Required |
-| -- | -- | :--: |
-| grant_type | The value of this should always be: authorization_code | YES |
-| code | The Authorization Code obtained from BGL | YES |
-| client_id | A unique identifier to identify a client that will be using the BGL API, Provided by BGL | YES |
-| client_secret | The client secret provided by BGL at the time of registration | YES |
-|scope |A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. As described by [Oauth2 Documentation](http://tools.ietf.org/html/rfc6749#section-3.3). | OPTIONAL |
-
+<table>
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <td>grant_type</td>
+        <td>The value of this should always be: authorization_code</td>
+        <td>Mandatory</td>
+    </tr>
+    <tr>
+        <td>code</td>
+        <td>The Authorization Code obtained from BGL</td>
+        <td>Mandatory</td>
+    </tr>
+    <tr>
+        <td>client_id</td>
+        <td>A unique identifier to identify a client that will be using the BGL API, Provided by BGL</td>
+        <td>Mandatory</td>
+    </tr>
+    <tr>
+        <td>client_secret</td>
+        <td>The client secret provided by BGL at the time of registration</td>
+        <td>Mandatory</td>
+    </tr>
+    <tr>
+        <td>scope</td>
+        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>Optional</td>
+    </tr>
+</table>
 
 If the request was successful, the client should get a JSON object containing an access token, token type, expiration period and scope.
 
@@ -39,20 +70,64 @@ scope: "fundList"
 
 The below table illustrates the content of a valid Request Token
 
-| Field | Description |
-| -- | -- |
-| access_token | The access token that is mandatory for requesting data from BGL API.  This value must be kept secure. |
-| refresh_token | A token that may be used to obtain a new access tokens. Refresh tokens are valid until the user revokes access. |
-| expires_in | The number of seconds remaining, from the time it was requested, before the token will expire.  Currently, all access tokens are issued with a 7 days lifespan |
-| token_type | Identifies the type of token returned. At this time, this field will always have the value Bearer. |
-| scope | The scope of this access token - what data could be accessed |
-
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>access_token</td>
+        <td>The access token that is mandatory for requesting data from BGL API. This value must be kept secure</td>
+    </tr>
+    <tr>
+        <td>refresh_token</td>
+        <td>A token that may be used to obtain a new access tokens. Refresh tokens are valid until the user revokes access</td>
+    </tr>
+    <tr>
+        <td>expires_in</td>
+        <td>The number of seconds remaining, from the time it was requested, before the token will expire. Currently, all access tokens are issued with a 7 days lifespan</td>
+    </tr>
+    <tr>
+        <td>token_type</td>
+        <td>Identifies the type of token returned. At this time, this field will always have the value Bearer</td>
+    </tr>
+    <tr>
+        <td>scope</td>
+        <td>The scope of this access token - what data could be accessed</td>
+    </tr>
+</table>
 
 There may be instances where the request for the Request Token may fail.  The below table illustrates the causes of a bad request and the outcome the client sees.
 
-| Cause | Description | Error | Error Description |
-| -- | -- | :--: | :--: |
-| Invalid Authorizatoin Code | When an invalid or expired Authorization code is passed | INVALID GRANT |Invalid authorization code: {passed Authorization Code} |
-| Invalid Client Id | When an invalid client id is passped | UNAUTHORIZED |No client with requested refkey: {passed invalid client id} |
-| Invalid Client Secret | When an invalid client secret is passped | INVALID_CLIENT |Bad client credentials |
-| Invalid Grant Type | When an invalid grant type is passped | UNSUPPORTED_GRANT_TYPE |Unsupported grant type: {passed grant type} |
+<table>
+    <tr>
+        <th>Cause</th>
+        <th>Description</th>
+        <th>Error</th>
+        <th>Error Description</th>
+    </tr>
+    <tr>
+        <td>Invalid Authorizatoin Code</td>
+        <td>When an invalid or expired Authorization code is passed</td>
+        <td>INVALID GRANT</td>
+        <td>Invalid authorization code: &lt;passed Authorization Code&gt;</td>
+    </tr>
+    <tr>
+        <td>Invalid Client Id</td>
+        <td>When an invalid client id is passed</td>
+        <td>UNAUTHORIZED</td>
+        <td>No client with requested refkey: &lt;passed invalid client id&gt;</td>
+    </tr>
+    <tr>
+        <td>Invalid Client Secret</td>
+        <td>When an invalid client secret is passed</td>
+        <td>INVALID_CLIENT</td>
+        <td>Bad client credentials</td>
+    </tr>
+    <tr>
+        <td>Invalid Grant Type</td>
+        <td>When an invalid grant type is passed</td>
+        <td>UNSUPPORTED_GRANT_TYPE</td>
+        <td>Unsupported grant type: &lt;passed grant type&gt;</td>
+    </tr>
+</table>

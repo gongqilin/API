@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1436754295591">
+    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1436758928356">
     
 
 <div class="book-summary">
@@ -389,51 +389,39 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_3467">
+                    <section class="normal" id="section-gitbook_12449">
                     
                         <h1 id="request--fund-list">Request : Fund List</h1>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Description</td>
-<td>Allows you to retrieve a list of fund <br> Returns the FundID of each fund for subsequent API requests</td>
-</tr>
-<tr>
-<td>Sample Request</td>
-<td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
-</tr>
-<tr>
-<td>Method support</td>
-<td>GET, POST</td>
-</tr>
-</tbody>
+    <tr>
+        <td>Description</td>
+        <td>Allows you to retrieve a list of fund, which also returns the fund id, which could be used for subsequent API requests</td>
+    </tr>
+    <tr>
+        <td>Request URI</td>
+        <td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
+    </tr>
+    <tr>
+        <td>Method</td>
+        <td>GET | POST</td>
+    </tr>
 </table>
+
 <h3 id="parameters">Parameters</h3>
 <p>The following parameters can be added into the http request or set in the Content-Type in the header.</p>
+<p><table>
+    <tr>
+        <td align="center">format=json <br> or <br> .json</td>
+        <td>This is the default. Will return the data in JSON format</td>
+        <td  align="center">Optional</td>
+    </tr>
+    <tr>
+        <td align="center">format=xml  <br> or <br> .xml</td>
+        <td>Will return the data in XML format</td>
+        <td  align="center">Optional</td>
+    </tr></p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">format=json <br> or <br> .json</td>
-<td>This is the default. Will return the data in JSON format.</td>
-</tr>
-<tr>
-<td style="text-align:center">format=xml  <br> or <br> .xml</td>
-<td>Will return the data in XML format.</td>
-</tr>
-</tbody>
-</table>
+
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-response">Sample Response</h3>
 <h4 id="json">JSON</h4>
