@@ -1,6 +1,6 @@
 # Obtaining BGL API Credentials
 
-In order to consume BGL API, the consuming application needs to register them self with BGL.  BGL will provide the following information.
+In order to consume BGL API, the consuming application needs to register it self with BGL.  BGL will provide the following information.
 
 <table>
     <tr>
