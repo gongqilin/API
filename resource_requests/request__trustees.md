@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <td>Request URI</td>
-        <td>https://api-uat.bgl360.com.au/fund/trustees</td>
+        <td>/fund/trustees</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -45,7 +45,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 ```javascript
 
-curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+curl -X POST https://api-staging.bgl360.com.au/fund/trustees --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
 ```
 
@@ -59,13 +59,13 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization
 		"relationships": [{
 			"entityRole": "Trustee",
 			"detail": {
-				"name": "drnwArn,  h  JhB rJ",
+				"name": "trustee name",
 				"ABN": null,
 				"phone": null,
 				"firm": "bgltestapi1",
 				"contact": {
-					"firstName": " h  JhB rJ",
-					"lastName": "drnwArn",
+					"firstName": "first name",
+					"lastName": "last name",
 					"isUser": false,
 					"title": "Mr"
 				}
@@ -74,13 +74,13 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization
 		{
 			"entityRole": "Trustee",
 			"detail": {
-				"name": "Aedrwdn, uuaanaurK s",
+				"name": "truestee name2",
 				"ABN": null,
 				"phone": null,
 				"firm": "bgltestapi1",
 				"contact": {
-					"firstName": "uuaanaurK s",
-					"lastName": "Aedrwdn",
+					"firstName": "first name",
+					"lastName": "last name",
 					"isUser": false,
 					"title": "Mrs"
 				}
@@ -92,13 +92,13 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization
 		"relationships": [{
 			"entityRole": "Trustee",
 			"detail": {
-				"name": "lllulMl,  aiair Gii",
+				"name": "truestee name3",
 				"ABN": null,
 				"phone": null,
 				"firm": "bgltestapi1",
 				"contact": {
-					"firstName": " aiair Gii",
-					"lastName": "lllulMl",
+					"firstName": "first name",
+					"lastName": "last name",
 					"isUser": false,
 					"title": "Mr"
 				}
@@ -107,12 +107,12 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization
 		{
 			"entityRole": "Trustee",
 			"detail": {
-				"name": "lalaaMrauul--CMla, bttitait",
+				"name": "truestee name4",
 				"ABN": null,
 				"phone": null,
 				"firm": "bgltestapi1",
 				"contact": {
-					"firstName": "bttitait",
+					"firstName": "first name",
 					"lastName": "lalaaMrauul--CMla",
 					"isUser": false,
 					"title": "Mrs"
@@ -128,7 +128,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization
 
 ```javascript
 
-curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
 ```
 
@@ -144,13 +144,13 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header "Authoriza
         <Relationship>
           <EntityRole>Trustee</EntityRole>
           <Detail>
-            <Name>drnwArn,  h  JhB rJ</Name>
+            <Name>truestee name</Name>
             <ABN />
             <Phone />
             <Firm>bgltestapi1</Firm>
             <Contact>
-              <FirstName> h  JhB rJ</FirstName>
-              <LastName>drnwArn</LastName>
+              <FirstName>first name</FirstName>
+              <LastName>last name</LastName>
               <IsUser>false</IsUser>
               <Title>Mr</Title>
             </Contact>
@@ -159,13 +159,13 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header "Authoriza
         <Relationship>
           <EntityRole>Trustee</EntityRole>
           <Detail>
-            <Name>Aedrwdn, uuaanaurK s</Name>
+            <Name>truestee name2</Name>
             <ABN />
             <Phone />
             <Firm>bgltestapi1</Firm>
             <Contact>
-              <FirstName>uuaanaurK s</FirstName>
-              <LastName>Aedrwdn</LastName>
+              <FirstName>first name</FirstName>
+              <LastName>last name</LastName>
               <IsUser>false</IsUser>
               <Title>Mrs</Title>
             </Contact>
@@ -179,13 +179,13 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header "Authoriza
         <Relationship>
           <EntityRole>Trustee</EntityRole>
           <Detail>
-            <Name>lllulMl,  aiair Gii</Name>
+            <Name>truestee name3</Name>
             <ABN />
             <Phone />
             <Firm>bgltestapi1</Firm>
             <Contact>
-              <FirstName> aiair Gii</FirstName>
-              <LastName>lllulMl</LastName>
+              <FirstName>first name</FirstName>
+              <LastName>last name</LastName>
               <IsUser>false</IsUser>
               <Title>Mr</Title>
             </Contact>
@@ -194,13 +194,13 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header "Authoriza
         <Relationship>
           <EntityRole>Trustee</EntityRole>
           <Detail>
-            <Name>lalaaMrauul--CMla, bttitait</Name>
+            <Name>truestee name4</Name>
             <ABN />
             <Phone />
             <Firm>bgltestapi1</Firm>
             <Contact>
-              <FirstName>bttitait</FirstName>
-              <LastName>lalaaMrauul--CMla</LastName>
+              <FirstName>first name</FirstName>
+              <LastName>last name</LastName>
               <IsUser>false</IsUser>
               <Title>Mrs</Title>
             </Contact>

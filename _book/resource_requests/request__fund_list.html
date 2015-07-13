@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1436774089335">
+    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1436785520734">
     
 
 <div class="book-summary">
@@ -301,10 +301,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4" data-path="sample_data/README">
+        <li class="chapter " data-level="4" data-path="sample_data/README.html">
             
                 
-                    <a href="../sample_data/README">
+                    <a href="../sample_data/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
@@ -426,10 +426,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list.html">
             
                 
-                    <a href="../sample_data/trustees_list">
+                    <a href="../sample_data/trustees_list.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
@@ -599,17 +599,17 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_21642">
+                    <section class="normal" id="section-gitbook_6604">
                     
                         <h1 id="request--fund-list">Request : Fund List</h1>
 <table>
     <tr>
         <td>Description</td>
-        <td>Allows you to retrieve a list of fund, which also returns the fund id, which could be used for subsequent API requests</td>
+        <td>Allows you to retrieve a list of fund owned by the resource owner (BGL User), which also returns the fund id, which could be used for subsequent API requests</td>
     </tr>
     <tr>
         <td>Request URI</td>
-        <td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
+        <td>/fund/list</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -641,7 +641,7 @@
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="curl-request---json">cURL Request - JSON</h4>
 <pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/list --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
 </code></pre>
 <h4 id="response---json">Response - JSON</h4>
 <pre><code class="lang-javascript">
@@ -657,7 +657,7 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list 
     {
         <span class="hljs-string">"fundID"</span>: <span class="hljs-string">"0000000048f240bd0148f2913f110027"</span>,
         <span class="hljs-string">"fundCode"</span>: <span class="hljs-string">"MIGRAT10"</span>,
-        <span class="hljs-string">"fundName"</span>: <span class="hljs-string">"lroPLPtaL.aaooptoln F  i 2aaru.LroiPS2ounu la ueouto4y"</span>,
+        <span class="hljs-string">"fundName"</span>: <span class="hljs-string">"fund name"</span>,
         <span class="hljs-string">"ABN"</span>: <span class="hljs-string">"5555522"</span>,
         <span class="hljs-string">"firmName"</span>: <span class="hljs-string">"bgltestapi1"</span>,
         <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
@@ -666,7 +666,7 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list 
 </code></pre>
 <h4 id="curl-request---xml">cURL Request - XML</h4>
 <pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/list.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
 </code></pre>
 <h4 id="response---xml">Response - XML</h4>
 <pre><code class="lang-xml">
@@ -684,7 +684,7 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list.
     <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>0000000048f240bd0148f2913f110027<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT10<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>lroPLPtaL.aaooptoln F  i 2aaru.LroiPS2ounu la ueouto4y<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>fund name<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>855544666<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>

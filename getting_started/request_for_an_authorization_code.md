@@ -1,8 +1,8 @@
-# Request for an Authorization Code
+# Request for an Authorization Code ( Step 2/4 )
 
-An Authorization Code is necessary to retrieve an Access Token from BGL OATH 2.0 Server.  Obtaining an Authorization token is an imporantant step, as it provides assuarance to the client that appropriate permission is being granted to access the BGL API.
+An Authorization Code is necessary to retrieve an Access Token from BGL API.  Obtaining an Authorization token is an imporantant step, as it provides assuarance to the client that appropriate permission is being granted to access the BGL API.
 
-To request an authorization code, the client must send a GET request to the BGL OATH 2.0 Server in the following manner.
+To request an authorization code, the client application must send a HTTP request to the BGL API in the following manner.
 
 <table>
     <tr>
@@ -11,7 +11,7 @@ To request an authorization code, the client must send a GET request to the BGL 
     </tr>
     <tr>
         <td>GET</td>
-        <td>https://api-uat.bgl360.com.au/oauth/authorize?response_type=code&client_id=&lt;API-Client-ID&gt;&scope=&lt;fundList&gt;</td>
+        <td>https://api-staging.bgl360.com.au/oauth/authorize?response_type=code&client_id=&lt;API-Client-ID&gt;&scope=&lt;fundList &gt;</td>
     </tr>
 </table>
 
@@ -25,17 +25,18 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>response_type</td>
-        <td>The value of this should always be: code.</td>
+        <td>The value of this should always be: **code**.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>client_id</td>
-        <td>A unique identifier to identify a client that will be using the BGL API. This is Provided by BGL. See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
+        <td>A unique identifier to identify a client application that will be using the BGL API.
+        <br><br>See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>redirect_uri</td>
-        <td>The URI that will be used to redirect after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2">Oauth2 Documentation.</a>  See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to set redirect uri.</td>
+        <td>The URI that will be used to redirect after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. <br><br>As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2">Oauth2 Documentation.</a>  See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to set redirect uri.</td>
         <td>Optional</td>
     </tr>
     <tr>
@@ -45,7 +46,7 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
+        <td>A URL-encoded,space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
         <td>Optional</td>
     </tr>
 </table>
@@ -76,11 +77,11 @@ Example : http://www.client-url.com.au/oauth/authCode?code=LqAx2wO
 </li>
 </ul>
 
-For security reasons, the authorization code has a very short lifespan ( about 5 - 10 mins ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL OATH 2.0 Server, as explained above.
+For security reasons, the authorization code has a very short lifespan ( **about 5 - 10 mins** ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL API, as explained above.
 
-Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that has somehow slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack and you should throw an HTTP 401 error code in response.
+Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that has somehow slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack.
 
-There may be instances where the request for a Authorization Code may fail.  The below table illustrates the causes of a bad request and the outcome the client sees.
+There may be instances where the request for a Authorization Code may fail/be denied.  The below table illustrates the causes of a bad request and the outcome the client sees.
 
 <table>
     <tr>

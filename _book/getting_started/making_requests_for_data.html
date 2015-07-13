@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1436774089335">
+    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1436785520734">
     
 
 <div class="book-summary">
@@ -301,10 +301,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4" data-path="sample_data/README">
+        <li class="chapter " data-level="4" data-path="sample_data/README.html">
             
                 
-                    <a href="../sample_data/README">
+                    <a href="../sample_data/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
@@ -426,10 +426,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list.html">
             
                 
-                    <a href="../sample_data/trustees_list">
+                    <a href="../sample_data/trustees_list.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
@@ -599,9 +599,9 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_21633">
+                    <section class="normal" id="section-gitbook_6597">
                     
-                        <h1 id="making-requests-for-data">Making requests for data</h1>
+                        <h1 id="making-requests-for-data--step-44-">Making requests for data ( Step 4/4 )</h1>
 <p>In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see <a href="obtaining_request_token.html">Obtaining Request Token code</a>), the client could use the below URI to make the request for data.</p>
 <table>
     <tr>
@@ -610,12 +610,12 @@
     </tr>
     <tr>
         <td>POST | GET</td>
-        <td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
+        <td><a href="https://api-staging.bgl360.com.au/fund/list" target="_blank">https://api-staging.bgl360.com.au/fund/list</a></td>
     </tr>
 </table>
 
 <p>The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the <a href="../resource_requests/README.html">next section</a>.</p>
-<p>However, the client needs to pass in the access token and token type as header information in the request, as per the following table:</p>
+<p>However, the client application needs to pass in the access token and token type as header information in the request, as per the following table:</p>
 <table>
     <tr>
         <th>Header variable name</th>
@@ -629,7 +629,7 @@
     </tr>
 </table>
 
-<p>By any mean if the client passes an invalid access token or an invalid token type, the BGL API will provide an error, which is illustrated in the below table.</p>
+<p>By any mean if the client application passes an invalid access token or an invalid token type, the BGL API will provide an error, which is illustrated in the below table.</p>
 <table>
     <tr>
         <th>Cause</th>

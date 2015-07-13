@@ -1,4 +1,4 @@
-# Obtaining BGL API Credentials
+# Obtaining BGL API Credentials ( Step 1/4 )
 
 In order to consume BGL API, the consuming application needs to register it self with BGL.  BGL will provide the following information.
 
@@ -21,7 +21,7 @@ In order to consume BGL API, the consuming application needs to register it self
     </tr>
     <tr>
         <td>Simple Fund 360 - Demo Account</td>
-        <td>This could be used to authenticate the client.</td>
+        <td>This Demo user account could be used to authenticate the client application</td>
     </tr>
 </table>
 

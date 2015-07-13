@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436774089335">
+    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436785520734">
     
 
 <div class="book-summary">
@@ -301,10 +301,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4" data-path="sample_data/README">
+        <li class="chapter " data-level="4" data-path="sample_data/README.html">
             
                 
-                    <a href="../sample_data/README">
+                    <a href="../sample_data/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
@@ -426,10 +426,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list.html">
             
                 
-                    <a href="../sample_data/trustees_list">
+                    <a href="../sample_data/trustees_list.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
@@ -599,7 +599,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_21639">
+                    <section class="normal" id="section-gitbook_6603">
                     
                         <h1 id="request--fund-detail">Request : Fund Detail</h1>
 <table>
@@ -609,7 +609,7 @@
     </tr>
     <tr>
         <td>Request URI</td>
-        <td><a href="https://api-uat.bgl360.com.au/fund/detail" target="_blank">https://api-uat.bgl360.com.au/fund/detail</a></td>
+        <td>/fund/detail</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -646,7 +646,7 @@
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="curl-request---json">cURL Request - JSON</h4>
 <pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/detail?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/detail?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
 </code></pre>
 <h4 id="response---json">Response - JSON</h4>
 <pre><code class="lang-javascript">
@@ -654,19 +654,19 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/detai
     <span class="hljs-string">"detail"</span>: {
         <span class="hljs-string">"activedDate"</span>: <span class="hljs-literal">null</span>,
         <span class="hljs-string">"postalAddress"</span>: {
-            <span class="hljs-string">"streetLine1"</span>: <span class="hljs-string">"L vlLel"</span>,
-            <span class="hljs-string">"streetLine2"</span>: <span class="hljs-string">"139 Macquarie Street"</span>,
-            <span class="hljs-string">"city"</span>: <span class="hljs-string">"Dubbo"</span>,
+            <span class="hljs-string">"streetLine1"</span>: <span class="hljs-string">"lvl 1"</span>,
+            <span class="hljs-string">"streetLine2"</span>: <span class="hljs-string">"139 xxx Street"</span>,
+            <span class="hljs-string">"city"</span>: <span class="hljs-string">"Syd"</span>,
             <span class="hljs-string">"state"</span>: <span class="hljs-string">"NEW_SOUTH_WALES"</span>,
             <span class="hljs-string">"country"</span>: <span class="hljs-string">"AU"</span>,
-            <span class="hljs-string">"postCode"</span>: <span class="hljs-string">"2830"</span>
+            <span class="hljs-string">"postCode"</span>: <span class="hljs-string">"2000"</span>
         }
     }
 }
 </code></pre>
 <h4 id="curl-request---xml">cURL Request - XML</h4>
 <pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/detail.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/detail.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
 </code></pre>
 <h4 id="response---xml">Response - XML</h4>
 <pre><code class="lang-xml">
@@ -674,12 +674,12 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/detai
   <span class="hljs-tag">&lt;<span class="hljs-title">Detail</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">ActivedDate</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">PostalAddress</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">StreetLine1</span>&gt;</span>L vlLel<span class="hljs-tag">&lt;/<span class="hljs-title">StreetLine1</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">StreetLine2</span>&gt;</span>139 Macquarie Street<span class="hljs-tag">&lt;/<span class="hljs-title">StreetLine2</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">City</span>&gt;</span>Dubbo<span class="hljs-tag">&lt;/<span class="hljs-title">City</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">StreetLine1</span>&gt;</span>lvl 1<span class="hljs-tag">&lt;/<span class="hljs-title">StreetLine1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">StreetLine2</span>&gt;</span>139 xxx Street<span class="hljs-tag">&lt;/<span class="hljs-title">StreetLine2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">City</span>&gt;</span>Syd<span class="hljs-tag">&lt;/<span class="hljs-title">City</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">State</span>&gt;</span>NEW_SOUTH_WALES<span class="hljs-tag">&lt;/<span class="hljs-title">State</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">Country</span>&gt;</span>AU<span class="hljs-tag">&lt;/<span class="hljs-title">Country</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">PostCode</span>&gt;</span>2830<span class="hljs-tag">&lt;/<span class="hljs-title">PostCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">PostCode</span>&gt;</span>2000<span class="hljs-tag">&lt;/<span class="hljs-title">PostCode</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">PostalAddress</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">Detail</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">root</span>&gt;</span>

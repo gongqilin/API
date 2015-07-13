@@ -1,10 +1,10 @@
-# Obtaining Request token
+# Obtaining Access token ( Step 3/4 )
 
-Once the client has the [Authorization code](request_for_an_authorization_code.md), then the client can obtain a Request Token.
+Once the client application has the [Authorization code](request_for_an_authorization_code.md), then the client application can obtain an Access Token.
 
-The Request Token will contain vital information that will be need to access the BGL API.
+The Access Token will contain vital information that will be need to access the BGL API.
 
-In order for the client to obtain a Request Token, the client should send a request to BGL OAUTH 2.0 Server as follows.
+In order for the client to obtain an Access Token, the client application should send a request to BGL API as follows.
 
 <table>
     <tr>
@@ -13,7 +13,7 @@ In order for the client to obtain a Request Token, the client should send a requ
     </tr>
     <tr>
         <td>POST</td>
-        <td>https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&code=&lt;Auth Code&gt;&scope=&lt;fundList&gt;&client_id=&lt;API Client ID&gt;&client_secret=&lt;API Client Secret&gt;</td>
+        <td>https://api-staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code=&lt;Auth-Code&gt;&scope=&lt;fundList&gt;&client_id=&lt;API-Client-ID&gt;&client_secret=&lt;API-Client-Secret &gt;</td>
     </tr>
 </table>
 
@@ -27,38 +27,50 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>grant_type</td>
-        <td>The value of this should always be: authorization_code</td>
+        <td>The value of this should always be: **authorization_code**</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>code</td>
-        <td>The Authorization Code obtained from BGL</td>
+        <td>The Authorization Code obtained from BGL API</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>client_id</td>
-        <td>A unique identifier to identify a client that will be using the BGL API, Provided by BGL</td>
+        <td>A unique identifier to identify a client that will be using the BGL API.<br><br>See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>client_secret</td>
-        <td>The client secret provided by BGL at the time of registration</td>
+        <td>The client secret provided by BGL<br><br>See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Secret.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
         <td>Optional</td>
     </tr>
 </table>
 
 If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.
 
-An example of a request for the Request Token is as follows.
+Example **A** of a request with basic authorisation header for the Access Token is as follows.
+
+Basic authorisation Header is  base64 encoded of &lt;API Client Id&gt;:&lt;API Client Secret&gt;
 
 ```javascript
 
-curl -X POST https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&code=x556T&scope=fundList&client_id=sampleClient360&client_secret=sampleClient360Secret
+curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code=<Auth-Code>&scope=<Scope> --header "Authorization: Basic xxxxxxxxxx"
+
+```
+
+Example **B** (**Not recommended for production**) of a request  for the Request Token is as follows.
+
+Basic authorisation Header is  base64 encoded of <API Client Id>:<API Client Secret>
+
+```javascript
+
+curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code=<Auth-Code>&scope=<Scope>&client_id=<API-Client-ID>&client_secret=<API-Client-Secret>
 
 ```
 

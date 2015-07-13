@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <td>Request URI</td>
-        <td>https://api-uat.bgl360.com.au/fund/detail</td>
+        <td>/fund/detail</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -50,7 +50,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 ```javascript
 
-curl -X POST https://api-uat.bgl360.com.au/fund/detail?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+curl -X POST https://api-staging.bgl360.com.au/fund/detail?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
 ```
 
@@ -62,12 +62,12 @@ curl -X POST https://api-uat.bgl360.com.au/fund/detail?fundId=0000000048f240bd01
 	"detail": {
 		"activedDate": null,
 		"postalAddress": {
-			"streetLine1": "L vlLel",
-			"streetLine2": "139 Macquarie Street",
-			"city": "Dubbo",
+			"streetLine1": "lvl 1",
+			"streetLine2": "139 xxx Street",
+			"city": "Syd",
 			"state": "NEW_SOUTH_WALES",
 			"country": "AU",
-			"postCode": "2830"
+			"postCode": "2000"
 		}
 	}
 }
@@ -78,7 +78,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/detail?fundId=0000000048f240bd01
 
 ```javascript
 
-curl -X POST https://api-uat.bgl360.com.au/fund/detail.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+curl -X POST https://api-staging.bgl360.com.au/fund/detail.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
 ```
 
@@ -90,12 +90,12 @@ curl -X POST https://api-uat.bgl360.com.au/fund/detail.xml?fundId=0000000048f240
   <Detail>
     <ActivedDate />
     <PostalAddress>
-      <StreetLine1>L vlLel</StreetLine1>
-      <StreetLine2>139 Macquarie Street</StreetLine2>
-      <City>Dubbo</City>
+      <StreetLine1>lvl 1</StreetLine1>
+      <StreetLine2>139 xxx Street</StreetLine2>
+      <City>Syd</City>
       <State>NEW_SOUTH_WALES</State>
       <Country>AU</Country>
-      <PostCode>2830</PostCode>
+      <PostCode>2000</PostCode>
     </PostalAddress>
   </Detail>
 </root>

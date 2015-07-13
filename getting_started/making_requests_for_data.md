@@ -1,4 +1,4 @@
-# Making requests for data
+# Making requests for data ( Step 4/4 )
 
 In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see [Obtaining Request Token code](obtaining_request_token.md)), the client could use the below URI to make the request for data.
 
@@ -9,13 +9,13 @@ In order for the client to make a request for the data, the client needs to have
     </tr>
     <tr>
         <td>POST | GET</td>
-        <td>https://api-uat.bgl360.com.au/fund/list</td>
+        <td>https://api-staging.bgl360.com.au/fund/list</td>
     </tr>
 </table>
 
 The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the [next section](../resource_requests/README.md).
 
-However, the client needs to pass in the access token and token type as header information in the request, as per the following table:
+However, the client application needs to pass in the access token and token type as header information in the request, as per the following table:
 
 <table>
     <tr>
@@ -30,7 +30,7 @@ However, the client needs to pass in the access token and token type as header i
     </tr>
 </table>
 
-By any mean if the client passes an invalid access token or an invalid token type, the BGL API will provide an error, which is illustrated in the below table.
+By any mean if the client application passes an invalid access token or an invalid token type, the BGL API will provide an error, which is illustrated in the below table.
 
 <table>
     <tr>

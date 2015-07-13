@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <td>Request URI</td>
-        <td>https://api-uat.bgl360.com.au/fund/investmentSummary</td>
+        <td>/fund/investmentSummary</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -60,7 +60,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 ```javascript
 
-curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+curl -X POST https://api-staging.bgl360.com.au/fund/investmentSummary?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
 ```
 
@@ -142,7 +142,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000
 
 ```javascript
 
-curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+curl -X GET https://api-staging.bgl360.com.au/fund/investmentSummary.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
 ```
 

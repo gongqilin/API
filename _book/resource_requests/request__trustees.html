@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1436774089335">
+    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1436785520734">
     
 
 <div class="book-summary">
@@ -301,10 +301,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4" data-path="sample_data/README">
+        <li class="chapter " data-level="4" data-path="sample_data/README.html">
             
                 
-                    <a href="../sample_data/README">
+                    <a href="../sample_data/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
@@ -426,10 +426,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list.html">
             
                 
-                    <a href="../sample_data/trustees_list">
+                    <a href="../sample_data/trustees_list.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
@@ -599,7 +599,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_21643">
+                    <section class="normal" id="section-gitbook_6607">
                     
                         <h1 id="request--trustees-list">Request : Trustees List</h1>
 <table>
@@ -609,7 +609,7 @@
     </tr>
     <tr>
         <td>Request URI</td>
-        <td><a href="https://api-uat.bgl360.com.au/fund/trustees" target="_blank">https://api-uat.bgl360.com.au/fund/trustees</a></td>
+        <td>/fund/trustees</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -641,7 +641,7 @@
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="curl-request---json">cURL Request - JSON</h4>
 <pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trustees --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/trustees --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
 </code></pre>
 <h4 id="response---json">Response - JSON</h4>
 <pre><code class="lang-javascript">
@@ -651,13 +651,13 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         <span class="hljs-string">"relationships"</span>: [{
             <span class="hljs-string">"entityRole"</span>: <span class="hljs-string">"Trustee"</span>,
             <span class="hljs-string">"detail"</span>: {
-                <span class="hljs-string">"name"</span>: <span class="hljs-string">"drnwArn,  h  JhB rJ"</span>,
+                <span class="hljs-string">"name"</span>: <span class="hljs-string">"trustee name"</span>,
                 <span class="hljs-string">"ABN"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"phone"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
                 <span class="hljs-string">"contact"</span>: {
-                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">" h  JhB rJ"</span>,
-                    <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"drnwArn"</span>,
+                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"first name"</span>,
+                    <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"last name"</span>,
                     <span class="hljs-string">"isUser"</span>: <span class="hljs-literal">false</span>,
                     <span class="hljs-string">"title"</span>: <span class="hljs-string">"Mr"</span>
                 }
@@ -666,13 +666,13 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         {
             <span class="hljs-string">"entityRole"</span>: <span class="hljs-string">"Trustee"</span>,
             <span class="hljs-string">"detail"</span>: {
-                <span class="hljs-string">"name"</span>: <span class="hljs-string">"Aedrwdn, uuaanaurK s"</span>,
+                <span class="hljs-string">"name"</span>: <span class="hljs-string">"truestee name2"</span>,
                 <span class="hljs-string">"ABN"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"phone"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
                 <span class="hljs-string">"contact"</span>: {
-                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"uuaanaurK s"</span>,
-                    <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Aedrwdn"</span>,
+                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"first name"</span>,
+                    <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"last name"</span>,
                     <span class="hljs-string">"isUser"</span>: <span class="hljs-literal">false</span>,
                     <span class="hljs-string">"title"</span>: <span class="hljs-string">"Mrs"</span>
                 }
@@ -684,13 +684,13 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         <span class="hljs-string">"relationships"</span>: [{
             <span class="hljs-string">"entityRole"</span>: <span class="hljs-string">"Trustee"</span>,
             <span class="hljs-string">"detail"</span>: {
-                <span class="hljs-string">"name"</span>: <span class="hljs-string">"lllulMl,  aiair Gii"</span>,
+                <span class="hljs-string">"name"</span>: <span class="hljs-string">"truestee name3"</span>,
                 <span class="hljs-string">"ABN"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"phone"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
                 <span class="hljs-string">"contact"</span>: {
-                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">" aiair Gii"</span>,
-                    <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"lllulMl"</span>,
+                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"first name"</span>,
+                    <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"last name"</span>,
                     <span class="hljs-string">"isUser"</span>: <span class="hljs-literal">false</span>,
                     <span class="hljs-string">"title"</span>: <span class="hljs-string">"Mr"</span>
                 }
@@ -699,12 +699,12 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         {
             <span class="hljs-string">"entityRole"</span>: <span class="hljs-string">"Trustee"</span>,
             <span class="hljs-string">"detail"</span>: {
-                <span class="hljs-string">"name"</span>: <span class="hljs-string">"lalaaMrauul--CMla, bttitait"</span>,
+                <span class="hljs-string">"name"</span>: <span class="hljs-string">"truestee name4"</span>,
                 <span class="hljs-string">"ABN"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"phone"</span>: <span class="hljs-literal">null</span>,
                 <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
                 <span class="hljs-string">"contact"</span>: {
-                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"bttitait"</span>,
+                    <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"first name"</span>,
                     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"lalaaMrauul--CMla"</span>,
                     <span class="hljs-string">"isUser"</span>: <span class="hljs-literal">false</span>,
                     <span class="hljs-string">"title"</span>: <span class="hljs-string">"Mrs"</span>
@@ -716,7 +716,7 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
 </code></pre>
 <h4 id="curl-request---xml">cURL Request - XML</h4>
 <pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trustees.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/trustees.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
 </code></pre>
 <h4 id="reponse---xml">Reponse - XML</h4>
 <pre><code class="lang-xml">
@@ -728,13 +728,13 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         <span class="hljs-tag">&lt;<span class="hljs-title">Relationship</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">EntityRole</span>&gt;</span>Trustee<span class="hljs-tag">&lt;/<span class="hljs-title">EntityRole</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">Detail</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>drnwArn,  h  JhB rJ<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>truestee name<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Phone</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Contact</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span> h  JhB rJ<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>drnwArn<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>first name<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>last name<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">IsUser</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-title">IsUser</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">Title</span>&gt;</span>Mr<span class="hljs-tag">&lt;/<span class="hljs-title">Title</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">Contact</span>&gt;</span>
@@ -743,13 +743,13 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         <span class="hljs-tag">&lt;<span class="hljs-title">Relationship</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">EntityRole</span>&gt;</span>Trustee<span class="hljs-tag">&lt;/<span class="hljs-title">EntityRole</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">Detail</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>Aedrwdn, uuaanaurK s<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>truestee name2<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Phone</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Contact</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>uuaanaurK s<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>Aedrwdn<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>first name<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>last name<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">IsUser</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-title">IsUser</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">Title</span>&gt;</span>Mrs<span class="hljs-tag">&lt;/<span class="hljs-title">Title</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">Contact</span>&gt;</span>
@@ -763,13 +763,13 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         <span class="hljs-tag">&lt;<span class="hljs-title">Relationship</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">EntityRole</span>&gt;</span>Trustee<span class="hljs-tag">&lt;/<span class="hljs-title">EntityRole</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">Detail</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>lllulMl,  aiair Gii<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>truestee name3<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Phone</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Contact</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span> aiair Gii<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>lllulMl<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>first name<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>last name<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">IsUser</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-title">IsUser</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">Title</span>&gt;</span>Mr<span class="hljs-tag">&lt;/<span class="hljs-title">Title</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">Contact</span>&gt;</span>
@@ -778,13 +778,13 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/trust
         <span class="hljs-tag">&lt;<span class="hljs-title">Relationship</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">EntityRole</span>&gt;</span>Trustee<span class="hljs-tag">&lt;/<span class="hljs-title">EntityRole</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">Detail</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>lalaaMrauul--CMla, bttitait<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>truestee name4<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Phone</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">Contact</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>bttitait<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>lalaaMrauul--CMla<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>first name<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>last name<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">IsUser</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-title">IsUser</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">Title</span>&gt;</span>Mrs<span class="hljs-tag">&lt;/<span class="hljs-title">Title</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">Contact</span>&gt;</span>
