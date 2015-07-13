@@ -27,6 +27,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 
 ```
+
 {
 	"investmentSummary": [{
 		"fundId": "0000000048f240bd0148f28816c80017",
@@ -93,11 +94,14 @@ If the format parameter is not set, the returned result will always be JSON.
 	"total": 84,
 	"offset": 0,
 	"max": 50
-}```
+}
+
+```
 
 #### XML
 
 ```
+
 <root xmlns='http://www.bglcorp.com.au'>
   <InvestmentSummary>
     <InvestmentSummary>
@@ -153,6 +157,8 @@ If the format parameter is not set, the returned result will always be JSON.
   <Total>84</Total>
   <Offset>0</Offset>
   <Max>50</Max>
-</root>```
+</root>
+
+```
 
 

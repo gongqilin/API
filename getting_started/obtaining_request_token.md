@@ -26,13 +26,16 @@ If the request was successful, the client should get a JSON object containing an
 An example of a valid Request Token is as follows.
 
 ```
+
 {
 access_token: "df2f0e40-606f-4311-8066-590732fd126b"
 token_type: "bearer"
 refresh_token: "c50a429f-9a6d-449d-8d82-4817798fe27b"
 expires_in: 581977
 scope: "fundList"
-}```
+}
+
+```
 
 The below table illustrates the content of a valid Request Token
 

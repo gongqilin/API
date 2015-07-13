@@ -24,6 +24,7 @@ If the format parameter is not set, the returned result will always be JSON.
 #### JSON
 
 ```
+
 {
 	"fundTrustees": [{
 		"fundId": "0000000048f240bd0148f28816c80017",
@@ -92,6 +93,7 @@ If the format parameter is not set, the returned result will always be JSON.
 		}]
 	}]
 }
+
 ```
 
 
@@ -99,6 +101,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 
 ```
+
 <root xmlns='http://www.bglcorp.com.au'>
   <FundTrustees>
     <FundTrustee>
@@ -172,4 +175,6 @@ If the format parameter is not set, the returned result will always be JSON.
       </Relationships>
     </FundTrustee>
   </FundTrustees>
-</root>```
+</root>
+
+```

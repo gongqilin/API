@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436752155193">
+    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436752525569">
     
 
 <div class="book-summary">
@@ -389,7 +389,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_764">
+                    <section class="normal" id="section-gitbook_1609">
                     
                         <h1 id="request--fund-detail">Request : Fund Detail</h1>
 <table>
@@ -445,7 +445,8 @@
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-response">Sample Response</h3>
 <h4 id="json">JSON</h4>
-<pre><code>{
+<pre><code>
+{
     &quot;detail&quot;: {
         &quot;activedDate&quot;: null,
         &quot;postalAddress&quot;: {
@@ -459,7 +460,8 @@
     }
 }
 </code></pre><h4 id="xml">XML</h4>
-<pre><code>&lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
+<pre><code>
+&lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
   &lt;Detail&gt;
     &lt;ActivedDate /&gt;
     &lt;PostalAddress&gt;
@@ -473,13 +475,15 @@
   &lt;/Detail&gt;
 &lt;/root&gt;
 </code></pre><p>If the url does not contain the fundId parameter BGL API will notify us with the following error.</p>
-<pre><code>{
+<pre><code>
+{
     &quot;message&quot;: &quot;Failed to call detail&quot;,
     &quot;errors&quot;: [&quot;Fund Id is required&quot;],
     &quot;status&quot;: 400
 }
 </code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
-<pre><code>{
+<pre><code>
+{
     &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
     &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
     &quot;status&quot;: 401

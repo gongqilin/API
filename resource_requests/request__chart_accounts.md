@@ -27,6 +27,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 
 ```
+
 {
 	"chartAccounts": [{
 		"accountClass": "Control",
@@ -49,11 +50,13 @@ If the format parameter is not set, the returned result will always be JSON.
 		"name": "Writeback of Deferred Tax"
 	}]
 }
+
 ```
 
 #### XML
 
 ```
+
 <root xmlns='http://www.bglcorp.com.au'>
   <ChartAccounts>
     <ChartAccount>
@@ -87,5 +90,7 @@ If the format parameter is not set, the returned result will always be JSON.
       <Name>Amounts owing by Other Persons</Name>
     </ChartAccount>
   </ChartAccounts>
-</root>```
+</root>
+
+```
 

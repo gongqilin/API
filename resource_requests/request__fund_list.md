@@ -21,6 +21,7 @@ If the format parameter is not set, the returned result will always be JSON.
 ### Sample Response
 
 #### JSON
+
 ```
 
 "funds": [{

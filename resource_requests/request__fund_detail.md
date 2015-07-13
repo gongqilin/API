@@ -25,6 +25,7 @@ If the format parameter is not set, the returned result will always be JSON.
 #### JSON
 
 ```
+
 {
 	"detail": {
 		"activedDate": null,
@@ -37,13 +38,16 @@ If the format parameter is not set, the returned result will always be JSON.
 			"postCode": "2830"
 		}
 	}
-}```
+}
+
+```
 
 
 #### XML
 
 
 ```
+
 <root xmlns='http://www.bglcorp.com.au'>
   <Detail>
     <ActivedDate />
@@ -56,26 +60,34 @@ If the format parameter is not set, the returned result will always be JSON.
       <PostCode>2830</PostCode>
     </PostalAddress>
   </Detail>
-</root>```
+</root>
+
+```
 
 
 If the url does not contain the fundId parameter BGL API will notify us with the following error.
 
 ```
+
 {
 	"message": "Failed to call detail",
 	"errors": ["Fund Id is required"],
 	"status": 400
-}```
+}
+
+```
 
 If the provided fund id is not found in BGL data, the following error will be returned.
 
 ```
+
 {
 	"message": "The fund is not found/accessible",
 	"errors": ["The fund is not found/accessible"],
 	"status": 401
-}```
+}
+
+```
 
 
 

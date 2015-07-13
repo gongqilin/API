@@ -27,6 +27,7 @@ If the format parameter is not set, the returned result will always be JSON.
 #### JSON
 
 ```
+
 {
 	"generalLedger": {
 		"fundId": "0000000048f240bd0148f28816c80017",
@@ -118,11 +119,14 @@ If the format parameter is not set, the returned result will always be JSON.
 			"lineType": "total"
 		}]
 	}
-}```
+}
+
+```
 
 #### XML
 
 ```
+
 <root xmlns='http://www.bglcorp.com.au'>
   <GeneralLedger>
     <FundId>0000000048f240bd0148f28816c80017</FundId>
@@ -187,6 +191,8 @@ If the format parameter is not set, the returned result will always be JSON.
       </Data>
     </Data>
   </GeneralLedger>
-</root>```
+</root>
+
+```
 
 

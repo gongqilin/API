@@ -40,6 +40,7 @@ If the format parameter is not set, the returned result will always be JSON.
 #### XML
 
 ```
+
 <root xmlns='http://www.bglcorp.com.au'>
   <UserDetail>
     <Username>xyz@bglcorp.com.au</Username>
