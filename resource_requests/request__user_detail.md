@@ -43,7 +43,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 #### cURL Request - JSON
 
-```
+```javascript
 
 curl -X POST https://api-uat.bgl360.com.au/user/detail --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
@@ -51,7 +51,7 @@ curl -X POST https://api-uat.bgl360.com.au/user/detail --header "Authorization:b
 
 #### Response - JSON
 
-```
+```javascript
 
 {
 	"userDetail": {
@@ -76,7 +76,7 @@ curl -X POST https://api-uat.bgl360.com.au/user/detail.xml --header "Authorizati
 
 #### Response XML
 
-```
+```xml
 
 <root xmlns='http://www.bglcorp.com.au'>
   <UserDetail>

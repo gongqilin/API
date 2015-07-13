@@ -56,7 +56,7 @@ If the request was successful, the client should get a JSON object containing an
 
 An example of a request for the Request Token is as follows.
 
-```
+```javascript
 
 curl -X POST https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&code=x556T&scope=fundList&client_id=sampleClient360&client_secret=sampleClient360Secret
 
@@ -64,7 +64,7 @@ curl -X POST https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_
 
 An example of a valid response of a Request Token is as follows.
 
-```
+```javascript
 
 {
 access_token: "df2f0e40-606f-4311-8066-590732fd126b"

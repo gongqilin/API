@@ -43,7 +43,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 #### cURL Request - JSON
 
-```
+```javascript
 
 curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
@@ -51,7 +51,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization
 
 #### Response - JSON
 
-```
+```javascript
 
 {
 	"fundTrustees": [{
@@ -126,7 +126,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees --header "Authorization
 
 #### cURL Request - XML
 
-```
+```javascript
 
 curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
@@ -134,7 +134,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/trustees.xml --header "Authoriza
 
 #### Reponse - XML
 
-```
+```xml
 
 <root xmlns='http://www.bglcorp.com.au'>
   <FundTrustees>

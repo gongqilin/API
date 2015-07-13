@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.6" data-basepath=".." data-revision="1436771304955">
+    <div class="book"  data-level="2.6" data-basepath=".." data-revision="1436774089335">
     
 
 <div class="book-summary">
@@ -300,6 +300,216 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="4" data-path="sample_data/README">
+            
+                
+                    <a href="../sample_data/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Sample Data
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="sample_data/fund_list.html">
+            
+                
+                    <a href="../sample_data/fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Fund List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1.1" data-path="sample_data/json.html">
+            
+                
+                    <a href="../sample_data/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.2" data-path="sample_data/xml.html">
+            
+                
+                    <a href="../sample_data/xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="sample_data/fund_detail.html">
+            
+                
+                    <a href="../sample_data/fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Fund Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.2.1" data-path="sample_data/json">
+            
+                
+                    <a href="../sample_data/json">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2.2" data-path="sample_data/xml">
+            
+                
+                    <a href="../sample_data/xml">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+            
+                
+                    <a href="../sample_data/trustees_list">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Trustees List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="sample_data/investment_summary">
+            
+                
+                    <a href="../sample_data/investment_summary">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Investment Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="sample_data/general_ledger">
+            
+                
+                    <a href="../sample_data/general_ledger">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         General Ledger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="sample_data/chart_of_accounts">
+            
+                
+                    <a href="../sample_data/chart_of_accounts">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Chart of Accounts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="sample_data/user_detail">
+            
+                
+                    <a href="../sample_data/user_detail">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         User Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
 
         
@@ -389,7 +599,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_19828">
+                    <section class="normal" id="section-gitbook_21637">
                     
                         <h1 id="request--chart-of-accounts">Request : Chart of Accounts</h1>
 <table>
@@ -435,79 +645,84 @@
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="curl-request---json">cURL Request - JSON</h4>
-<pre><code>
-curl -X POST https://api-uat.bgl360.com.au/fund/chartAccounts?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response---json">Response - JSON</h4>
-<pre><code>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/chartAccounts?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response---json">Response - JSON</h4>
+<pre><code class="lang-javascript">
 {
-    &quot;chartAccounts&quot;: [{
-        &quot;accountClass&quot;: &quot;Control&quot;,
-        &quot;chartAccountType&quot;: {
-            &quot;label&quot;: &quot;Allocation - Member&quot;,
-            &quot;maxCode&quot;: 0,
-            &quot;minCode&quot;: 0
+    <span class="hljs-string">"chartAccounts"</span>: [{
+        <span class="hljs-string">"accountClass"</span>: <span class="hljs-string">"Control"</span>,
+        <span class="hljs-string">"chartAccountType"</span>: {
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Allocation - Member"</span>,
+            <span class="hljs-string">"maxCode"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"minCode"</span>: <span class="hljs-number">0</span>
         },
-        &quot;code&quot;: &quot;48700&quot;,
-        &quot;name&quot;: &quot;Contributions Tax (Surcharge)&quot;
+        <span class="hljs-string">"code"</span>: <span class="hljs-string">"48700"</span>,
+        <span class="hljs-string">"name"</span>: <span class="hljs-string">"Contributions Tax (Surcharge)"</span>
     },
     {
-        &quot;accountClass&quot;: &quot;Control&quot;,
-        &quot;chartAccountType&quot;: {
-            &quot;label&quot;: &quot;Allocation - Member&quot;,
-            &quot;maxCode&quot;: 0,
-            &quot;minCode&quot;: 0
+        <span class="hljs-string">"accountClass"</span>: <span class="hljs-string">"Control"</span>,
+        <span class="hljs-string">"chartAccountType"</span>: {
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Allocation - Member"</span>,
+            <span class="hljs-string">"maxCode"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"minCode"</span>: <span class="hljs-number">0</span>
         },
-        &quot;code&quot;: &quot;49300&quot;,
-        &quot;name&quot;: &quot;Writeback of Deferred Tax&quot;
+        <span class="hljs-string">"code"</span>: <span class="hljs-string">"49300"</span>,
+        <span class="hljs-string">"name"</span>: <span class="hljs-string">"Writeback of Deferred Tax"</span>
     }]
 }
-</code></pre><h4 id="curl-request---xml">cURL Request - XML</h4>
-<pre><code>
-curl -X POST https://api-uat.bgl360.com.au/fund/chartAccounts.xml?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response---xml">Response - XML</h4>
-<pre><code>
-&lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
-  &lt;ChartAccounts&gt;
-    &lt;ChartAccount&gt;
-      &lt;AccountClass&gt;Control&lt;/AccountClass&gt;
-      &lt;ChartAccountType&gt;
-        &lt;Label&gt;Allocation - Member&lt;/Label&gt;
-        &lt;MaxCode&gt;0&lt;/MaxCode&gt;
-        &lt;MinCode&gt;0&lt;/MinCode&gt;
-      &lt;/ChartAccountType&gt;
-      &lt;Code&gt;48700&lt;/Code&gt;
-      &lt;Name&gt;Contributions Tax (Surcharge)&lt;/Name&gt;
-    &lt;/ChartAccount&gt;
-    &lt;ChartAccount&gt;
-      &lt;AccountClass&gt;Control&lt;/AccountClass&gt;
-      &lt;ChartAccountType&gt;
-        &lt;Label&gt;Allocation - Member&lt;/Label&gt;
-        &lt;MaxCode&gt;0&lt;/MaxCode&gt;
-        &lt;MinCode&gt;0&lt;/MinCode&gt;
-      &lt;/ChartAccountType&gt;
-      &lt;Code&gt;49300&lt;/Code&gt;
-      &lt;Name&gt;Writeback of Deferred Tax&lt;/Name&gt;
-    &lt;/ChartAccount&gt;
-    &lt;ChartAccount&gt;
-      &lt;AccountClass&gt;Control&lt;/AccountClass&gt;
-      &lt;ChartAccountType&gt;
-        &lt;Label&gt;Asset&lt;/Label&gt;
-        &lt;MaxCode&gt;69999&lt;/MaxCode&gt;
-        &lt;MinCode&gt;60000&lt;/MinCode&gt;
-      &lt;/ChartAccountType&gt;
-      &lt;Code&gt;60100&lt;/Code&gt;
-      &lt;Name&gt;Amounts owing by Other Persons&lt;/Name&gt;
-    &lt;/ChartAccount&gt;
-  &lt;/ChartAccounts&gt;
-&lt;/root&gt;
-</code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
-<pre><code>
+</code></pre>
+<h4 id="curl-request---xml">cURL Request - XML</h4>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/chartAccounts.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response---xml">Response - XML</h4>
+<pre><code class="lang-xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">root</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">'http://www.bglcorp.com.au'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ChartAccounts</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ChartAccount</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">AccountClass</span>&gt;</span>Control<span class="hljs-tag">&lt;/<span class="hljs-title">AccountClass</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ChartAccountType</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Label</span>&gt;</span>Allocation - Member<span class="hljs-tag">&lt;/<span class="hljs-title">Label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MaxCode</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MaxCode</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MinCode</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MinCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ChartAccountType</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>48700<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>Contributions Tax (Surcharge)<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ChartAccount</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ChartAccount</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">AccountClass</span>&gt;</span>Control<span class="hljs-tag">&lt;/<span class="hljs-title">AccountClass</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ChartAccountType</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Label</span>&gt;</span>Allocation - Member<span class="hljs-tag">&lt;/<span class="hljs-title">Label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MaxCode</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MaxCode</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MinCode</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MinCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ChartAccountType</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>49300<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>Writeback of Deferred Tax<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ChartAccount</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ChartAccount</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">AccountClass</span>&gt;</span>Control<span class="hljs-tag">&lt;/<span class="hljs-title">AccountClass</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ChartAccountType</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Label</span>&gt;</span>Asset<span class="hljs-tag">&lt;/<span class="hljs-title">Label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MaxCode</span>&gt;</span>69999<span class="hljs-tag">&lt;/<span class="hljs-title">MaxCode</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MinCode</span>&gt;</span>60000<span class="hljs-tag">&lt;/<span class="hljs-title">MinCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ChartAccountType</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>60100<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Name</span>&gt;</span>Amounts owing by Other Persons<span class="hljs-tag">&lt;/<span class="hljs-title">Name</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ChartAccount</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ChartAccounts</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">root</span>&gt;</span>
+</code></pre>
+<p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
+<pre><code class="lang-javascript">
 {
-    &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
-    &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
-    &quot;status&quot;: 401
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"The fund is not found/accessible"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The fund is not found/accessible"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">401</span>
 }
 </code></pre>
+
                     
                     </section>
                 

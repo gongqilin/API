@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436771304955">
+    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436774089335">
     
 
 <div class="book-summary">
@@ -300,6 +300,216 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="4" data-path="sample_data/README">
+            
+                
+                    <a href="../sample_data/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Sample Data
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="sample_data/fund_list.html">
+            
+                
+                    <a href="../sample_data/fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Fund List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1.1" data-path="sample_data/json.html">
+            
+                
+                    <a href="../sample_data/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.2" data-path="sample_data/xml.html">
+            
+                
+                    <a href="../sample_data/xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="sample_data/fund_detail.html">
+            
+                
+                    <a href="../sample_data/fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Fund Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.2.1" data-path="sample_data/json">
+            
+                
+                    <a href="../sample_data/json">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2.2" data-path="sample_data/xml">
+            
+                
+                    <a href="../sample_data/xml">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+            
+                
+                    <a href="../sample_data/trustees_list">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Trustees List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="sample_data/investment_summary">
+            
+                
+                    <a href="../sample_data/investment_summary">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Investment Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="sample_data/general_ledger">
+            
+                
+                    <a href="../sample_data/general_ledger">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         General Ledger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="sample_data/chart_of_accounts">
+            
+                
+                    <a href="../sample_data/chart_of_accounts">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Chart of Accounts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="sample_data/user_detail">
+            
+                
+                    <a href="../sample_data/user_detail">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         User Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
 
         
@@ -389,7 +599,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_19829">
+                    <section class="normal" id="section-gitbook_21639">
                     
                         <h1 id="request--fund-detail">Request : Fund Detail</h1>
 <table>
@@ -435,56 +645,62 @@
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="curl-request---json">cURL Request - JSON</h4>
-<pre><code>
-curl -X POST https://api-uat.bgl360.com.au/fund/detail?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response---json">Response - JSON</h4>
-<pre><code>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/detail?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response---json">Response - JSON</h4>
+<pre><code class="lang-javascript">
 {
-    &quot;detail&quot;: {
-        &quot;activedDate&quot;: null,
-        &quot;postalAddress&quot;: {
-            &quot;streetLine1&quot;: &quot;L vlLel&quot;,
-            &quot;streetLine2&quot;: &quot;139 Macquarie Street&quot;,
-            &quot;city&quot;: &quot;Dubbo&quot;,
-            &quot;state&quot;: &quot;NEW_SOUTH_WALES&quot;,
-            &quot;country&quot;: &quot;AU&quot;,
-            &quot;postCode&quot;: &quot;2830&quot;
+    <span class="hljs-string">"detail"</span>: {
+        <span class="hljs-string">"activedDate"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"postalAddress"</span>: {
+            <span class="hljs-string">"streetLine1"</span>: <span class="hljs-string">"L vlLel"</span>,
+            <span class="hljs-string">"streetLine2"</span>: <span class="hljs-string">"139 Macquarie Street"</span>,
+            <span class="hljs-string">"city"</span>: <span class="hljs-string">"Dubbo"</span>,
+            <span class="hljs-string">"state"</span>: <span class="hljs-string">"NEW_SOUTH_WALES"</span>,
+            <span class="hljs-string">"country"</span>: <span class="hljs-string">"AU"</span>,
+            <span class="hljs-string">"postCode"</span>: <span class="hljs-string">"2830"</span>
         }
     }
 }
-</code></pre><h4 id="curl-request---xml">cURL Request - XML</h4>
-<pre><code>
-curl -X POST https://api-uat.bgl360.com.au/fund/detail.xml?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response---xml">Response - XML</h4>
-<pre><code>
-&lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
-  &lt;Detail&gt;
-    &lt;ActivedDate /&gt;
-    &lt;PostalAddress&gt;
-      &lt;StreetLine1&gt;L vlLel&lt;/StreetLine1&gt;
-      &lt;StreetLine2&gt;139 Macquarie Street&lt;/StreetLine2&gt;
-      &lt;City&gt;Dubbo&lt;/City&gt;
-      &lt;State&gt;NEW_SOUTH_WALES&lt;/State&gt;
-      &lt;Country&gt;AU&lt;/Country&gt;
-      &lt;PostCode&gt;2830&lt;/PostCode&gt;
-    &lt;/PostalAddress&gt;
-  &lt;/Detail&gt;
-&lt;/root&gt;
-</code></pre><p>If the url does not contain the fundId parameter BGL API will notify us with the following error.</p>
-<pre><code>
+</code></pre>
+<h4 id="curl-request---xml">cURL Request - XML</h4>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/detail.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response---xml">Response - XML</h4>
+<pre><code class="lang-xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">root</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">'http://www.bglcorp.com.au'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Detail</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ActivedDate</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">PostalAddress</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">StreetLine1</span>&gt;</span>L vlLel<span class="hljs-tag">&lt;/<span class="hljs-title">StreetLine1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">StreetLine2</span>&gt;</span>139 Macquarie Street<span class="hljs-tag">&lt;/<span class="hljs-title">StreetLine2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">City</span>&gt;</span>Dubbo<span class="hljs-tag">&lt;/<span class="hljs-title">City</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">State</span>&gt;</span>NEW_SOUTH_WALES<span class="hljs-tag">&lt;/<span class="hljs-title">State</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Country</span>&gt;</span>AU<span class="hljs-tag">&lt;/<span class="hljs-title">Country</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">PostCode</span>&gt;</span>2830<span class="hljs-tag">&lt;/<span class="hljs-title">PostCode</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">PostalAddress</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Detail</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">root</span>&gt;</span>
+</code></pre>
+<p>If the url does not contain the fundId parameter BGL API will notify us with the following error.</p>
+<pre><code class="lang-javascript">
 {
-    &quot;message&quot;: &quot;Failed to call detail&quot;,
-    &quot;errors&quot;: [&quot;Fund Id is required&quot;],
-    &quot;status&quot;: 400
-}
-</code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
-<pre><code>
-{
-    &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
-    &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
-    &quot;status&quot;: 401
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call detail"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"Fund Id is required"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
 }
 </code></pre>
+<p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"The fund is not found/accessible"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The fund is not found/accessible"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">401</span>
+}
+</code></pre>
+
                     
                     </section>
                 

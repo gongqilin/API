@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.3" data-basepath=".." data-revision="1436771304955">
+    <div class="book"  data-level="1.3" data-basepath=".." data-revision="1436774089335">
     
 
 <div class="book-summary">
@@ -300,6 +300,216 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="4" data-path="sample_data/README">
+            
+                
+                    <a href="../sample_data/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Sample Data
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="sample_data/fund_list.html">
+            
+                
+                    <a href="../sample_data/fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Fund List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1.1" data-path="sample_data/json.html">
+            
+                
+                    <a href="../sample_data/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.2" data-path="sample_data/xml.html">
+            
+                
+                    <a href="../sample_data/xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="sample_data/fund_detail.html">
+            
+                
+                    <a href="../sample_data/fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Fund Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.2.1" data-path="sample_data/json">
+            
+                
+                    <a href="../sample_data/json">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2.2" data-path="sample_data/xml">
+            
+                
+                    <a href="../sample_data/xml">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+            
+                
+                    <a href="../sample_data/trustees_list">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Trustees List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="sample_data/investment_summary">
+            
+                
+                    <a href="../sample_data/investment_summary">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Investment Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="sample_data/general_ledger">
+            
+                
+                    <a href="../sample_data/general_ledger">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         General Ledger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="sample_data/chart_of_accounts">
+            
+                
+                    <a href="../sample_data/chart_of_accounts">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Chart of Accounts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="sample_data/user_detail">
+            
+                
+                    <a href="../sample_data/user_detail">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         User Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
 
         
@@ -389,7 +599,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_19823">
+                    <section class="normal" id="section-gitbook_21634">
                     
                         <h1 id="obtaining-request-token">Obtaining Request token</h1>
 <p>Once the client has the <a href="request_for_an_authorization_code.html">Authorization code</a>, then the client can obtain a Request Token.</p>
@@ -442,18 +652,20 @@
 
 <p>If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.</p>
 <p>An example of a request for the Request Token is as follows.</p>
-<pre><code>
-curl -X POST https://api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&amp;code=x556T&amp;scope=fundList&amp;client_id=sampleClient360&amp;client_secret=sampleClient360Secret
-</code></pre><p>An example of a valid response of a Request Token is as follows.</p>
-<pre><code>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/oauth/token?grant_type=authorization_code&amp;code=x556T&amp;scope=fundList&amp;client_id=sampleClient360&amp;client_secret=sampleClient360Secret</span>
+</code></pre>
+<p>An example of a valid response of a Request Token is as follows.</p>
+<pre><code class="lang-javascript">
 {
-access_token: &quot;df2f0e40-606f-4311-8066-590732fd126b&quot;
-token_type: &quot;bearer&quot;
-refresh_token: &quot;c50a429f-9a6d-449d-8d82-4817798fe27b&quot;
-expires_in: 581977
-scope: &quot;fundList&quot;
+access_token: <span class="hljs-string">"df2f0e40-606f-4311-8066-590732fd126b"</span>
+token_type: <span class="hljs-string">"bearer"</span>
+refresh_token: <span class="hljs-string">"c50a429f-9a6d-449d-8d82-4817798fe27b"</span>
+expires_in: <span class="hljs-number">581977</span>
+scope: <span class="hljs-string">"fundList"</span>
 }
-</code></pre><p>The below table illustrates the content of a valid Request Token</p>
+</code></pre>
+<p>The below table illustrates the content of a valid Request Token</p>
 <table>
     <tr>
         <th>Field</th>

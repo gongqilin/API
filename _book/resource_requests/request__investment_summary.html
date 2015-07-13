@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.4" data-basepath=".." data-revision="1436771304955">
+    <div class="book"  data-level="2.4" data-basepath=".." data-revision="1436774089335">
     
 
 <div class="book-summary">
@@ -300,6 +300,216 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="4" data-path="sample_data/README">
+            
+                
+                    <a href="../sample_data/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Sample Data
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="sample_data/fund_list.html">
+            
+                
+                    <a href="../sample_data/fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Fund List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1.1" data-path="sample_data/json.html">
+            
+                
+                    <a href="../sample_data/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.2" data-path="sample_data/xml.html">
+            
+                
+                    <a href="../sample_data/xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="sample_data/fund_detail.html">
+            
+                
+                    <a href="../sample_data/fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Fund Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.2.1" data-path="sample_data/json">
+            
+                
+                    <a href="../sample_data/json">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.1.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2.2" data-path="sample_data/xml">
+            
+                
+                    <a href="../sample_data/xml">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.2.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="sample_data/trustees_list">
+            
+                
+                    <a href="../sample_data/trustees_list">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Trustees List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="sample_data/investment_summary">
+            
+                
+                    <a href="../sample_data/investment_summary">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Investment Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="sample_data/general_ledger">
+            
+                
+                    <a href="../sample_data/general_ledger">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         General Ledger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="sample_data/chart_of_accounts">
+            
+                
+                    <a href="../sample_data/chart_of_accounts">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Chart of Accounts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="sample_data/user_detail">
+            
+                
+                    <a href="../sample_data/user_detail">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         User Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
 
         
@@ -389,7 +599,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_19831">
+                    <section class="normal" id="section-gitbook_21641">
                     
                         <h1 id="request--investment-summary">Request : Investment Summary</h1>
 <table>
@@ -445,167 +655,175 @@
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="curl-request---json">cURL Request - JSON</h4>
-<pre><code>
-curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response---json">Response - JSON</h4>
-<pre><code>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response---json">Response - JSON</h4>
+<pre><code class="lang-javascript">
 {
-    &quot;investmentSummary&quot;: [{
-        &quot;fundId&quot;: &quot;0000000048f240bd0148f28816c80017&quot;,
-        &quot;start&quot;: &quot;2015-04-30T00:00:00Z&quot;,
-        &quot;end&quot;: &quot;2015-05-01T00:00:00Z&quot;,
-        &quot;data&quot;: [{
-            &quot;investmentName&quot;: &quot;Andrews SF share transactions account&quot;,
-            &quot;code&quot;: &quot;0040605685885&quot;,
-            &quot;units&quot;: null,
-            &quot;mktPrice&quot;: 25597.51,
-            &quot;cost&quot;: 25597.51,
-            &quot;mktValueAsPerLedger&quot;: 25597.51,
-            &quot;currentYearUnRealisedMovement&quot;: null,
-            &quot;investmentGroup&quot;: &quot;Cash/Bank Accounts&quot;,
-            &quot;aveCost&quot;: 25597.51,
-            &quot;unitsMarketPrice&quot;: 25597.51,
-            &quot;unRealisedMovement&quot;: null,
-            &quot;realisedMovement&quot;: null
+    <span class="hljs-string">"investmentSummary"</span>: [{
+        <span class="hljs-string">"fundId"</span>: <span class="hljs-string">"0000000048f240bd0148f28816c80017"</span>,
+        <span class="hljs-string">"start"</span>: <span class="hljs-string">"2015-04-30T00:00:00Z"</span>,
+        <span class="hljs-string">"end"</span>: <span class="hljs-string">"2015-05-01T00:00:00Z"</span>,
+        <span class="hljs-string">"data"</span>: [{
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Andrews SF share transactions account"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"0040605685885"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
         },
         {
-            &quot;investmentName&quot;: &quot;Lynas Corporation Limited - Ordinary Fully Paid&quot;,
-            &quot;code&quot;: &quot;LYC.AX&quot;,
-            &quot;units&quot;: 35578,
-            &quot;mktPrice&quot;: 0.045,
-            &quot;cost&quot;: 66492.61,
-            &quot;mktValueAsPerLedger&quot;: 1601.01,
-            &quot;currentYearUnRealisedMovement&quot;: -35.58,
-            &quot;investmentGroup&quot;: &quot;Shares in Listed Companies (Australian)&quot;,
-            &quot;aveCost&quot;: 1.87,
-            &quot;unitsMarketPrice&quot;: 1601.01,
-            &quot;unRealisedMovement&quot;: -64891.6000000000000,
-            &quot;realisedMovement&quot;: 0
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Lynas Corporation Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"LYC.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">35578</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.045</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">66492.61</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">1601.01</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">35.58</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">1.87</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">1601.01</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">64891.6000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
         },
         {
-            &quot;investmentName&quot;: &quot;National Aust. Bank&quot;,
-            &quot;code&quot;: &quot;NAB.AX&quot;,
-            &quot;units&quot;: 0,
-            &quot;mktPrice&quot;: 36.77,
-            &quot;cost&quot;: -2.17,
-            &quot;mktValueAsPerLedger&quot;: 0,
-            &quot;currentYearUnRealisedMovement&quot;: 0,
-            &quot;investmentGroup&quot;: &quot;Shares in Listed Companies (Australian)&quot;,
-            &quot;aveCost&quot;: 0,
-            &quot;unitsMarketPrice&quot;: 0E-13,
-            &quot;unRealisedMovement&quot;: 2.17,
-            &quot;realisedMovement&quot;: 0
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"National Aust. Bank"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NAB.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">36.77</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
         },
         {
-            &quot;investmentName&quot;: &quot;Newcrest Mining Limited&quot;,
-            &quot;code&quot;: &quot;NCM.AX&quot;,
-            &quot;units&quot;: 2000,
-            &quot;mktPrice&quot;: 14.45,
-            &quot;cost&quot;: 50195.79,
-            &quot;mktValueAsPerLedger&quot;: 28900,
-            &quot;currentYearUnRealisedMovement&quot;: 240,
-            &quot;investmentGroup&quot;: &quot;Shares in Listed Companies (Australian)&quot;,
-            &quot;aveCost&quot;: 25.1,
-            &quot;unitsMarketPrice&quot;: 28900.0000000000000,
-            &quot;unRealisedMovement&quot;: -21295.7900000000000,
-            &quot;realisedMovement&quot;: 0
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Newcrest Mining Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NCM.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">2000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">14.45</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">50195.79</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">28900</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">240</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">25.1</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">28900.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">21295.7900000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
         }]
     }
     ],
-    &quot;total&quot;: 84,
-    &quot;offset&quot;: 0,
-    &quot;max&quot;: 50
-}
-</code></pre><h4 id="curl-request---xml">cURL Request - XML</h4>
-<pre><code>
-curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary.xml?fundId=0000000048f240bd0148f28816c80017 --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response---xml">Response - XML</h4>
-<pre><code>
-&lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
-  &lt;InvestmentSummary&gt;
-    &lt;InvestmentSummary&gt;
-      &lt;FundId&gt;0000000048f240bd0148f28816c80017&lt;/FundId&gt;
-      &lt;Start&gt;Thu Apr 30 00:00:00 UTC 2015&lt;/Start&gt;
-      &lt;End&gt;Fri May 01 00:00:00 UTC 2015&lt;/End&gt;
-      &lt;Data&gt;
-        &lt;Data&gt;
-          &lt;InvestmentName&gt;Rainwater Tank (Carter Road)&lt;/InvestmentName&gt;
-          &lt;Code&gt;MIGRAT04_RAINWATERTA&lt;/Code&gt;
-          &lt;Units&gt;1&lt;/Units&gt;
-          &lt;MktPrice&gt;0&lt;/MktPrice&gt;
-          &lt;Cost&gt;2478.18&lt;/Cost&gt;
-          &lt;MktValueAsPerLedger&gt;2323.26&lt;/MktValueAsPerLedger&gt;
-          &lt;CurrentYearUnRealisedMovement&gt;0&lt;/CurrentYearUnRealisedMovement&gt;
-          &lt;InvestmentGroup&gt;Plant and Equipment (at written down value) - Unitised&lt;/InvestmentGroup&gt;
-          &lt;AveCost&gt;2478.18&lt;/AveCost&gt;
-          &lt;UnitsMarketPrice&gt;0&lt;/UnitsMarketPrice&gt;
-          &lt;UnRealisedMovement&gt;-2478.18&lt;/UnRealisedMovement&gt;
-          &lt;RealisedMovement&gt;0&lt;/RealisedMovement&gt;
-        &lt;/Data&gt;
-        &lt;Data&gt;
-          &lt;InvestmentName&gt;Shed (Carter Road)&lt;/InvestmentName&gt;
-          &lt;Code&gt;MIGRAT04_SHED(CARTER&lt;/Code&gt;
-          &lt;Units&gt;1&lt;/Units&gt;
-          &lt;MktPrice&gt;0&lt;/MktPrice&gt;
-          &lt;Cost&gt;139174.59&lt;/Cost&gt;
-          &lt;MktValueAsPerLedger&gt;125218&lt;/MktValueAsPerLedger&gt;
-          &lt;CurrentYearUnRealisedMovement&gt;0&lt;/CurrentYearUnRealisedMovement&gt;
-          &lt;InvestmentGroup&gt;Plant and Equipment (at written down value) - Unitised&lt;/InvestmentGroup&gt;
-          &lt;AveCost&gt;139174.59&lt;/AveCost&gt;
-          &lt;UnitsMarketPrice&gt;0&lt;/UnitsMarketPrice&gt;
-          &lt;UnRealisedMovement&gt;-139174.59&lt;/UnRealisedMovement&gt;
-          &lt;RealisedMovement&gt;0&lt;/RealisedMovement&gt;
-        &lt;/Data&gt;
-        &lt;Data&gt;
-          &lt;InvestmentName&gt;Wmc Limited&lt;/InvestmentName&gt;
-          &lt;Code&gt;WMC.AX&lt;/Code&gt;
-          &lt;Units&gt;0&lt;/Units&gt;
-          &lt;MktPrice&gt;8.2&lt;/MktPrice&gt;
-          &lt;Cost&gt;-2.17&lt;/Cost&gt;
-          &lt;MktValueAsPerLedger&gt;0&lt;/MktValueAsPerLedger&gt;
-          &lt;CurrentYearUnRealisedMovement&gt;0&lt;/CurrentYearUnRealisedMovement&gt;
-          &lt;InvestmentGroup&gt;Shares in Listed Companies (Australian)&lt;/InvestmentGroup&gt;
-          &lt;AveCost&gt;0&lt;/AveCost&gt;
-          &lt;UnitsMarketPrice&gt;0E-13&lt;/UnitsMarketPrice&gt;
-          &lt;UnRealisedMovement&gt;2.17&lt;/UnRealisedMovement&gt;
-          &lt;RealisedMovement&gt;0&lt;/RealisedMovement&gt;
-        &lt;/Data&gt;
-      &lt;/Data&gt;
-    &lt;/InvestmentSummary&gt;
-  &lt;/InvestmentSummary&gt;
-  &lt;Total&gt;84&lt;/Total&gt;
-  &lt;Offset&gt;0&lt;/Offset&gt;
-  &lt;Max&gt;50&lt;/Max&gt;
-&lt;/root&gt;
-</code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
-<pre><code>
-{
-    &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
-    &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
-    &quot;status&quot;: 401
-}
-</code></pre><p>If Start and End Date are not valid dates, the following error will be returned.</p>
-<pre><code>
-{
-    &quot;message&quot;: &quot;Failed to call investmentSummary&quot;,
-    &quot;errors&quot;: [&quot;The Start or End Dates are invalid&quot;],
-    &quot;status&quot;: 400
-}
-</code></pre><p>If only one date is present, the following error will be returned.</p>
-<pre><code>
-{
-    &quot;message&quot;: &quot;Failed to call investmentSummary&quot;,
-    &quot;errors&quot;: [&quot;The Start &amp; End Dates are invalid&quot;],
-    &quot;status&quot;: 400
-}
-</code></pre><p>If end date is greater than the start date, the following error will be returned.</p>
-<pre><code>
-{
-    &quot;message&quot;: &quot;Failed to call investmentSummary&quot;,
-    &quot;errors&quot;: [&quot;The Start &amp; End Dates are invalid&quot;],
-    &quot;status&quot;: 400
+    <span class="hljs-string">"total"</span>: <span class="hljs-number">84</span>,
+    <span class="hljs-string">"offset"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">"max"</span>: <span class="hljs-number">50</span>
 }
 </code></pre>
+<h4 id="curl-request---xml">cURL Request - XML</h4>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/investmentSummary.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response---xml">Response - XML</h4>
+<pre><code class="lang-xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">root</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">'http://www.bglcorp.com.au'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentSummary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentSummary</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundId</span>&gt;</span>0000000048f240bd0148f28816c80017<span class="hljs-tag">&lt;/<span class="hljs-title">FundId</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Start</span>&gt;</span>Thu Apr 30 00:00:00 UTC 2015<span class="hljs-tag">&lt;/<span class="hljs-title">Start</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">End</span>&gt;</span>Fri May 01 00:00:00 UTC 2015<span class="hljs-tag">&lt;/<span class="hljs-title">End</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Rainwater Tank (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_RAINWATERTA<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>2478.18<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>2323.26<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>2478.18<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-2478.18<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Shed (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_SHED(CARTER<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>139174.59<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>125218<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>139174.59<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-139174.59<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Wmc Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WMC.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>8.2<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-2.17<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>2.17<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentSummary</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentSummary</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Total</span>&gt;</span>84<span class="hljs-tag">&lt;/<span class="hljs-title">Total</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Offset</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Offset</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Max</span>&gt;</span>50<span class="hljs-tag">&lt;/<span class="hljs-title">Max</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">root</span>&gt;</span>
+</code></pre>
+<p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"The fund is not found/accessible"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The fund is not found/accessible"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">401</span>
+}
+</code></pre>
+<p>If Start and End Date are not valid dates, the following error will be returned.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The Start or End Dates are invalid"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
+}
+</code></pre>
+<p>If only one date is present, the following error will be returned.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The Start &amp; End Dates are invalid"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
+}
+</code></pre>
+<p>If end date is greater than the start date, the following error will be returned.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The Start &amp; End Dates are invalid"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
+}
+</code></pre>
+
                     
                     </section>
                 

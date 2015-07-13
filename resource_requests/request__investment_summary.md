@@ -58,7 +58,7 @@ If the format parameter is not set, the returned result will always be JSON.
 
 #### cURL Request - JSON
 
-```
+```javascript
 
 curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
@@ -66,7 +66,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000
 
 #### Response - JSON
 
-```
+```javascript
 
 {
 	"investmentSummary": [{
@@ -140,7 +140,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary?fundId=0000000
 
 #### cURL Request - XML
 
-```
+```javascript
 
 curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
 
@@ -148,7 +148,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary.xml?fundId=000
 
 #### Response - XML
 
-```
+```xml
 
 <root xmlns='http://www.bglcorp.com.au'>
   <InvestmentSummary>
@@ -211,7 +211,7 @@ curl -X POST https://api-uat.bgl360.com.au/fund/investmentSummary.xml?fundId=000
 
 If the provided fund id is not found in BGL data, the following error will be returned.
 
-```
+```javascript
 
 {
 	"message": "The fund is not found/accessible",
@@ -223,7 +223,7 @@ If the provided fund id is not found in BGL data, the following error will be re
 
 If Start and End Date are not valid dates, the following error will be returned.
 
-```
+```javascript
 
 {
 	"message": "Failed to call investmentSummary",
@@ -235,7 +235,7 @@ If Start and End Date are not valid dates, the following error will be returned.
 
 If only one date is present, the following error will be returned.
 
-```
+```javascript
 
 {
 	"message": "Failed to call investmentSummary",
@@ -247,7 +247,7 @@ If only one date is present, the following error will be returned.
 
 If end date is greater than the start date, the following error will be returned.
 
-```
+```javascript
 
 {
 	"message": "Failed to call investmentSummary",

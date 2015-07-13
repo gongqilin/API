@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request : Fund List | BGL API</title>
+        <title>XML | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../resource_requests/request__fund_detail.html" />
+    <link rel="next" href="../sample_data/fund_detail.html" />
     
     
-    <link rel="prev" href="../resource_requests/README.html" />
+    <link rel="prev" href="../sample_data/json.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1436774089335">
+    <div class="book"  data-level="4.1.2" data-basepath=".." data-revision="1436774089335">
     
 
 <div class="book-summary">
@@ -168,7 +168,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="resource_requests/request__fund_list.html">
+        <li class="chapter " data-level="2.1" data-path="resource_requests/request__fund_list.html">
             
                 
                     <a href="../resource_requests/request__fund_list.html">
@@ -351,7 +351,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.1.2" data-path="sample_data/xml.html">
+        <li class="chapter active" data-level="4.1.2" data-path="sample_data/xml.html">
             
                 
                     <a href="../sample_data/xml.html">
@@ -599,76 +599,9 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_21642">
+                    <section class="normal" id="section-gitbook_21648">
                     
-                        <h1 id="request--fund-list">Request : Fund List</h1>
-<table>
-    <tr>
-        <td>Description</td>
-        <td>Allows you to retrieve a list of fund, which also returns the fund id, which could be used for subsequent API requests</td>
-    </tr>
-    <tr>
-        <td>Request URI</td>
-        <td><a href="https://api-uat.bgl360.com.au/fund/list" target="_blank">https://api-uat.bgl360.com.au/fund/list</a></td>
-    </tr>
-    <tr>
-        <td>Method</td>
-        <td>GET | POST</td>
-    </tr>
-</table>
-
-<h3 id="parameters">Parameters</h3>
-<p>The following parameters can be added in the http request.</p>
-<p><table>
-    <tr>
-        <th>Parameter</th>
-        <th>Description</th>
-        <th>Required</th>
-    </tr>
-    <tr>
-        <td align="center">format=json <br> or <br> .json</td>
-        <td>This is the default. Will return the data in JSON format</td>
-        <td  align="center">Optional</td>
-    </tr>
-    <tr>
-        <td align="center">format=xml  <br> or <br> .xml</td>
-        <td>Will return the data in XML format</td>
-        <td  align="center">Optional</td>
-    </tr></p>
-<table>
-
-<p>If the format parameter is not set, the returned result will always be JSON.</p>
-<h3 id="sample-request-and-response">Sample Request and Response</h3>
-<h4 id="curl-request---json">cURL Request - JSON</h4>
-<pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
-</code></pre>
-<h4 id="response---json">Response - JSON</h4>
-<pre><code class="lang-javascript">
-<span class="hljs-string">"funds"</span>: [{
-        <span class="hljs-string">"fundID"</span>: <span class="hljs-string">"0000000048f240bd0148f28816c80017"</span>,
-        <span class="hljs-string">"fundCode"</span>: <span class="hljs-string">"MIGRAT04"</span>,
-        <span class="hljs-string">"fundName"</span>: <span class="hljs-string">"ANNPSRAOPP4UFENAS4S4TUFUNAPEUFRO"</span>,
-        <span class="hljs-string">"ABN"</span>: <span class="hljs-string">"95888"</span>,
-        <span class="hljs-string">"firmName"</span>: <span class="hljs-string">"bgltestapi1"</span>,
-        <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
-        <span class="hljs-string">"fundEmail"</span>: <span class="hljs-string">"D@BGLNOTES.COM.AU"</span>
-    },
-    {
-        <span class="hljs-string">"fundID"</span>: <span class="hljs-string">"0000000048f240bd0148f2913f110027"</span>,
-        <span class="hljs-string">"fundCode"</span>: <span class="hljs-string">"MIGRAT10"</span>,
-        <span class="hljs-string">"fundName"</span>: <span class="hljs-string">"lroPLPtaL.aaooptoln F  i 2aaru.LroiPS2ounu la ueouto4y"</span>,
-        <span class="hljs-string">"ABN"</span>: <span class="hljs-string">"5555522"</span>,
-        <span class="hljs-string">"firmName"</span>: <span class="hljs-string">"bgltestapi1"</span>,
-        <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
-        <span class="hljs-string">"fundEmail"</span>: <span class="hljs-literal">null</span>
-    }]
-</code></pre>
-<h4 id="curl-request---xml">cURL Request - XML</h4>
-<pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
-</code></pre>
-<h4 id="response---xml">Response - XML</h4>
+                        <h1 id="xml">XML</h1>
 <pre><code class="lang-xml">
 <span class="hljs-tag">&lt;<span class="hljs-title">root</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">'http://www.bglcorp.com.au'</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">Funds</span>&gt;</span>
@@ -676,16 +609,133 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list.
       <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>0000000048f240bd0148f28816c80017<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT04<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>ANNPSRAOPP4UFENAS4S4TUFUNAPEUFRO<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>6558555<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span>&gt;</span>D@BGLNOTES.COM.AU<span class="hljs-tag">&lt;/<span class="hljs-title">FundEmail</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span>&gt;</span>DAUNT@BGLNOTES.COM.AU<span class="hljs-tag">&lt;/<span class="hljs-title">FundEmail</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>0000000048f240bd0148f2913f110027<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT10<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>lroPLPtaL.aaooptoln F  i 2aaru.LroiPS2ounu la ueouto4y<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>855544666<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>00000000492acccc01492ae14861001b<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>INV5<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>nu&amp;amp;at una elH&amp;amp; tgnutBurtea aeteaPng ugBt&amp;amp;SiFB<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e02492ab99e01492adfd404000e<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>INV1<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>ESLSSNNF RPL ENNINPFSLTLTEES&amp;amp; .TSLAMS&amp;amp;I IASP.NP PPF<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e3048f2773f0148f2897eb40010<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT05<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>anwrnnonwrdnlaPer mtFnorBdpAB dwmosunwiau  oPwn<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e3048f2773f0148f28ae34a0019<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT06<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>IUNNLUHNIDOYAA FPNALH 7UETONNDN25<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e3048f2773f0148f28dff910021<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT08<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>da adnd0 dFonaF6nrndannnan eo6adu<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>84111122223<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e3048f2773f0148f28fb4ca002e<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT09<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>Fny6 ttina M8pM ol  rda6Jr8nu tu o  uuntu8iFa<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e6548f291fb0148f2936a8c000c<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT11<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span> i7i Nu rilF7tlltalodrnmynpnrnna aNrr<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e6548f291fb0148f2959fb5001e<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT13<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>D8MPLE HABED ELEPTE LHLNNLVEE  LOT    EXLIE TAI IEENLEOI IR<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009e6548f2a76c0148f2aa66c20000<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT14<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>SNTN NR9PS URE ASNANUUFUNIUAR9<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009f5048f27d9c0148f28c2df1002b<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT07<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>lrnaenuF u S ae uradou nwyw wd al34H9d<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009f50492ac05401492ae09b45000a<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>INV4<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>i l exEtemvRvmctrrx tL veueev RR ee <span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009f50492ac05401492b24f845000f<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>INV3<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span> Scclc  r p   e ueSPnSnnrea siVur uSirteP<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Fund</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Fund</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundID</span>&gt;</span>8a009f8a48f291f80148f294c5e3000f<span class="hljs-tag">&lt;/<span class="hljs-title">FundID</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundCode</span>&gt;</span>MIGRAT12<span class="hljs-tag">&lt;/<span class="hljs-title">FundCode</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">FundName</span>&gt;</span>5FIPFFA45AENNOEA  TI5D5EUNUE5AINENDU<span class="hljs-tag">&lt;/<span class="hljs-title">FundName</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ABN</span>&gt;</span>37111155556<span class="hljs-tag">&lt;/<span class="hljs-title">ABN</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FirmName</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">FirmName</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">FundEmail</span> /&gt;</span>
@@ -703,10 +753,10 @@ curl -X POST https:<span class="hljs-comment">//api-uat.bgl360.com.au/fund/list.
         </div>
 
         
-        <a href="../resource_requests/README.html" class="navigation navigation-prev " aria-label="Previous page: Resource Requests"><i class="fa fa-angle-left"></i></a>
+        <a href="../sample_data/json.html" class="navigation navigation-prev " aria-label="Previous page: JSON"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../resource_requests/request__fund_detail.html" class="navigation navigation-next " aria-label="Next page: Request : Fund Detail"><i class="fa fa-angle-right"></i></a>
+        <a href="../sample_data/fund_detail.html" class="navigation navigation-next " aria-label="Next page: Fund Detail"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
