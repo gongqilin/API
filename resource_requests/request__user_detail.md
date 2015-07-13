@@ -1,10 +1,19 @@
 # Request : User Detail
 
-||
---|--
-Description|Allows you to retrieve the details of the user
-Sample Request|https://api-uat.bgl360.com.au/user/detail
-Method support|GET, POST
+<table>
+    <tr>
+        <td>Description</td>
+        <td>Allows you to retrieve the details of the user</td>
+    </tr>
+    <tr>
+        <td>Request URI</td>
+        <td>https://api-uat.bgl360.com.au/user/detail</td>
+    </tr>
+    <tr>
+        <td>Method</td>
+        <td>GET | POST</td>
+    </tr>
+</table>
 
 ### Parameters
 

@@ -2,6 +2,7 @@
 
 In order to consume BGL API, the consuming application needs to register them self with BGL.  BGL will provide the following information.
 
+
 | Subject       | Description |
 | --            | -- |
 | Client Id     | A unique identifier to identify a client that will be using the BGL API |
