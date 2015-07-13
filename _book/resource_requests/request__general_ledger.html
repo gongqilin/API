@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request : Fund Detail | BGL API</title>
+        <title>Request : General Ledger | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../resource_requests/request__trustees.html" />
+    <link rel="next" href="../resource_requests/request__chart_accounts.html" />
     
     
-    <link rel="prev" href="../resource_requests/request__fund_list.html" />
+    <link rel="prev" href="../resource_requests/request__investment_summary.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1436752155193">
+    <div class="book"  data-level="2.5" data-basepath=".." data-revision="1436752155193">
     
 
 <div class="book-summary">
@@ -184,7 +184,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.2" data-path="resource_requests/request__fund_detail.html">
+        <li class="chapter " data-level="2.2" data-path="resource_requests/request__fund_detail.html">
             
                 
                     <a href="../resource_requests/request__fund_detail.html">
@@ -232,7 +232,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.5" data-path="resource_requests/request__general_ledger.html">
+        <li class="chapter active" data-level="2.5" data-path="resource_requests/request__general_ledger.html">
             
                 
                     <a href="../resource_requests/request__general_ledger.html">
@@ -389,9 +389,9 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_764">
+                    <section class="normal" id="section-gitbook_765">
                     
-                        <h1 id="request--fund-detail">Request : Fund Detail</h1>
+                        <h1 id="request--general-ledger">Request : General Ledger</h1>
 <table>
 <thead>
 <tr>
@@ -402,11 +402,11 @@
 <tbody>
 <tr>
 <td>Description</td>
-<td>Allows you to retrieve details based on a Fund Id</td>
+<td>Allows you to retrieve the General Ledger for a specified fund id</td>
 </tr>
 <tr>
 <td>Sample Request</td>
-<td><a href="https://api-uat.bgl360.com.au/fund/detail" target="_blank">https://api-uat.bgl360.com.au/fund/detail</a></td>
+<td><a href="https://api-uat.bgl360.com.au/fund/generalLedger" target="_blank">https://api-uat.bgl360.com.au/fund/generalLedger</a></td>
 </tr>
 <tr>
 <td>Method support</td>
@@ -427,7 +427,7 @@
 <tbody>
 <tr>
 <td style="text-align:center">fundId</td>
-<td>The unique id to obtain the fund details.</td>
+<td>The unique id to obtain general ledger.</td>
 <td>MANDATORY</td>
 </tr>
 <tr>
@@ -440,50 +440,179 @@
 <td>Will return the data in XML format.</td>
 <td>OPTIONAL</td>
 </tr>
+<tr>
+<td style="text-align:center">start</td>
+<td>start date of Report.  Expected Format : yyyy-mm-dd</td>
+<td>OPTIONAL</td>
+</tr>
+<tr>
+<td style="text-align:center">end</td>
+<td>end date of Report.  Expected Format : yyyy-mm-dd</td>
+<td>OPTIONAL</td>
+</tr>
 </tbody>
 </table>
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-response">Sample Response</h3>
 <h4 id="json">JSON</h4>
 <pre><code>{
-    &quot;detail&quot;: {
-        &quot;activedDate&quot;: null,
-        &quot;postalAddress&quot;: {
-            &quot;streetLine1&quot;: &quot;L vlLel&quot;,
-            &quot;streetLine2&quot;: &quot;139 Macquarie Street&quot;,
-            &quot;city&quot;: &quot;Dubbo&quot;,
-            &quot;state&quot;: &quot;NEW_SOUTH_WALES&quot;,
-            &quot;country&quot;: &quot;AU&quot;,
-            &quot;postCode&quot;: &quot;2830&quot;
-        }
+    &quot;generalLedger&quot;: {
+        &quot;fundId&quot;: &quot;0000000048f240bd0148f28816c80017&quot;,
+        &quot;start&quot;: &quot;2015-06-30T14:00:00Z&quot;,
+        &quot;end&quot;: &quot;2016-06-30T13:59:59Z&quot;,
+        &quot;data&quot;: [
+        {
+            &quot;fundName&quot;: null,
+            &quot;fromDate&quot;: null,
+            &quot;toDate&quot;: null,
+            &quot;year&quot;: 2015,
+            &quot;id&quot;: null,
+            &quot;pid&quot;: null,
+            &quot;entryId&quot;: null,
+            &quot;accountClass&quot;: null,
+            &quot;fundId&quot;: &quot;&quot;,
+            &quot;taccountParentName&quot;: null,
+            &quot;taccountParentCode&quot;: &quot;84000&quot;,
+            &quot;taccountSubCode&quot;: &quot;84000&quot;,
+            &quot;taccountSubName&quot;: &quot;GST Payable/Refundable&quot;,
+            &quot;bsb&quot;: &quot;&quot;,
+            &quot;bankAccNum&quot;: &quot;&quot;,
+            &quot;transactionDate&quot;: null,
+            &quot;transactionSource&quot;: &quot;&quot;,
+            &quot;createSource&quot;: &quot;&quot;,
+            &quot;processedDate&quot;: null,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;units&quot;: null,
+            &quot;amount&quot;: 0,
+            &quot;balance&quot;: 511.61,
+            &quot;bankFeedsProvider&quot;: null,
+            &quot;statementBalance&quot;: null,
+            &quot;lineType&quot;: &quot;total&quot;
+        },
+        {
+            &quot;fundName&quot;: null,
+            &quot;fromDate&quot;: null,
+            &quot;toDate&quot;: null,
+            &quot;year&quot;: 2015,
+            &quot;id&quot;: null,
+            &quot;pid&quot;: null,
+            &quot;entryId&quot;: null,
+            &quot;accountClass&quot;: null,
+            &quot;fundId&quot;: &quot;&quot;,
+            &quot;taccountParentName&quot;: &quot;Income Tax Payable/Refundable&quot;,
+            &quot;taccountParentCode&quot;: &quot;85000&quot;,
+            &quot;taccountSubCode&quot;: &quot;85000&quot;,
+            &quot;taccountSubName&quot;: &quot;Income Tax Payable/Refundable&quot;,
+            &quot;bsb&quot;: null,
+            &quot;bankAccNum&quot;: null,
+            &quot;transactionDate&quot;: &quot;2015-06-30T00:00:00.000+0000&quot;,
+            &quot;transactionSource&quot;: &quot;Opening Balance&quot;,
+            &quot;createSource&quot;: &quot;&quot;,
+            &quot;processedDate&quot;: null,
+            &quot;description&quot;: &quot;Opening Balance&quot;,
+            &quot;units&quot;: null,
+            &quot;amount&quot;: null,
+            &quot;balance&quot;: -26860,
+            &quot;bankFeedsProvider&quot;: null,
+            &quot;statementBalance&quot;: null,
+            &quot;lineType&quot;: &quot;balance&quot;
+        },
+        {
+            &quot;fundName&quot;: null,
+            &quot;fromDate&quot;: null,
+            &quot;toDate&quot;: null,
+            &quot;year&quot;: 2015,
+            &quot;id&quot;: null,
+            &quot;pid&quot;: null,
+            &quot;entryId&quot;: null,
+            &quot;accountClass&quot;: null,
+            &quot;fundId&quot;: &quot;&quot;,
+            &quot;taccountParentName&quot;: null,
+            &quot;taccountParentCode&quot;: &quot;85000&quot;,
+            &quot;taccountSubCode&quot;: &quot;85000&quot;,
+            &quot;taccountSubName&quot;: &quot;Income Tax Payable/Refundable&quot;,
+            &quot;bsb&quot;: &quot;&quot;,
+            &quot;bankAccNum&quot;: &quot;&quot;,
+            &quot;transactionDate&quot;: null,
+            &quot;transactionSource&quot;: &quot;&quot;,
+            &quot;createSource&quot;: &quot;&quot;,
+            &quot;processedDate&quot;: null,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;units&quot;: null,
+            &quot;amount&quot;: 0,
+            &quot;balance&quot;: -26860,
+            &quot;bankFeedsProvider&quot;: null,
+            &quot;statementBalance&quot;: null,
+            &quot;lineType&quot;: &quot;total&quot;
+        }]
     }
 }
 </code></pre><h4 id="xml">XML</h4>
 <pre><code>&lt;root xmlns=&#39;http://www.bglcorp.com.au&#39;&gt;
-  &lt;Detail&gt;
-    &lt;ActivedDate /&gt;
-    &lt;PostalAddress&gt;
-      &lt;StreetLine1&gt;L vlLel&lt;/StreetLine1&gt;
-      &lt;StreetLine2&gt;139 Macquarie Street&lt;/StreetLine2&gt;
-      &lt;City&gt;Dubbo&lt;/City&gt;
-      &lt;State&gt;NEW_SOUTH_WALES&lt;/State&gt;
-      &lt;Country&gt;AU&lt;/Country&gt;
-      &lt;PostCode&gt;2830&lt;/PostCode&gt;
-    &lt;/PostalAddress&gt;
-  &lt;/Detail&gt;
+  &lt;GeneralLedger&gt;
+    &lt;FundId&gt;0000000048f240bd0148f28816c80017&lt;/FundId&gt;
+    &lt;Start&gt;Tue Jun 30 14:00:00 UTC 2015&lt;/Start&gt;
+    &lt;End&gt;Thu Jun 30 13:59:59 UTC 2016&lt;/End&gt;
+    &lt;Data&gt;
+      &lt;Data&gt;
+        &lt;FundName /&gt;
+        &lt;FromDate /&gt;
+        &lt;ToDate /&gt;
+        &lt;Year&gt;2015&lt;/Year&gt;
+        &lt;Id&gt;2134161&lt;/Id&gt;
+        &lt;Pid /&gt;
+        &lt;EntryId&gt;11667226&lt;/EntryId&gt;
+        &lt;AccountClass&gt;N&lt;/AccountClass&gt;
+        &lt;FundId&gt;&lt;/FundId&gt;
+        &lt;TaccountParentName&gt;Changes in Market Values of Investments&lt;/TaccountParentName&gt;
+        &lt;TaccountParentCode&gt;24700&lt;/TaccountParentCode&gt;
+        &lt;TaccountSubCode&gt;24700&lt;/TaccountSubCode&gt;
+        &lt;TaccountSubName&gt;Changes in Market Values of Investments&lt;/TaccountSubName&gt;
+        &lt;Bsb /&gt;
+        &lt;BankAccNum /&gt;
+        &lt;TransactionDate&gt;2015-07-11&lt;/TransactionDate&gt;
+        &lt;TransactionSource&gt;SYSTEM&lt;/TransactionSource&gt;
+        &lt;CreateSource /&gt;
+        &lt;ProcessedDate&gt;2015-07-11&lt;/ProcessedDate&gt;
+        &lt;Description&gt;Revaluation - 10/07/2015 @ $0.1000 (System Price) - 40,000.000000 Units on hand&lt;/Description&gt;
+        &lt;Units /&gt;
+        &lt;Amount&gt;-40&lt;/Amount&gt;
+        &lt;Balance&gt;-40&lt;/Balance&gt;
+        &lt;BankFeedsProvider /&gt;
+        &lt;StatementBalance /&gt;
+        &lt;LineType&gt;trans&lt;/LineType&gt;
+      &lt;/Data&gt;
+      &lt;Data&gt;
+        &lt;FundName /&gt;
+        &lt;FromDate /&gt;
+        &lt;ToDate /&gt;
+        &lt;Year&gt;2015&lt;/Year&gt;
+        &lt;Id&gt;2134161&lt;/Id&gt;
+        &lt;Pid /&gt;
+        &lt;EntryId&gt;11667244&lt;/EntryId&gt;
+        &lt;AccountClass&gt;N&lt;/AccountClass&gt;
+        &lt;FundId&gt;&lt;/FundId&gt;
+        &lt;TaccountParentName&gt;Changes in Market Values of Investments&lt;/TaccountParentName&gt;
+        &lt;TaccountParentCode&gt;24700&lt;/TaccountParentCode&gt;
+        &lt;TaccountSubCode&gt;24700&lt;/TaccountSubCode&gt;
+        &lt;TaccountSubName&gt;Changes in Market Values of Investments&lt;/TaccountSubName&gt;
+        &lt;Bsb /&gt;
+        &lt;BankAccNum /&gt;
+        &lt;TransactionDate&gt;2015-07-11&lt;/TransactionDate&gt;
+        &lt;TransactionSource&gt;SYSTEM&lt;/TransactionSource&gt;
+        &lt;CreateSource /&gt;
+        &lt;ProcessedDate&gt;2015-07-11&lt;/ProcessedDate&gt;
+        &lt;Description&gt;Revaluation - 10/07/2015 @ $0.7250 (System Price) - 15,650.000000 Units on hand&lt;/Description&gt;
+        &lt;Units /&gt;
+        &lt;Amount&gt;-1565&lt;/Amount&gt;
+        &lt;Balance&gt;-1605&lt;/Balance&gt;
+        &lt;BankFeedsProvider /&gt;
+        &lt;StatementBalance /&gt;
+        &lt;LineType&gt;trans&lt;/LineType&gt;
+      &lt;/Data&gt;
+    &lt;/Data&gt;
+  &lt;/GeneralLedger&gt;
 &lt;/root&gt;
-</code></pre><p>If the url does not contain the fundId parameter BGL API will notify us with the following error.</p>
-<pre><code>{
-    &quot;message&quot;: &quot;Failed to call detail&quot;,
-    &quot;errors&quot;: [&quot;Fund Id is required&quot;],
-    &quot;status&quot;: 400
-}
-</code></pre><p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
-<pre><code>{
-    &quot;message&quot;: &quot;The fund is not found/accessible&quot;,
-    &quot;errors&quot;: [&quot;The fund is not found/accessible&quot;],
-    &quot;status&quot;: 401
-}
 </code></pre>
                     
                     </section>
@@ -494,10 +623,10 @@
         </div>
 
         
-        <a href="../resource_requests/request__fund_list.html" class="navigation navigation-prev " aria-label="Previous page: Request : Fund List"><i class="fa fa-angle-left"></i></a>
+        <a href="../resource_requests/request__investment_summary.html" class="navigation navigation-prev " aria-label="Previous page: Request : Investment Summary"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../resource_requests/request__trustees.html" class="navigation navigation-next " aria-label="Next page: Request : Trustees List"><i class="fa fa-angle-right"></i></a>
+        <a href="../resource_requests/request__chart_accounts.html" class="navigation navigation-next " aria-label="Next page: Request : Chart Accounts"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -11,4 +11,8 @@
    * [Request : Fund Detail](resource_requests/request__fund_detail.md)
    * [Request : Trustees List](resource_requests/request__trustees.md)
    * [Request : Investment Summary](resource_requests/request__investment_summary.md)
+   * [Request : General Ledger](resource_requests/request__general_ledger.md)
+   * [Request : Chart Accounts](resource_requests/request__chart_accounts.md)
+   * [Request : User Detail](resource_requests/request__user_detail.md)
+* [Data Dictionary](data_dictionary/README.md)
 

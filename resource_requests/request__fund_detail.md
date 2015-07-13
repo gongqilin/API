@@ -14,7 +14,7 @@ The following parameters can be added into the http request or set in the Conten
 
 |  |  | |
 | :--: | -- | -- |
-| fundId| The unique id to obtain the fund details. | MANDATORY |
+| fundId | The unique id to obtain the fund details. | MANDATORY |
 | format=json <br> or <br> .json | This is the default. Will return the data in JSON format. | OPTIONAL |
 | format=xml  <br> or <br> .xml| Will return the data in XML format. | OPTIONAL |
 

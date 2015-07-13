@@ -40,12 +40,15 @@ If the format parameter is not set, the returned result will always be JSON.
 		"firmName": "bgltestapi1",
 		"firm": "bgltestapi1",
 		"fundEmail": null
-	}]```
+	}]
+
+```
 
 
 #### XML
 
 ```
+
 <root xmlns='http://www.bglcorp.com.au'>
   <Funds>
     <Fund>
@@ -67,7 +70,9 @@ If the format parameter is not set, the returned result will always be JSON.
       <FundEmail />
     </Fund>
   </Funds>
-</root>```
+</root>
+
+```
 
 
 
