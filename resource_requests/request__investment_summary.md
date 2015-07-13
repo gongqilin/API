@@ -17,7 +17,7 @@
 
 ### Parameters
 
-The following parameters can be added into the http request or set in the Content-Type in the header.
+The following parameters can be added in the http request.
 
 <table>
     <tr>
