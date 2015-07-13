@@ -30,7 +30,7 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>client_id</td>
-        <td>A unique identifier to identify a client that will be using the BGL API. This is Provided by BGL. SEE [Authorization code](request_for_an_authorization_code.md) See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
+        <td>A unique identifier to identify a client that will be using the BGL API. This is Provided by BGL. See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
