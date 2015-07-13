@@ -15,7 +15,7 @@ In order for the client to make a request for the data, the client needs to have
     </tr>
 </table>
 
-The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the next section.
+The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the [next section](../resource_requests/README.html).
 
 However, the client needs to pass in the access token and token type as header information in the request, as per the following table:
 

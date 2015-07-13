@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.3" data-basepath=".." data-revision="1436758928356">
+    <div class="book"  data-level="1.3" data-basepath=".." data-revision="1436764454903">
     
 
 <div class="book-summary">
@@ -389,7 +389,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12439">
+                    <section class="normal" id="section-gitbook_13774">
                     
                         <h1 id="obtaining-request-token">Obtaining Request token</h1>
 <p>Once the client has the Authorization code, as explained in the previous section, then the client can obtain a Request Token.</p>
@@ -440,7 +440,7 @@
     </tr>
 </table>
 
-<p>If the request was successful, the client should get a JSON object containing an access token, token type, expiration period and scope.</p>
+<p>If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.</p>
 <p>An example of a valid Request Token is as follows.</p>
 <pre><code>
 {
@@ -462,7 +462,7 @@ scope: &quot;fundList&quot;
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>A token that may be used to obtain a new access tokens. Refresh tokens are valid until the user revokes access</td>
+        <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access</td>
     </tr>
     <tr>
         <td>expires_in</td>

@@ -52,7 +52,7 @@ The URL query parameters are as follows.
     </tr>
 </table>
 
-If the request was successful, the client should get a JSON object containing an access token, token type, expiration period and scope.
+If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.
 
 An example of a valid Request Token is as follows.
 
@@ -81,7 +81,7 @@ The below table illustrates the content of a valid Request Token
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>A token that may be used to obtain a new access tokens. Refresh tokens are valid until the user revokes access</td>
+        <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access</td>
     </tr>
     <tr>
         <td>expires_in</td>
