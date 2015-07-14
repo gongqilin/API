@@ -58,7 +58,7 @@ Once the request is processed one of the following will occur.
 <p>
 If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log into to BGL.
 </p>
-<p>![logo](/images/BGLAuthenticationScreen.png "BGL Authentication Page")</p></p>
+![logo](/images/BGLAuthenticationScreen.png "BGL Authentication Page")<br>
 <p>Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.</p>
 </li>
 
