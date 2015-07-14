@@ -46,63 +46,18 @@ If the format parameter is not set, the returned result will always be JSON.
 
 ### Sample Request and Response
 
-#### cURL Request - JSON
+#### JSON
 
-```javascript
+See section - [Fund Detail - JSON](../sample_data/fund_detail_-_json.md) for sample request and json response.
 
-curl -X POST https://api-staging.bgl360.com.au/fund/detail?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+#### XML
 
-```
+See section [Fund Detail - XML](../sample_data/fund_detail_-_xml.md) for sample request and xml response.
 
-#### Response - JSON
-
-```javascript
-
-{
-	"detail": {
-		"activedDate": null,
-		"postalAddress": {
-			"streetLine1": "lvl 1",
-			"streetLine2": "139 xxx Street",
-			"city": "Syd",
-			"state": "NEW_SOUTH_WALES",
-			"country": "AU",
-			"postCode": "2000"
-		}
-	}
-}
-
-```
-
-#### cURL Request - XML
-
-```javascript
-
-curl -X POST https://api-staging.bgl360.com.au/fund/detail.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
-
-```
-
-#### Response - XML
-
-```xml
-
-<root xmlns='http://www.bglcorp.com.au'>
-  <Detail>
-    <ActivedDate />
-    <PostalAddress>
-      <StreetLine1>lvl 1</StreetLine1>
-      <StreetLine2>139 xxx Street</StreetLine2>
-      <City>Syd</City>
-      <State>NEW_SOUTH_WALES</State>
-      <Country>AU</Country>
-      <PostCode>2000</PostCode>
-    </PostalAddress>
-  </Detail>
-</root>
-
-```
 
 If the url does not contain the fundId parameter BGL API will notify us with the following error.
+
+#### Error Messages
 
 ```javascript
 

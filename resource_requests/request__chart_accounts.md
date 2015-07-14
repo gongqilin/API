@@ -46,91 +46,18 @@ If the format parameter is not set, the returned result will always be JSON.
 
 ### Sample Request and Response
 
-#### cURL Request - JSON
 
-```javascript
 
-curl -X POST https://api-staging.bgl360.com.au/fund/chartAccounts?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+#### JSON
 
-```
+See section - [Chart of Accounts - JSON](../sample_data/char_of_accounts_-_json.md) for sample request and json response.
 
-#### Response - JSON
+#### XML
 
-```javascript
+See section [Chart of Accounts - XML](../sample_data/chart_of_accounts_-_xml.md) for sample request and xml response.
 
-{
-	"chartAccounts": [{
-		"accountClass": "Control",
-		"chartAccountType": {
-			"label": "Allocation - Member",
-			"maxCode": 0,
-			"minCode": 0
-		},
-		"code": "48700",
-		"name": "Contributions Tax (Surcharge)"
-	},
-	{
-		"accountClass": "Control",
-		"chartAccountType": {
-			"label": "Allocation - Member",
-			"maxCode": 0,
-			"minCode": 0
-		},
-		"code": "49300",
-		"name": "Writeback of Deferred Tax"
-	}]
-}
+#### Error Messages
 
-```
-
-#### cURL Request - XML
-
-```javascript
-
-curl -X POST https://api-staging.bgl360.com.au/fund/chartAccounts.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
-
-```
-
-#### Response - XML
-
-```xml
-
-<root xmlns='http://www.bglcorp.com.au'>
-  <ChartAccounts>
-    <ChartAccount>
-      <AccountClass>Control</AccountClass>
-      <ChartAccountType>
-        <Label>Allocation - Member</Label>
-        <MaxCode>0</MaxCode>
-        <MinCode>0</MinCode>
-      </ChartAccountType>
-      <Code>48700</Code>
-      <Name>Contributions Tax (Surcharge)</Name>
-    </ChartAccount>
-    <ChartAccount>
-      <AccountClass>Control</AccountClass>
-      <ChartAccountType>
-        <Label>Allocation - Member</Label>
-        <MaxCode>0</MaxCode>
-        <MinCode>0</MinCode>
-      </ChartAccountType>
-      <Code>49300</Code>
-      <Name>Writeback of Deferred Tax</Name>
-    </ChartAccount>
-    <ChartAccount>
-      <AccountClass>Control</AccountClass>
-      <ChartAccountType>
-        <Label>Asset</Label>
-        <MaxCode>69999</MaxCode>
-        <MinCode>60000</MinCode>
-      </ChartAccountType>
-      <Code>60100</Code>
-      <Name>Amounts owing by Other Persons</Name>
-    </ChartAccount>
-  </ChartAccounts>
-</root>
-
-```
 
 If the provided fund id is not found in BGL data, the following error will be returned.
 

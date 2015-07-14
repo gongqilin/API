@@ -56,10 +56,21 @@ Once the request is processed one of the following will occur.
 <ul>
 <li>
 <p>
+If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials and log into to BGL.
+</p>
+<p>![logo](/images/BGLAuthenticationScreen.png "BGL Authentication Page")</p></p>
+<p>Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.</p>
+</li>
+
+</ul>
+
+<ul>
+<li>
+<p>
 If the user has not previously accepted the application's permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API's authorization screen as displayed below.
 </p>
 
-<p>![logo](/images/APIAuthorizationScreen.png "API Authorization")</p>
+<p>![logo](/images/APIAuthorizationScreen.png "API Authorization Page")</p>
 
 
 <p>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.</p>

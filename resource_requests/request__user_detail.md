@@ -39,54 +39,15 @@ The following parameters can be added in the http request.
 
 If the format parameter is not set, the returned result will always be JSON.
 
+
 ### Sample Request and Response
 
-#### cURL Request - JSON
+#### JSON
 
-```javascript
+See section - [User Detail - JSON](../sample_data/user_detail_-_json.md) for sample request and json response.
 
-curl -X POST https://api-staging.bgl360.com.au/user/detail --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
+#### XML
 
-```
+See section [User Detail - XML](../sample_data/user_detail_-_xml.md) for sample request and xml response.
 
-#### Response - JSON
 
-```javascript
-
-{
-	"userDetail": {
-		"username": "xyz@bglcorp.com.au",
-		"firstName": "Ronaldinho",
-		"lastName": "Assis Moreira",
-		"firm": "bgltestapi1",
-		"role": "Admin",
-		"title": null
-	}
-}
-
-```
-
-#### cURL Request - XML
-
-```
-
-curl -X POST https://api-staging.bgl360.com.au/user/detail.xml --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"
-
-```
-
-#### Response XML
-
-```xml
-
-<root xmlns='http://www.bglcorp.com.au'>
-  <UserDetail>
-    <Username>xyz@bglcorp.com.au</Username>
-    <FirstName>Ronaldinho</FirstName>
-    <LastName>Assis Moreira</LastName>
-    <Firm>bgltestapi1</Firm>
-    <Role>Admin</Role>
-    <Title />
-  </UserDetail>
-</root>
-
-```

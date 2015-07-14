@@ -54,9 +54,9 @@ The URL query parameters are as follows.
 
 If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.
 
-Example **A** of a request with basic authorisation header for the Access Token is as follows.
+Example **A** of a request with basic authorization header for the Access Token is as follows.
 
-Basic authorisation Header is  base64 encoded of &lt;API Client Id&gt;:&lt;API Client Secret&gt;
+Basic authorization Header is  base64 encoded of &lt;API Client Id&gt;:&lt;API Client Secret&gt;
 
 ```javascript
 
@@ -66,7 +66,7 @@ curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=authorizat
 
 Example **B** (**Not recommended for production**) of a request  for the Request Token is as follows.
 
-Basic authorisation Header is  base64 encoded of <API Client Id>:<API Client Secret>
+Basic authorization Header is  base64 encoded of <API Client Id>:<API Client Secret>
 
 ```javascript
 

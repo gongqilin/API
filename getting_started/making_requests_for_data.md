@@ -1,6 +1,6 @@
 # Making requests for data ( Step 4/4 )
 
-In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see [Obtaining Request Token code](obtaining_request_token.md)), the client could use the below URI to make the request for data.
+In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see [Obtaining Access Token](obtaining_request_token.md)), the client could use the below URI to make the request for data.
 
 <table>
     <tr>
