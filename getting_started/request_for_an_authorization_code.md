@@ -53,47 +53,28 @@ The URL query parameters are as follows.
 
 Once the request is processed one of the following will occur.
 
-<table>
-    <tr>
-        <th align="left">1. BGL Login Page</th>
-    </tr>
-    <tr>
-        <td>If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log into to BGL.
-        <br><br>
-        Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.
-        </td>
-    </tr>
-    <tr>
-    <td>![logo](/images/BGLAuthenticationScreen.png "BGL Authentication Page")</td>
-    </tr>
-</table>
+#### 1. BGL Login Page
 
-<table>
-    <tr>
-        <th align="left">2. Authorization Page</th>
-    </tr>
-    <tr>
-        <td>If the user has not previously accepted the application's permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API's authorization screen as displayed below.</td>
-    </tr>
-    <tr>
-    <td>![logo](/images/APIAuthorizationScreen.png "API Authorization Page")</td>
-    </tr>
-</table>
+If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log into to BGL.
+
+Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.
+
+![logo](/images/BGLAuthenticationScreen.png "BGL Authentication Page")
 
 
-<table>
-    <tr>
-        <th align="left">3. Redirect URL</th>
-    </tr>
-    <tr>
-        <td>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.
+#### 2. Authorization Page
 
+If the user has not previously accepted the application's permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API's authorization screen as displayed below.
+
+![logo](/images/APIAuthorizationScreen.png "API Authorization Page")
+
+#### 3. Redirect URL
+
+When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.
 
 If a valid granted permission exists for the client, the authorization screen is by-passed and the user is immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request.
-<br><br>
-Example : http://www.client-url.com.au/oauth/authCode?code=LqAx2wO</td>
-    </tr>
-</table>
+
+Example : http://www.client-url.com.au/oauth/authCode?code=LqAx2wO
 
 For security reasons, the authorization code has a very short lifespan ( **about 5 - 10 mins** ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL API, as explained above.
 
