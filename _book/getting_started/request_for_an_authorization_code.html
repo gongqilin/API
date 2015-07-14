@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1436860296455">
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1436861296102">
     
 
 <div class="book-summary">
@@ -821,7 +821,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1818">
+                    <section class="normal" id="section-gitbook_2337">
                     
                         <h1 id="request-for-an-authorization-code--step-24-">Request for an Authorization Code ( Step 2/4 )</h1>
 <p>An Authorization Code is necessary to retrieve an Access Token from BGL API.  Obtaining an Authorization token is an imporantant step, as it provides assuarance to the client that appropriate permission is being granted to access the BGL API.</p>
@@ -873,40 +873,47 @@
 </table>
 
 <p>Once the request is processed one of the following will occur.</p>
-<ul>
-<li>
-<p>
-If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log into to BGL.
-</p>
-<img src="/images/BGLAuthenticationScreen.png" alt="logo" title="BGL Authentication Page"><br>
-<p>Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.</p>
-</li>
+<table>
+    <tr>
+        <th align="left">1. BGL Login Page</th>
+    </tr>
+    <tr>
+        <td>If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log into to BGL.
+        <br><br>
+        Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.
+        </td>
+    </tr>
+    <tr>
+    <td><img src="/images/BGLAuthenticationScreen.png" alt="logo" title="BGL Authentication Page"></td>
+    </tr>
+</table>
 
-</ul>
+<table>
+    <tr>
+        <th align="left">Authorization Page</th>
+    </tr>
+    <tr>
+        <td>If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API&#39;s authorization screen as displayed below.</td>
+    </tr>
+    <tr>
+    <td><img src="/images/APIAuthorizationScreen.png" alt="logo" title="API Authorization Page"></td>
+    </tr>
+</table>
 
-<ul>
-<li>
-<p>
-If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API&#39;s authorization screen as displayed below.
-</p>
 
-<p><img src="/images/APIAuthorizationScreen.png" alt="logo" title="API Authorization Page"></p>
+<table>
+    <tr>
+        <th align="left">Redirect URL</th>
+    </tr>
+    <tr>
+        <td>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.
 
 
-<p>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.</p>
-</li>
-</ul>
-
-<ul>
-<li>
-<p>
-If a valid granted permission exists for the client, the authorization screen is by-passed and the user is immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request
-</p>
-<p>
-Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" target="_blank">http://www.client-url.com.au/oauth/authCode?code=LqAx2wO</a>
-</p>
-</li>
-</ul>
+If a valid granted permission exists for the client, the authorization screen is by-passed and the user is immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request.
+<br><br>
+Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" target="_blank">http://www.client-url.com.au/oauth/authCode?code=LqAx2wO</a></td>
+    </tr>
+</table>
 
 <p>For security reasons, the authorization code has a very short lifespan ( <strong>about 5 - 10 mins</strong> ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL API, as explained above.</p>
 <p>Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that has somehow slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack.</p>
