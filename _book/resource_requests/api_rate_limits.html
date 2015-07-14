@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request : Fund List | BGL API</title>
+        <title>API Rate Limits | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../resource_requests/request__fund_detail.html" />
+    <link rel="next" href="../getting_started/grant_refresh_token.html" />
     
     
-    <link rel="prev" href="../getting_started/grant_refresh_token.html" />
+    <link rel="prev" href="../resource_requests/README.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1436859976666">
+    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1436859976666">
     
 
 <div class="book-summary">
@@ -168,7 +168,7 @@
                 
     
         
-        <li class="chapter " data-level="2.1" data-path="resource_requests/api_rate_limits.html">
+        <li class="chapter active" data-level="2.1" data-path="resource_requests/api_rate_limits.html">
             
                 
                     <a href="../resource_requests/api_rate_limits.html">
@@ -200,7 +200,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.3" data-path="resource_requests/request__fund_list.html">
+        <li class="chapter " data-level="2.3" data-path="resource_requests/request__fund_list.html">
             
                 
                     <a href="../resource_requests/request__fund_list.html">
@@ -821,50 +821,37 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1541">
+                    <section class="normal" id="section-gitbook_1539">
                     
-                        <h1 id="request--fund-list">Request : Fund List</h1>
-<table>
-    <tr>
-        <td>Description</td>
-        <td>Allows you to retrieve a list of fund owned by the resource owner (BGL User), which also returns the fund id, which could be used for subsequent API requests</td>
-    </tr>
-    <tr>
-        <td>Request URI</td>
-        <td>/fund/list</td>
-    </tr>
-    <tr>
-        <td>Method</td>
-        <td>GET | POST</td>
-    </tr>
-</table>
-
-<h3 id="parameters">Parameters</h3>
-<p>The following parameters can be added in the http request.</p>
-<p><table>
-    <tr>
-        <th>Parameter</th>
-        <th>Description</th>
-        <th>Required</th>
-    </tr>
-    <tr>
-        <td align="center">format=json <br> or <br> .json</td>
-        <td>This is the default. Will return the data in JSON format</td>
-        <td  align="center">Optional</td>
-    </tr>
-    <tr>
-        <td align="center">format=xml  <br> or <br> .xml</td>
-        <td>Will return the data in XML format</td>
-        <td  align="center">Optional</td>
-    </tr></p>
-<table>
-
-<p>If the format parameter is not set, the returned result will always be JSON.</p>
-<h3 id="sample-request-and-response">Sample Request and Response</h3>
-<h4 id="json">JSON</h4>
-<p>See section - <a href="../sample_data/fund_list_-_json.html">Fund List - JSON</a> for sample request and json response.</p>
-<h4 id="xml">XML</h4>
-<p>See section <a href="../sample_data/fund_list_-_xml.html">Fund List - XML</a> for sample request and xml response.</p>
+                        <h1 id="api-rate-limits">API Rate Limits</h1>
+<p>In order to manage the high volume of requests, the BGL API will limit the number of requests a client can make to BGL API.  This constraints are based on two aspects, which is explained below.</p>
+<h4 id="1-x-rate-daily-limit">1. X-Rate Daily Limit</h4>
+<p>This is a value that will be enforced on the number of requests a client could make on a given day. Currently this is set to unlimtted in the staging envoirnment (<a href="https://api-staging.bgl360.com.au" target="_blank">https://api-staging.bgl360.com.au</a>).</p>
+<p>The response header will indicate the remaining number of requests available.  For every valid request we make this indicator will reduce it&#39;s count by one. Zero means we have hit the available threshold.</p>
+<p><img src="/images/XRateDailyLimitRemain.png" alt="logo" title="Remaining Daily Limit"></p>
+<p>By any means if we exceed the given limit we will receive the following error.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Too Many Requests"</span>,
+    <span class="hljs-string">"errors"</span>: [
+        <span class="hljs-string">"You have exceeded your daily limit"</span>
+    ],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">429</span>
+}
+</code></pre>
+<p>Please not, that any requests that will return an error response will not reduce the daily limit threshold.</p>
+<h4 id="2-x-rate-limit">2. X-Rate Limit</h4>
+<p>This is a value that indicates how many requests that could be made within a given time frame. Currently this is set to 100 per 10 minute period in the staging envoirnment (<a href="https://api-staging.bgl360.com.au" target="_blank">https://api-staging.bgl360.com.au</a>).</p>
+<p>By any mean if the client makes requests more than the specified X limit, BGL API will return an error response as follows.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Too Many Requests"</span>,
+    <span class="hljs-string">"errors"</span>: [
+        <span class="hljs-string">"You had too many requests in last 10 mins, the rate limit ceiling for every 10 mins is 100"</span>
+    ],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">429</span>
+}
+</code></pre>
 
                     
                     </section>
@@ -875,10 +862,10 @@
         </div>
 
         
-        <a href="../getting_started/grant_refresh_token.html" class="navigation navigation-prev " aria-label="Previous page: Grant Refresh Token"><i class="fa fa-angle-left"></i></a>
+        <a href="../resource_requests/README.html" class="navigation navigation-prev " aria-label="Previous page: Resource Requests"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../resource_requests/request__fund_detail.html" class="navigation navigation-next " aria-label="Next page: Request : Fund Detail"><i class="fa fa-angle-right"></i></a>
+        <a href="../getting_started/grant_refresh_token.html" class="navigation navigation-next " aria-label="Next page: Grant Refresh Token"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

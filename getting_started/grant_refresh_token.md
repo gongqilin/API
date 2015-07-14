@@ -1,6 +1,6 @@
 # Grant Refresh Token
 
-The refresh token grant is performed by exchanging a Refresh Token received during a previous authorization request for an access token  (see [Obtaining Access Token](obtaining_request_token.md)), using the token endpoint.
+The refresh token grant is performed by exchanging a Refresh Token received during a previous authorization request for an access token  (see [Obtaining Access Token](../getting_started/obtaining_request_token.md)), using the token endpoint.
 
 There are two ways of performing this request
 
@@ -34,12 +34,12 @@ Following are the request parameters
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>refresh token obtained previously. see [Obtaining Access Token](obtaining_request_token.md) </td>
+        <td>refresh token obtained previously. see [Obtaining Access Token](../getting_started/obtaining_request_token.md) </td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>client_id</td>
-        <td>A unique identifier to identify a client that will be using the BGL API.<br><br>See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
+        <td>A unique identifier to identify a client that will be using the BGL API.<br><br>See [Obtaining BGL API Credentials](../getting_started/obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
@@ -90,12 +90,12 @@ Following are the request parameters
     </tr>
     <tr>
         <td>client_id</td>
-        <td>A unique identifier to identify a client that will be using the BGL API.<br><br>See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
+        <td>A unique identifier to identify a client that will be using the BGL API.<br><br>See [Obtaining BGL API Credentials](../getting_started/obtaining_bgl_api_credentials.md) on how to obtain Client Id.</td>
         <td>Mandatory</td>
     </tr>
      <tr>
         <td>client_secret</td>
-        <td>The client secret provided by BGL<br><br>See [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md) on how to obtain Client Secret.</td>
+        <td>The client secret provided by BGL<br><br>See [Obtaining BGL API Credentials](../getting_started/obtaining_bgl_api_credentials.md) on how to obtain Client Secret.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
