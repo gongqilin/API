@@ -134,3 +134,5 @@ There may be instances where the request for a Authorization Code may fail/be de
     </tr>
 
 </table>
+
+![logo](/images/BGLAuthenticationScreen.png "BGL Authentication Page")
