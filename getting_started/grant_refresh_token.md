@@ -14,7 +14,7 @@ There are two ways of performing this request
                 </tr>
                 <tr>
                     <td>POST</td>
-                    <td>https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_token&refresh_token=&lt;refresh token&gt;&client_id=&lt;API Client Id&gt;&scope=fundList</td>
+                    <td>https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_token&refresh_token=&lt;refresh-token&gt;&client_id=&lt;API-Client-Id&gt;&scope=fundList &gt;</td>
                     <td>Authorization: bearer &lt;Existing Access Token&gt;</td>
                 </tr>
             </table>
@@ -53,7 +53,7 @@ Sample Request
 
 ```javascript
 
-curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_token&refresh_token=<refresh token>&client_id=<client id>&scope=fundList --header "Authorization:bearer <access token>"
+curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_token&refresh_token=<refresh-token>&client_id=<client-id>&scope=<scope> --header "Authorization:bearer <access token>"
 
 ```
 
@@ -66,7 +66,7 @@ curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_to
                 </tr>
                 <tr>
                     <td>POST</td>
-                    <td>https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_token&client_secret=&lt;API Client Secret&gt;&refresh_token=&lt;refresh token&gt;&client_id=&lt;API Client Id&gt;&scope=fundList</td>
+                    <td>https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_token&client_secret=&lt;API-Client-Secret&gt;&refresh_token=&lt;refresh-token&gt;&client_id=&lt;API-Client-Id&gt;&scope=&lt;Scope &gt;</td>
                 </tr>
             </table>
 
