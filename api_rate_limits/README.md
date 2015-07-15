@@ -9,7 +9,7 @@ This is a value that will be enforced on the number of requests a client could m
 
 The response header "**X-Rate-Daily-Limit-Remaining**" will indicate the remaining number of requests available.  For every valid request we make this indicator will reduce it's count by one. Zero means we have hit the available threshold. -1 indicates that unlimited requests could be made.
 
-![logo](/images/XRateDailyLimitRemain.png "Remaining Daily Limit")
+![logo](../images/XRateDailyLimitRemain.png "Remaining Daily Limit")
 
 By any means if we exceed the given limit we will receive the following error, with status - **429 Too Many Requests**.
 
@@ -30,7 +30,7 @@ Please not, that any requests that will return an error response will not reduce
 #### 2. X-Rate Limit
 
 
-This is a value that indicates how many requests that could be made within a given time frame. Currently this is set to 100 per 10 minute period in the staging envoirnment (https://api-staging.bgl360.com.au).
+This is a value that indicates how many requests that could be made within a given time frame. Currently this is set to **100 per 10 minutes** period in the staging envoirnment (https://api-staging.bgl360.com.au).
 
 By any mean if the client makes requests more than the specified X limit, BGL API will return an error response as follows, with status - **429 Too Many Requests**.
 

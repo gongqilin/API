@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request : Trustees List | BGL API - Version 1.0.1</title>
+        <title>Request : User Detail | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../resource_requests/request__investment_summary.html" />
+    <link rel="next" href="../sample_data/README.html" />
     
     
-    <link rel="prev" href="../resource_requests/request__fund_detail.html" />
+    <link rel="prev" href="../resource_requests/request_chart_accounts.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1436929077636">
+    <div class="book"  data-level="4.7" data-basepath=".." data-revision="1436934339921">
     
 
 <div class="book-summary">
@@ -138,7 +138,7 @@
                         
                             <b>1.4.</b>
                         
-                         Making requests for data
+                         Making Requests for Data
                     </a>
                 
             
@@ -200,10 +200,10 @@
                 
     
         
-        <li class="chapter " data-level="4.1" data-path="resource_requests/request__fund_list.html">
+        <li class="chapter " data-level="4.1" data-path="resource_requests/request_fund_list.html">
             
                 
-                    <a href="../resource_requests/request__fund_list.html">
+                    <a href="../resource_requests/request_fund_list.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
@@ -216,10 +216,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="resource_requests/request__fund_detail.html">
+        <li class="chapter " data-level="4.2" data-path="resource_requests/request_fund_detail.html">
             
                 
-                    <a href="../resource_requests/request__fund_detail.html">
+                    <a href="../resource_requests/request_fund_detail.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
@@ -232,10 +232,10 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.3" data-path="resource_requests/request__trustees.html">
+        <li class="chapter " data-level="4.3" data-path="resource_requests/request_trustees.html">
             
                 
-                    <a href="../resource_requests/request__trustees.html">
+                    <a href="../resource_requests/request_trustees.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
@@ -248,10 +248,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.4" data-path="resource_requests/request__investment_summary.html">
+        <li class="chapter " data-level="4.4" data-path="resource_requests/request_investment_summary.html">
             
                 
-                    <a href="../resource_requests/request__investment_summary.html">
+                    <a href="../resource_requests/request_investment_summary.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.4.</b>
@@ -264,10 +264,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.5" data-path="resource_requests/request__general_ledger.html">
+        <li class="chapter " data-level="4.5" data-path="resource_requests/request_general_ledger.html">
             
                 
-                    <a href="../resource_requests/request__general_ledger.html">
+                    <a href="../resource_requests/request_general_ledger.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.5.</b>
@@ -280,10 +280,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.6" data-path="resource_requests/request__chart_accounts.html">
+        <li class="chapter " data-level="4.6" data-path="resource_requests/request_chart_accounts.html">
             
                 
-                    <a href="../resource_requests/request__chart_accounts.html">
+                    <a href="../resource_requests/request_chart_accounts.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.6.</b>
@@ -296,10 +296,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.7" data-path="resource_requests/request__user_detail.html">
+        <li class="chapter active" data-level="4.7" data-path="resource_requests/request_user_detail.html">
             
                 
-                    <a href="../resource_requests/request__user_detail.html">
+                    <a href="../resource_requests/request_user_detail.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.7.</b>
@@ -813,7 +813,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >BGL API - Version 1.0.1</a>
+        <a href="../" >BGL API</a>
     </h1>
 </div>
 
@@ -821,17 +821,17 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4653">
+                    <section class="normal" id="section-gitbook_157">
                     
-                        <h1 id="request--trustees-list">Request : Trustees List</h1>
+                        <h1 id="request--user-detail">Request : User Detail</h1>
 <table>
     <tr>
         <td>Description</td>
-        <td>Allows you to retrieve a List of Individual Trustees and their details</td>
+        <td>Allows you to retrieve the details of the user</td>
     </tr>
     <tr>
         <td>Request URI</td>
-        <td>/fund/trustees</td>
+        <td>/user/detail</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -862,9 +862,9 @@
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="json">JSON</h4>
-<p>See section - <a href="../sample_data/trustees_list_-json.html">Trustees List - JSON</a> for sample request and json response.</p>
+<p>See section - <a href="../sample_data/user_detail_-_json.html">User Detail - JSON</a> for sample request and json response.</p>
 <h4 id="xml">XML</h4>
-<p>See section <a href="../sample_data/trustees_list_-_xml.html">Trustees List - XML</a> for sample request and xml response.</p>
+<p>See section <a href="../sample_data/user_detail_-_xml.html">User Detail - XML</a> for sample request and xml response.</p>
 
                     
                     </section>
@@ -875,10 +875,10 @@
         </div>
 
         
-        <a href="../resource_requests/request__fund_detail.html" class="navigation navigation-prev " aria-label="Previous page: Request : Fund Detail"><i class="fa fa-angle-left"></i></a>
+        <a href="../resource_requests/request_chart_accounts.html" class="navigation navigation-prev " aria-label="Previous page: Request : Chart of Accounts"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../resource_requests/request__investment_summary.html" class="navigation navigation-next " aria-label="Next page: Request : Investment Summary"><i class="fa fa-angle-right"></i></a>
+        <a href="../sample_data/README.html" class="navigation navigation-next " aria-label="Next page: Sample Data"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

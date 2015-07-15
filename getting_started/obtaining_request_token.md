@@ -1,4 +1,4 @@
-# Obtaining Access token ( Step 3/4 )
+# Obtaining Access Token ( Step 3/4 )
 
 Once the client application has the [Authorization code](request_for_an_authorization_code.md), then the client application can obtain an Access Token.
 

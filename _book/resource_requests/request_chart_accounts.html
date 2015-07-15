@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Request : General Ledger | BGL API - Version 1.0.1</title>
+        <title>Request : Chart of Accounts | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../resource_requests/request__chart_accounts.html" />
+    <link rel="next" href="../resource_requests/request_user_detail.html" />
     
     
-    <link rel="prev" href="../resource_requests/request__investment_summary.html" />
+    <link rel="prev" href="../resource_requests/request_general_ledger.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.5" data-basepath=".." data-revision="1436929077636">
+    <div class="book"  data-level="4.6" data-basepath=".." data-revision="1436934339921">
     
 
 <div class="book-summary">
@@ -138,7 +138,7 @@
                         
                             <b>1.4.</b>
                         
-                         Making requests for data
+                         Making Requests for Data
                     </a>
                 
             
@@ -200,10 +200,10 @@
                 
     
         
-        <li class="chapter " data-level="4.1" data-path="resource_requests/request__fund_list.html">
+        <li class="chapter " data-level="4.1" data-path="resource_requests/request_fund_list.html">
             
                 
-                    <a href="../resource_requests/request__fund_list.html">
+                    <a href="../resource_requests/request_fund_list.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.</b>
@@ -216,10 +216,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="resource_requests/request__fund_detail.html">
+        <li class="chapter " data-level="4.2" data-path="resource_requests/request_fund_detail.html">
             
                 
-                    <a href="../resource_requests/request__fund_detail.html">
+                    <a href="../resource_requests/request_fund_detail.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.2.</b>
@@ -232,10 +232,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.3" data-path="resource_requests/request__trustees.html">
+        <li class="chapter " data-level="4.3" data-path="resource_requests/request_trustees.html">
             
                 
-                    <a href="../resource_requests/request__trustees.html">
+                    <a href="../resource_requests/request_trustees.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.3.</b>
@@ -248,10 +248,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.4" data-path="resource_requests/request__investment_summary.html">
+        <li class="chapter " data-level="4.4" data-path="resource_requests/request_investment_summary.html">
             
                 
-                    <a href="../resource_requests/request__investment_summary.html">
+                    <a href="../resource_requests/request_investment_summary.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.4.</b>
@@ -264,10 +264,10 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.5" data-path="resource_requests/request__general_ledger.html">
+        <li class="chapter " data-level="4.5" data-path="resource_requests/request_general_ledger.html">
             
                 
-                    <a href="../resource_requests/request__general_ledger.html">
+                    <a href="../resource_requests/request_general_ledger.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.5.</b>
@@ -280,10 +280,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.6" data-path="resource_requests/request__chart_accounts.html">
+        <li class="chapter active" data-level="4.6" data-path="resource_requests/request_chart_accounts.html">
             
                 
-                    <a href="../resource_requests/request__chart_accounts.html">
+                    <a href="../resource_requests/request_chart_accounts.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.6.</b>
@@ -296,10 +296,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4.7" data-path="resource_requests/request__user_detail.html">
+        <li class="chapter " data-level="4.7" data-path="resource_requests/request_user_detail.html">
             
                 
-                    <a href="../resource_requests/request__user_detail.html">
+                    <a href="../resource_requests/request_user_detail.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.7.</b>
@@ -813,7 +813,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >BGL API - Version 1.0.1</a>
+        <a href="../" >BGL API</a>
     </h1>
 </div>
 
@@ -821,17 +821,17 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4651">
+                    <section class="normal" id="section-gitbook_151">
                     
-                        <h1 id="request--general-ledger">Request : General Ledger</h1>
+                        <h1 id="request--chart-of-accounts">Request : Chart of Accounts</h1>
 <table>
     <tr>
         <td>Description</td>
-        <td>Allows you to retrieve the General Ledger for a specified fund id</td>
+        <td>Allows you to retrieve the Chart of Acounts based on a fund id</td>
     </tr>
     <tr>
         <td>Request URI</td>
-        <td>/fund/generalLedger</td>
+        <td>/fund/chartAccounts</td>
     </tr>
     <tr>
         <td>Method</td>
@@ -853,16 +853,6 @@
         <td  align="center">Mandatory</td>
     </tr>
     <tr>
-        <td align="center">start</td>
-        <td>Start date of Report.  Expected format : yyyy-mm-dd</td>
-        <td  align="center">Optional</td>
-    </tr>
-    <tr>
-        <td align="center">end</td>
-        <td>End date of Report.  Expected Format : yyyy-mm-dd</td>
-        <td  align="center">Optional</td>
-    </tr>
-    <tr>
         <td align="center">format=json <br> or <br> .json</td>
         <td>This is the default. Will return the data in JSON format</td>
         <td  align="center">Optional</td>
@@ -877,9 +867,9 @@
 <p>If the format parameter is not set, the returned result will always be JSON.</p>
 <h3 id="sample-request-and-response">Sample Request and Response</h3>
 <h4 id="json">JSON</h4>
-<p>See section - <a href="../sample_data/general_ledger_-_json.html">General Ledger - JSON</a> for sample request and json response.</p>
+<p>See section - <a href="../sample_data/char_of_accounts_-_json.html">Chart of Accounts - JSON</a> for sample request and json response.</p>
 <h4 id="xml">XML</h4>
-<p>See section <a href="../sample_data/general_ledger_-_xml.html">General Ledger - XML</a> for sample request and xml response.</p>
+<p>See section <a href="../sample_data/chart_of_accounts_-_xml.html">Chart of Accounts - XML</a> for sample request and xml response.</p>
 <h4 id="error-messages">Error Messages</h4>
 <p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
 <pre><code class="lang-javascript">
@@ -887,30 +877,6 @@
     <span class="hljs-string">"message"</span>: <span class="hljs-string">"The fund is not found/accessible"</span>,
     <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The fund is not found/accessible"</span>],
     <span class="hljs-string">"status"</span>: <span class="hljs-number">401</span>
-}
-</code></pre>
-<p>If Start and End Date are not valid dates, the following error will be returned.</p>
-<pre><code class="lang-javascript">
-{
-    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,
-    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The Start or End Dates are invalid"</span>],
-    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
-}
-</code></pre>
-<p>If only one date is present, the following error will be returned.</p>
-<pre><code class="lang-javascript">
-{
-    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,
-    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The Start &amp; End Dates are invalid"</span>],
-    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
-}
-</code></pre>
-<p>If end date is greater than the start date, the following error will be returned.</p>
-<pre><code class="lang-javascript">
-{
-    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,
-    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The Start &amp; End Dates are invalid"</span>],
-    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
 }
 </code></pre>
 
@@ -923,10 +889,10 @@
         </div>
 
         
-        <a href="../resource_requests/request__investment_summary.html" class="navigation navigation-prev " aria-label="Previous page: Request : Investment Summary"><i class="fa fa-angle-left"></i></a>
+        <a href="../resource_requests/request_general_ledger.html" class="navigation navigation-prev " aria-label="Previous page: Request : General Ledger"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../resource_requests/request__chart_accounts.html" class="navigation navigation-next " aria-label="Next page: Request : Chart of Accounts"><i class="fa fa-angle-right"></i></a>
+        <a href="../resource_requests/request_user_detail.html" class="navigation navigation-next " aria-label="Next page: Request : User Detail"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
