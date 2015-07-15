@@ -59,14 +59,14 @@ If the user has not logged into any BGL system prior to requesting an Authorizat
 
 Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.
 
-![logo](/images/BGLAuthenticationScreen.png "BGL Authentication Page")
+![logo](../images/BGLAuthenticationScreen.png "BGL Authentication Page")
 
 
 #### 2. Authorization Page
 
 If the user has not previously accepted the application's permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API's authorization screen as displayed below.
 
-![logo](/images/APIAuthorizationScreen.png "API Authorization Page")
+![logo](../images/APIAuthorizationScreen.png "API Authorization Page")
 
 #### 3. Redirect URL
 

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/images/bglapilogo.png" alt="BGL API Logo"/>
+  <img src="images/bglapilogo.png" alt="BGL API Logo"/>
 </div>
 
 #BGL API - Version 1.0.1
