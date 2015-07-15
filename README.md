@@ -9,7 +9,7 @@ The API exposes BGL users' Data to the client applications with users' consent.
 
 The objective of this document is to provide a BGL API to developers where they can commence development work.
 
-See [Change Log](../change_log/README.md) for document history.
+See [Change Log](change_log/README.md) for document history.
 
 **Envoirnment(s)**
 
