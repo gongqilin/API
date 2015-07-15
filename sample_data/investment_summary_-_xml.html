@@ -1,0 +1,1834 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Investment Summary - XML | BGL API - Version 1.0.1</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../sample_data/general_ledger.html" />
+    
+    
+    <link rel="prev" href="../sample_data/investment_summary_-_json.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="5.4.2" data-basepath=".." data-revision="1436922894656">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="getting_started/README.html">
+            
+                
+                    <a href="../getting_started/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Getting Started
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="getting_started/obtaining_bgl_api_credentials.html">
+            
+                
+                    <a href="../getting_started/obtaining_bgl_api_credentials.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Obtaining BGL API Credentials
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="getting_started/request_for_an_authorization_code.html">
+            
+                
+                    <a href="../getting_started/request_for_an_authorization_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Request for an Authorization Code
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="getting_started/obtaining_request_token.html">
+            
+                
+                    <a href="../getting_started/obtaining_request_token.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Obtaining Access Token
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="getting_started/making_requests_for_data.html">
+            
+                
+                    <a href="../getting_started/making_requests_for_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Making requests for data
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="grant_refresh_token/README.html">
+            
+                
+                    <a href="../grant_refresh_token/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Grant Refresh Token
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="api_rate_limits/README.html">
+            
+                
+                    <a href="../api_rate_limits/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         API Rate Limits
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="resource_requests/README.html">
+            
+                
+                    <a href="../resource_requests/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Resource Requests
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="resource_requests/request__fund_list.html">
+            
+                
+                    <a href="../resource_requests/request__fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Request : Fund List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="resource_requests/request__fund_detail.html">
+            
+                
+                    <a href="../resource_requests/request__fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Request : Fund Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="resource_requests/request__trustees.html">
+            
+                
+                    <a href="../resource_requests/request__trustees.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Request : Trustees List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="resource_requests/request__investment_summary.html">
+            
+                
+                    <a href="../resource_requests/request__investment_summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Request : Investment Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="resource_requests/request__general_ledger.html">
+            
+                
+                    <a href="../resource_requests/request__general_ledger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         Request : General Ledger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="resource_requests/request__chart_accounts.html">
+            
+                
+                    <a href="../resource_requests/request__chart_accounts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Request : Chart of Accounts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="resource_requests/request__user_detail.html">
+            
+                
+                    <a href="../resource_requests/request__user_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         Request : User Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="sample_data/README.html">
+            
+                
+                    <a href="../sample_data/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Sample Data
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="sample_data/fund_list.html">
+            
+                
+                    <a href="../sample_data/fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Fund List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1.1" data-path="sample_data/fund_list_-_json.html">
+            
+                
+                    <a href="../sample_data/fund_list_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                         Fund List - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.2" data-path="sample_data/fund_list_-_xml.html">
+            
+                
+                    <a href="../sample_data/fund_list_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                         Fund List - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="sample_data/fund_detail.html">
+            
+                
+                    <a href="../sample_data/fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Fund Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.2.1" data-path="sample_data/fund_detail_-_json.html">
+            
+                
+                    <a href="../sample_data/fund_detail_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                         Fund Detail - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2.2" data-path="sample_data/fund_detail_-_xml.html">
+            
+                
+                    <a href="../sample_data/fund_detail_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                         Fund Detail - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="sample_data/trustees_list.html">
+            
+                
+                    <a href="../sample_data/trustees_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Trustees List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.3.1" data-path="sample_data/trustees_list_-json.html">
+            
+                
+                    <a href="../sample_data/trustees_list_-json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                         Trustees List - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.2" data-path="sample_data/trustees_list_-_xml.html">
+            
+                
+                    <a href="../sample_data/trustees_list_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                         Trustees List - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="sample_data/investment_summary.html">
+            
+                
+                    <a href="../sample_data/investment_summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Investment Summary
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.4.1" data-path="sample_data/investment_summary_-_json.html">
+            
+                
+                    <a href="../sample_data/investment_summary_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                         Investment Summary - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5.4.2" data-path="sample_data/investment_summary_-_xml.html">
+            
+                
+                    <a href="../sample_data/investment_summary_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.2.</b>
+                        
+                         Investment Summary - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="sample_data/general_ledger.html">
+            
+                
+                    <a href="../sample_data/general_ledger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         General Ledger
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.5.1" data-path="sample_data/general_ledger_-_json.html">
+            
+                
+                    <a href="../sample_data/general_ledger_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.1.</b>
+                        
+                         General Ledger - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5.2" data-path="sample_data/general_ledger_-_xml.html">
+            
+                
+                    <a href="../sample_data/general_ledger_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.2.</b>
+                        
+                         General Ledger - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="sample_data/chart_of_accounts.html">
+            
+                
+                    <a href="../sample_data/chart_of_accounts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         Chart of Accounts
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.6.1" data-path="sample_data/char_of_accounts_-_json.html">
+            
+                
+                    <a href="../sample_data/char_of_accounts_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                         Chart of Accounts - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6.2" data-path="sample_data/chart_of_accounts_-_xml.html">
+            
+                
+                    <a href="../sample_data/chart_of_accounts_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                         Chart of Accounts - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="sample_data/user_detail.html">
+            
+                
+                    <a href="../sample_data/user_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         User Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.7.1" data-path="sample_data/user_detail_-_json.html">
+            
+                
+                    <a href="../sample_data/user_detail_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.1.</b>
+                        
+                         User Detail - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7.2" data-path="sample_data/user_detail_-_xml.html">
+            
+                
+                    <a href="../sample_data/user_detail_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.2.</b>
+                        
+                         User Detail - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="change_log/README.html">
+            
+                
+                    <a href="../change_log/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Change Log
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >BGL API - Version 1.0.1</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_4505">
+                    
+                        <h1 id="investment-summary---xml">Investment Summary - XML</h1>
+<h4 id="curl-request-">cURL Request :</h4>
+<pre><code class="lang-javascript">
+curl -X GET https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/investmentSummary.xml?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response-">Response :</h4>
+<pre><code class="lang-xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">root</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">'http://www.bglcorp.com.au'</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentSummary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">FundId</span>&gt;</span>0000000048f240bd0148f28816c80017<span class="hljs-tag">&lt;/<span class="hljs-title">FundId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Start</span>&gt;</span>Tue Jun 30 14:00:00 UTC 2015<span class="hljs-tag">&lt;/<span class="hljs-title">Start</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">End</span>&gt;</span>Thu Jun 30 13:59:59 UTC 2016<span class="hljs-tag">&lt;/<span class="hljs-title">End</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Andrews SF share transactions account<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>0040605685885<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>25597.51<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>25597.51<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>25597.51<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>25597.51<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>25597.51<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Westpac Business Cash Reserve 16-0105<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>06040084844161<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>158367.97<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>158367.97<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>158367.97<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>158367.97<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>158367.97<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Westpac Business Flexi 27-0988<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>60004641115442<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>50484.69<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>50484.69<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>50484.69<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>50484.69<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>50484.69<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>NAB Term Deposit 11-566-4704<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>NAB Term Deposit 11-<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>352041.24<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>352041.24<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>352041.24<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>352041.24<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>352041.24<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>NAB Term Deposit 11-647-3782<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>NAB Term Deposit 110<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>257687.68<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>257687.68<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>257687.68<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>257687.68<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>257687.68<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>NAB Term Deposit 12-914-8292<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>NAB Term Deposit 12-<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>225000<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>225000<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>225000<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>225000<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>225000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Westpac Term Deposit 164325 (Matures 25/03/15)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>Westpac Term Deposi0<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>150000<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>150000<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>150000<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>150000<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>150000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Westpac Term Deposit 170346<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>Westpac Term Deposi1<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>350000<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>350000<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>350000<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Cash/Bank Accounts<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>350000<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>350000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Athena Finance Pty Ltd<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>ATHENA<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>100000<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>100000<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>100000<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Fixed Interest Securities (Australian) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>100000<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>100000.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Luxury car lease<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_LUXURYCARLE<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-25476<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Leased Assets - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>25476<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Villa 25 Westview Parade Port Bouvard<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_VILLA25WEST<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>163341.54<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Loans to Associated Entities (In house loans) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-163341.54<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Bore Pump (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_BOREPUMP(CA<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>2724.64<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>2384.34<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>2724.64<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-2724.64<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Pioneer Water Tank (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_PIONEERWATE<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>10418.18<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>9467.09<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>10418.18<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-10418.18<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Rainwater Tank (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_RAINWATERTA<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>2478.18<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>2323.26<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>2478.18<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-2478.18<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Shed (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_SHED(CARTER<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>139174.59<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>125218<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>139174.59<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-139174.59<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Tenant's Tank (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_TENANT'STAN<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>6707.73<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>5426.06<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>6707.73<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-6707.73<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Water Tank (Carter Road)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MIGRAT04_WATERTANK(C<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>9215.45<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>7166.7<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Plant and Equipment (at written down value) - Unitised<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>9215.45<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-9215.45<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Lot 4, Carters Road, Margaret River<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>LOT4CARTRD<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>1600000<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>2437738.84<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>1600000<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Real Estate Properties ( Australian - Residential)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>2437738.84<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>1600000.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-837738.8400000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Allco Finance Grooup Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>AFG.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>6.97<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Amp Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>AMP.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>6.21<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>0.02<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-0.02<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Argo Investments Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>ARG.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>7.91<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-2.97<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>2.97<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Bhp Billiton Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>BHP.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>4000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>26.65<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>108481.93<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>106600<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>-1200<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>27.12<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>106600.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-1881.9300000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Brambles Industries<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>BIL.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>5.96<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-28522.85<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>28522.8500000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Babcock and Brown Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>BNB.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.325<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Commonwealth Bank of Australia<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>CBA.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>85.79<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Computershare Ltd<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>CPU.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>11.77<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-4.34<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>4.34<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Crane Group Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>CRG.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>10.38<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Dioro Exploration Nl<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>DIO.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>1.27<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-171.2<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>171.2<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>DCA Group Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>DVC.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>2.79<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Ezenet Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>EZE.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.06<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Falcon Minerals Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>FCN.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>30000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>4823.5<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>300<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.16<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>300<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-4523.5000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Goconnect Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>GCN.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>250000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.006<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>6667<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>1500<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>-500<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.03<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>1500<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-5167.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Iluka Resources<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>ILU.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>7.27<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-1.49<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>1.49<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Iron Ore Holdings Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>IOH.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>15000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.7<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>28255.49<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>10500<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>1.88<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>10500.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-17755.4900000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Lynas Corporation Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>LYC.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>35578<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.033<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>66492.61<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>1174.07<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>1.87<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>1174.074<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-65318.5360000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Mayne Group Ltd<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>MAY.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>5.93<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>National Aust. Bank<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>NAB.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>33.07<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-2.17<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>2.17<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Newcrest Mining Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>NCM.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>2000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>12.6<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>50195.79<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>25200<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>-1040<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>25.1<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>25200.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-24995.7900000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Norwest Energy Nl - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>NWE.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>200000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.007<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>11231.99<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>1400<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>400<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.06<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>1400<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-9831.9900000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>New Tel Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>NWL.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.048<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Otto Energy Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>OEL.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>150000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.069<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>12797<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>10350<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>150<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.09<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>10350.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-2447.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>OZ Minerals Ltd<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>OZL.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>4000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>3.67<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>54767.52<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>14680<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>-1480<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>13.69<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>14680.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-40087.5200000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Platinum Australia Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>PLA.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>19000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.067<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>12262<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>1273<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.65<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>1273<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-10989.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Qantas Airways<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>QAN.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>3.33<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-5.83<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>5.83<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Queensland Mining Corporation Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>QMN.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.006<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Rio Tinto Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>RIO.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>800<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>52.07<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>50622.21<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>41656<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>-976<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>63.28<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>41656.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-8966.2100000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Reckon Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>RKN.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>1.99<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Regis Resources Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>RRL.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>10000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>1.14<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>36574.82<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>11400<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>350<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>3.66<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>11400.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-25174.8200000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Regis Resources Limited - Option Expiring 31-Jan-2014<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>RRLO.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>8000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>2.25<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>13631.99<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>18000<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>1.7<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>18000.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>4368.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>St George Bank<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>SGB.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>27.11<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-2.17<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>2.17<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Stockford Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>SKD.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.03<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-2.98<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>2.98<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Suncorp-Metway<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>SME.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>20.1699<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Santos Ltd<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>STO.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>7.62<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Tap Oil Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>TAP.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>10000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.34<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>8323.5<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>3400<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>-150<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.83<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>3400<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-4923.5000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Telstra Corporation Ltd<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>TLS.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>47000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>6.21<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>128930.42<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>291870<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>6580<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>2.74<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>291870.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>162939.5800000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Uranex Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>UNX.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>15000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.16<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>6747<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>2400<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.45<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>2400<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-4347.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Viralytics Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>VLA.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>15650<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.725<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>5807.19<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>11346.25<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>1565<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.37<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>11346.2500000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>5539.06<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>West African Resources Limited - Ordinary Fully Paid<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WAF.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>40000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.1<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>17747<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>4000<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>40<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0.44<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>4000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-13747.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Wasabi Energy Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WAS.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.004<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Westpac Banking Corp<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WBC.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>33.1<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Westpac Banking Corporation - Convertible Preference Shares<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WBCPC.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>1000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>101.45<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>100000<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>101450<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>1750<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>100<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>101450.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>1450<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Wesfarmers Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WES.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>39.88<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-2.17<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>2.17<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Wmc Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WMC.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>8.2<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-2.17<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>2.17<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Woolworths Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WOW.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>26.92<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-3.97<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>3.97<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Woodside Petroleum<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>WPL.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>6251<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>33.57<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>237056.81<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>209846.07<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>-2625.42<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>37.92<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>209846.0700000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-27210.7400000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Zinifex Limited<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>ZFX.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>8.2<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-0.01<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Shares in Listed Companies (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>0.01<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Amp Office Trust<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>AOF.AX<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>1.15<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>-1.49<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Units in Listed Unit Trusts (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>0E-13<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>1.49<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Data</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentName</span>&gt;</span>Sea Pines Investment Trust<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentName</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Code</span>&gt;</span>SEAPINES<span class="hljs-tag">&lt;/<span class="hljs-title">Code</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Units</span>&gt;</span>500000<span class="hljs-tag">&lt;/<span class="hljs-title">Units</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktPrice</span>&gt;</span>0.9902<span class="hljs-tag">&lt;/<span class="hljs-title">MktPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Cost</span>&gt;</span>500000<span class="hljs-tag">&lt;/<span class="hljs-title">Cost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>495100<span class="hljs-tag">&lt;/<span class="hljs-title">MktValueAsPerLedger</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">CurrentYearUnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">InvestmentGroup</span>&gt;</span>Units in Unlisted Unit Trusts (Australian)<span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentGroup</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AveCost</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">AveCost</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>495100.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnitsMarketPrice</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">UnRealisedMovement</span>&gt;</span>-4900.0000000000000<span class="hljs-tag">&lt;/<span class="hljs-title">UnRealisedMovement</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">RealisedMovement</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-title">RealisedMovement</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Data</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">InvestmentSummary</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">root</span>&gt;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../sample_data/investment_summary_-_json.html" class="navigation navigation-prev " aria-label="Previous page: Investment Summary - JSON"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../sample_data/general_ledger.html" class="navigation navigation-next " aria-label="Next page: General Ledger"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

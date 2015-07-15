@@ -1,0 +1,1832 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Investment Summary - JSON | BGL API - Version 1.0.1</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../sample_data/investment_summary_-_xml.html" />
+    
+    
+    <link rel="prev" href="../sample_data/investment_summary.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="5.4.1" data-basepath=".." data-revision="1436922894656">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="getting_started/README.html">
+            
+                
+                    <a href="../getting_started/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Getting Started
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="getting_started/obtaining_bgl_api_credentials.html">
+            
+                
+                    <a href="../getting_started/obtaining_bgl_api_credentials.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Obtaining BGL API Credentials
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="getting_started/request_for_an_authorization_code.html">
+            
+                
+                    <a href="../getting_started/request_for_an_authorization_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Request for an Authorization Code
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="getting_started/obtaining_request_token.html">
+            
+                
+                    <a href="../getting_started/obtaining_request_token.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Obtaining Access Token
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="getting_started/making_requests_for_data.html">
+            
+                
+                    <a href="../getting_started/making_requests_for_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Making requests for data
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="grant_refresh_token/README.html">
+            
+                
+                    <a href="../grant_refresh_token/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Grant Refresh Token
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="api_rate_limits/README.html">
+            
+                
+                    <a href="../api_rate_limits/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         API Rate Limits
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="resource_requests/README.html">
+            
+                
+                    <a href="../resource_requests/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Resource Requests
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="resource_requests/request__fund_list.html">
+            
+                
+                    <a href="../resource_requests/request__fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Request : Fund List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="resource_requests/request__fund_detail.html">
+            
+                
+                    <a href="../resource_requests/request__fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Request : Fund Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="resource_requests/request__trustees.html">
+            
+                
+                    <a href="../resource_requests/request__trustees.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Request : Trustees List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="resource_requests/request__investment_summary.html">
+            
+                
+                    <a href="../resource_requests/request__investment_summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Request : Investment Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="resource_requests/request__general_ledger.html">
+            
+                
+                    <a href="../resource_requests/request__general_ledger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         Request : General Ledger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="resource_requests/request__chart_accounts.html">
+            
+                
+                    <a href="../resource_requests/request__chart_accounts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Request : Chart of Accounts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="resource_requests/request__user_detail.html">
+            
+                
+                    <a href="../resource_requests/request__user_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         Request : User Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="sample_data/README.html">
+            
+                
+                    <a href="../sample_data/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Sample Data
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="sample_data/fund_list.html">
+            
+                
+                    <a href="../sample_data/fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Fund List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1.1" data-path="sample_data/fund_list_-_json.html">
+            
+                
+                    <a href="../sample_data/fund_list_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                         Fund List - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.2" data-path="sample_data/fund_list_-_xml.html">
+            
+                
+                    <a href="../sample_data/fund_list_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                         Fund List - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="sample_data/fund_detail.html">
+            
+                
+                    <a href="../sample_data/fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Fund Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.2.1" data-path="sample_data/fund_detail_-_json.html">
+            
+                
+                    <a href="../sample_data/fund_detail_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                         Fund Detail - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2.2" data-path="sample_data/fund_detail_-_xml.html">
+            
+                
+                    <a href="../sample_data/fund_detail_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                         Fund Detail - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="sample_data/trustees_list.html">
+            
+                
+                    <a href="../sample_data/trustees_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Trustees List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.3.1" data-path="sample_data/trustees_list_-json.html">
+            
+                
+                    <a href="../sample_data/trustees_list_-json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                         Trustees List - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.2" data-path="sample_data/trustees_list_-_xml.html">
+            
+                
+                    <a href="../sample_data/trustees_list_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                         Trustees List - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="sample_data/investment_summary.html">
+            
+                
+                    <a href="../sample_data/investment_summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Investment Summary
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="5.4.1" data-path="sample_data/investment_summary_-_json.html">
+            
+                
+                    <a href="../sample_data/investment_summary_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                         Investment Summary - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4.2" data-path="sample_data/investment_summary_-_xml.html">
+            
+                
+                    <a href="../sample_data/investment_summary_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.2.</b>
+                        
+                         Investment Summary - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="sample_data/general_ledger.html">
+            
+                
+                    <a href="../sample_data/general_ledger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         General Ledger
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.5.1" data-path="sample_data/general_ledger_-_json.html">
+            
+                
+                    <a href="../sample_data/general_ledger_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.1.</b>
+                        
+                         General Ledger - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5.2" data-path="sample_data/general_ledger_-_xml.html">
+            
+                
+                    <a href="../sample_data/general_ledger_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.2.</b>
+                        
+                         General Ledger - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="sample_data/chart_of_accounts.html">
+            
+                
+                    <a href="../sample_data/chart_of_accounts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         Chart of Accounts
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.6.1" data-path="sample_data/char_of_accounts_-_json.html">
+            
+                
+                    <a href="../sample_data/char_of_accounts_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                         Chart of Accounts - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6.2" data-path="sample_data/chart_of_accounts_-_xml.html">
+            
+                
+                    <a href="../sample_data/chart_of_accounts_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                         Chart of Accounts - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="sample_data/user_detail.html">
+            
+                
+                    <a href="../sample_data/user_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         User Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.7.1" data-path="sample_data/user_detail_-_json.html">
+            
+                
+                    <a href="../sample_data/user_detail_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.1.</b>
+                        
+                         User Detail - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7.2" data-path="sample_data/user_detail_-_xml.html">
+            
+                
+                    <a href="../sample_data/user_detail_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.2.</b>
+                        
+                         User Detail - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="change_log/README.html">
+            
+                
+                    <a href="../change_log/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Change Log
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >BGL API - Version 1.0.1</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_4504">
+                    
+                        <h1 id="investment-summary---json">Investment Summary - JSON</h1>
+<h4 id="curl-request-">cURL Request :</h4>
+<pre><code class="lang-javascript">
+curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/fund/investmentSummary?fundId=0000000048f240bd0148f28816c80017 --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
+</code></pre>
+<h4 id="response-">Response :</h4>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"investmentSummary"</span>: {
+        <span class="hljs-string">"fundId"</span>: <span class="hljs-string">"0000000048f240bd0148f28816c80017"</span>,
+        <span class="hljs-string">"start"</span>: <span class="hljs-string">"2015-06-30T14:00:00Z"</span>,
+        <span class="hljs-string">"end"</span>: <span class="hljs-string">"2016-06-30T13:59:59Z"</span>,
+        <span class="hljs-string">"data"</span>: [{
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Andrews SF share transactions account"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"0040605685885"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">25597.51</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Westpac Business Cash Reserve 16-0105"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"06040084844161"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">158367.97</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">158367.97</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">158367.97</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">158367.97</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">158367.97</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Westpac Business Flexi 27-0988"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"60004641115442"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">50484.69</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">50484.69</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">50484.69</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">50484.69</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">50484.69</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"NAB Term Deposit 11-566-4704"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NAB Term Deposit 11-"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">352041.24</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">352041.24</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">352041.24</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">352041.24</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">352041.24</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"NAB Term Deposit 11-647-3782"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NAB Term Deposit 110"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">257687.68</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">257687.68</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">257687.68</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">257687.68</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">257687.68</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"NAB Term Deposit 12-914-8292"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NAB Term Deposit 12-"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">225000</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">225000</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">225000</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">225000</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">225000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Westpac Term Deposit 164325 (Matures 25/03/15)"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"Westpac Term Deposi0"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">150000</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">150000</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">150000</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">150000</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">150000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Westpac Term Deposit 170346"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"Westpac Term Deposi1"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">350000</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">350000</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">350000</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Cash/Bank Accounts"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">350000</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">350000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-literal">null</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Athena Finance Pty Ltd"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"ATHENA"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">100000</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">100000</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">100000</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Fixed Interest Securities (Australian) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">100000</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">100000.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Luxury car lease"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_LUXURYCARLE"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">25476</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Leased Assets - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">25476</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Villa 25 Westview Parade Port Bouvard"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_VILLA25WEST"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">163341.54</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Loans to Associated Entities (In house loans) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">163341.54</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Bore Pump (Carter Road)"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_BOREPUMP(CA"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">2724.64</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">2384.34</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Plant and Equipment (at written down value) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">2724.64</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">2724.64</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Pioneer Water Tank (Carter Road)"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_PIONEERWATE"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">10418.18</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">9467.09</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Plant and Equipment (at written down value) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">10418.18</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">10418.18</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Rainwater Tank (Carter Road)"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_RAINWATERTA"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">2478.18</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">2323.26</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Plant and Equipment (at written down value) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">2478.18</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">2478.18</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Shed (Carter Road)"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_SHED(CARTER"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">139174.59</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">125218</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Plant and Equipment (at written down value) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">139174.59</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">139174.59</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Tenant's Tank (Carter Road)"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_TENANT'STAN"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">6707.73</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">5426.06</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Plant and Equipment (at written down value) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">6707.73</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">6707.73</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Water Tank (Carter Road)"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MIGRAT04_WATERTANK(C"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">9215.45</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">7166.7</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Plant and Equipment (at written down value) - Unitised"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">9215.45</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">9215.45</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Lot 4, Carters Road, Margaret River"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"LOT4CARTRD"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">1600000</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">2437738.84</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">1600000</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Real Estate Properties ( Australian - Residential)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">2437738.84</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">1600000.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">837738.8400000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Allco Finance Grooup Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"AFG.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">6.97</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Amp Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"AMP.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">6.21</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">0.02</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">0.02</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Argo Investments Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"ARG.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">7.91</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">2.97</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">2.97</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Bhp Billiton Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"BHP.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">4000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">26.65</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">108481.93</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">106600</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">1200</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">27.12</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">106600.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">1881.9300000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Brambles Industries"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"BIL.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">5.96</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">28522.85</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">28522.8500000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Babcock and Brown Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"BNB.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.325</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Commonwealth Bank of Australia"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"CBA.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">85.79</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Computershare Ltd"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"CPU.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">11.77</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">4.34</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">4.34</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Crane Group Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"CRG.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">10.38</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Dioro Exploration Nl"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"DIO.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">1.27</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">171.2</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">171.2</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"DCA Group Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"DVC.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">2.79</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Ezenet Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"EZE.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.06</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Falcon Minerals Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"FCN.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">30000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">4823.5</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">300</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.16</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">300</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">4523.5000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Goconnect Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"GCN.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">250000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.006</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">6667</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">1500</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">500</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.03</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">1500</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">5167.0000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Iluka Resources"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"ILU.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">7.27</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">1.49</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">1.49</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Iron Ore Holdings Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"IOH.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">15000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.7</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">28255.49</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">10500</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">1.88</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">10500.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">17755.4900000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Lynas Corporation Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"LYC.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">35578</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.033</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">66492.61</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">1174.07</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">1.87</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">1174.074</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">65318.5360000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Mayne Group Ltd"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"MAY.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">5.93</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"National Aust. Bank"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NAB.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">33.07</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Newcrest Mining Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NCM.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">2000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">12.6</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">50195.79</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">25200</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">1040</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">25.1</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">25200.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">24995.7900000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Norwest Energy Nl - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NWE.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">200000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.007</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">11231.99</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">1400</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">400</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.06</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">1400</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">9831.9900000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"New Tel Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"NWL.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.048</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Otto Energy Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"OEL.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">150000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.069</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">12797</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">10350</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">150</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.09</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">10350.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">2447.0000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"OZ Minerals Ltd"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"OZL.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">4000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">3.67</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">54767.52</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">14680</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">1480</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">13.69</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">14680.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">40087.5200000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Platinum Australia Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"PLA.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">19000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.067</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">12262</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">1273</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.65</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">1273</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">10989.0000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Qantas Airways"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"QAN.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">3.33</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">5.83</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">5.83</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Queensland Mining Corporation Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"QMN.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.006</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Rio Tinto Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"RIO.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">800</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">52.07</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">50622.21</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">41656</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">976</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">63.28</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">41656.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">8966.2100000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Reckon Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"RKN.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">1.99</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Regis Resources Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"RRL.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">10000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">1.14</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">36574.82</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">11400</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">350</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">3.66</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">11400.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">25174.8200000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Regis Resources Limited - Option Expiring 31-Jan-2014"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"RRLO.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">8000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">2.25</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">13631.99</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">18000</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">1.7</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">18000.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">4368.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"St George Bank"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"SGB.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">27.11</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Stockford Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"SKD.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.03</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">2.98</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">2.98</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Suncorp-Metway"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"SME.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">20.1699</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Santos Ltd"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"STO.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">7.62</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Tap Oil Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"TAP.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">10000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.34</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">8323.5</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">3400</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">150</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.83</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">3400</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">4923.5000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Telstra Corporation Ltd"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"TLS.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">47000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">6.21</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">128930.42</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">291870</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">6580</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">2.74</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">291870.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">162939.5800000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Uranex Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"UNX.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">15000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.16</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">6747</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">2400</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.45</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">2400</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">4347.0000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Viralytics Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"VLA.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">15650</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.725</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">5807.19</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">11346.25</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">1565</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.37</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">11346.2500000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">5539.06</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"West African Resources Limited - Ordinary Fully Paid"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WAF.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">40000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.1</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">17747</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">4000</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">40</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0.44</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">4000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">13747.0000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Wasabi Energy Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WAS.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.004</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Westpac Banking Corp"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WBC.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">33.1</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Westpac Banking Corporation - Convertible Preference Shares"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WBCPC.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">1000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">101.45</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">100000</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">101450</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">1750</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">100</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">101450.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">1450</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Wesfarmers Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WES.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">39.88</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Wmc Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WMC.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">8.2</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">2.17</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Woolworths Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WOW.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">26.92</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">3.97</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">3.97</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Woodside Petroleum"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"WPL.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">6251</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">33.57</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">237056.81</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">209846.07</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: -<span class="hljs-number">2625.42</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">37.92</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">209846.0700000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">27210.7400000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Zinifex Limited"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"ZFX.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">8.2</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Shares in Listed Companies (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">0.01</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Amp Office Trust"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"AOF.AX"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">1.15</span>,
+            <span class="hljs-string">"cost"</span>: -<span class="hljs-number">1.49</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Units in Listed Unit Trusts (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">0E-13</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: <span class="hljs-number">1.49</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        },
+        {
+            <span class="hljs-string">"investmentName"</span>: <span class="hljs-string">"Sea Pines Investment Trust"</span>,
+            <span class="hljs-string">"code"</span>: <span class="hljs-string">"SEAPINES"</span>,
+            <span class="hljs-string">"units"</span>: <span class="hljs-number">500000</span>,
+            <span class="hljs-string">"mktPrice"</span>: <span class="hljs-number">0.9902</span>,
+            <span class="hljs-string">"cost"</span>: <span class="hljs-number">500000</span>,
+            <span class="hljs-string">"mktValueAsPerLedger"</span>: <span class="hljs-number">495100</span>,
+            <span class="hljs-string">"currentYearUnRealisedMovement"</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-string">"investmentGroup"</span>: <span class="hljs-string">"Units in Unlisted Unit Trusts (Australian)"</span>,
+            <span class="hljs-string">"aveCost"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"unitsMarketPrice"</span>: <span class="hljs-number">495100.0000000000000</span>,
+            <span class="hljs-string">"unRealisedMovement"</span>: -<span class="hljs-number">4900.0000000000000</span>,
+            <span class="hljs-string">"realisedMovement"</span>: <span class="hljs-number">0</span>
+        }]
+    }
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../sample_data/investment_summary.html" class="navigation navigation-prev " aria-label="Previous page: Investment Summary"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../sample_data/investment_summary_-_xml.html" class="navigation navigation-next " aria-label="Next page: Investment Summary - XML"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

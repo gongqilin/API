@@ -1,0 +1,962 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Request for an Authorization Code | BGL API - Version 1.0.1</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../getting_started/obtaining_request_token.html" />
+    
+    
+    <link rel="prev" href="../getting_started/obtaining_bgl_api_credentials.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1436922894656">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="getting_started/README.html">
+            
+                
+                    <a href="../getting_started/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Getting Started
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="getting_started/obtaining_bgl_api_credentials.html">
+            
+                
+                    <a href="../getting_started/obtaining_bgl_api_credentials.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Obtaining BGL API Credentials
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.2" data-path="getting_started/request_for_an_authorization_code.html">
+            
+                
+                    <a href="../getting_started/request_for_an_authorization_code.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Request for an Authorization Code
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="getting_started/obtaining_request_token.html">
+            
+                
+                    <a href="../getting_started/obtaining_request_token.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Obtaining Access Token
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="getting_started/making_requests_for_data.html">
+            
+                
+                    <a href="../getting_started/making_requests_for_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Making requests for data
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="grant_refresh_token/README.html">
+            
+                
+                    <a href="../grant_refresh_token/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Grant Refresh Token
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="api_rate_limits/README.html">
+            
+                
+                    <a href="../api_rate_limits/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         API Rate Limits
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="resource_requests/README.html">
+            
+                
+                    <a href="../resource_requests/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Resource Requests
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="resource_requests/request__fund_list.html">
+            
+                
+                    <a href="../resource_requests/request__fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Request : Fund List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="resource_requests/request__fund_detail.html">
+            
+                
+                    <a href="../resource_requests/request__fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Request : Fund Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="resource_requests/request__trustees.html">
+            
+                
+                    <a href="../resource_requests/request__trustees.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Request : Trustees List
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="resource_requests/request__investment_summary.html">
+            
+                
+                    <a href="../resource_requests/request__investment_summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Request : Investment Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="resource_requests/request__general_ledger.html">
+            
+                
+                    <a href="../resource_requests/request__general_ledger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         Request : General Ledger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="resource_requests/request__chart_accounts.html">
+            
+                
+                    <a href="../resource_requests/request__chart_accounts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Request : Chart of Accounts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="resource_requests/request__user_detail.html">
+            
+                
+                    <a href="../resource_requests/request__user_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         Request : User Detail
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="sample_data/README.html">
+            
+                
+                    <a href="../sample_data/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Sample Data
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="sample_data/fund_list.html">
+            
+                
+                    <a href="../sample_data/fund_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Fund List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1.1" data-path="sample_data/fund_list_-_json.html">
+            
+                
+                    <a href="../sample_data/fund_list_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                         Fund List - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.1.2" data-path="sample_data/fund_list_-_xml.html">
+            
+                
+                    <a href="../sample_data/fund_list_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                         Fund List - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="sample_data/fund_detail.html">
+            
+                
+                    <a href="../sample_data/fund_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Fund Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.2.1" data-path="sample_data/fund_detail_-_json.html">
+            
+                
+                    <a href="../sample_data/fund_detail_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                         Fund Detail - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2.2" data-path="sample_data/fund_detail_-_xml.html">
+            
+                
+                    <a href="../sample_data/fund_detail_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                         Fund Detail - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="sample_data/trustees_list.html">
+            
+                
+                    <a href="../sample_data/trustees_list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Trustees List
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.3.1" data-path="sample_data/trustees_list_-json.html">
+            
+                
+                    <a href="../sample_data/trustees_list_-json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                         Trustees List - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3.2" data-path="sample_data/trustees_list_-_xml.html">
+            
+                
+                    <a href="../sample_data/trustees_list_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                         Trustees List - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="sample_data/investment_summary.html">
+            
+                
+                    <a href="../sample_data/investment_summary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Investment Summary
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.4.1" data-path="sample_data/investment_summary_-_json.html">
+            
+                
+                    <a href="../sample_data/investment_summary_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                         Investment Summary - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4.2" data-path="sample_data/investment_summary_-_xml.html">
+            
+                
+                    <a href="../sample_data/investment_summary_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.2.</b>
+                        
+                         Investment Summary - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="sample_data/general_ledger.html">
+            
+                
+                    <a href="../sample_data/general_ledger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         General Ledger
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.5.1" data-path="sample_data/general_ledger_-_json.html">
+            
+                
+                    <a href="../sample_data/general_ledger_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.1.</b>
+                        
+                         General Ledger - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5.2" data-path="sample_data/general_ledger_-_xml.html">
+            
+                
+                    <a href="../sample_data/general_ledger_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.2.</b>
+                        
+                         General Ledger - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="sample_data/chart_of_accounts.html">
+            
+                
+                    <a href="../sample_data/chart_of_accounts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         Chart of Accounts
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.6.1" data-path="sample_data/char_of_accounts_-_json.html">
+            
+                
+                    <a href="../sample_data/char_of_accounts_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                         Chart of Accounts - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6.2" data-path="sample_data/chart_of_accounts_-_xml.html">
+            
+                
+                    <a href="../sample_data/chart_of_accounts_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                         Chart of Accounts - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="sample_data/user_detail.html">
+            
+                
+                    <a href="../sample_data/user_detail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         User Detail
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.7.1" data-path="sample_data/user_detail_-_json.html">
+            
+                
+                    <a href="../sample_data/user_detail_-_json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.1.</b>
+                        
+                         User Detail - JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7.2" data-path="sample_data/user_detail_-_xml.html">
+            
+                
+                    <a href="../sample_data/user_detail_-_xml.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.2.</b>
+                        
+                         User Detail - XML
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="change_log/README.html">
+            
+                
+                    <a href="../change_log/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Change Log
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >BGL API - Version 1.0.1</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_4480">
+                    
+                        <h1 id="request-for-an-authorization-code--step-24-">Request for an Authorization Code ( Step 2/4 )</h1>
+<p>An Authorization Code is necessary to retrieve an Access Token from BGL API.  Obtaining an Authorization token is an imporantant step, as it provides assuarance to the client that appropriate permission is being granted to access the BGL API.</p>
+<p>To request an authorization code, the client application must send a HTTP request to the BGL API in the following manner.</p>
+<table>
+    <tr>
+        <th>Method</th>
+        <th>URI</th>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td><a href="https://api-staging.bgl360.com.au/oauth/authorize?response_type=code&amp;client_id=&lt;API-Client-ID&gt;&amp;scope=&lt;fundList" target="_blank">https://api-staging.bgl360.com.au/oauth/authorize?response_type=code&amp;client_id=&lt;API-Client-ID&gt;&amp;scope=&lt;fundList</a> &gt;</td>
+    </tr>
+</table>
+
+<p>The URL query parameters are as follows.</p>
+<table>
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <td>response_type</td>
+        <td>The value of this should always be: <strong>code</strong>.</td>
+        <td>Mandatory</td>
+    </tr>
+    <tr>
+        <td>client_id</td>
+        <td>A unique identifier to identify a client application that will be using the BGL API.
+        <br><br>See <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a> on how to obtain Client Id.</td>
+        <td>Mandatory</td>
+    </tr>
+    <tr>
+        <td>redirect_uri</td>
+        <td>The URI that will be used to redirect after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. <br><br>As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2">Oauth2 Documentation.</a>  See <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a> on how to set redirect uri.</td>
+        <td>Optional</td>
+    </tr>
+    <tr>
+        <td>state</td>
+        <td>An opaque value used by the client to maintain state between the request and callback. The authorization server includes this value when redirecting the user-agent back to the client. This parameter should be used for preventing cross-site request forgery as described in <a href="http://tools.ietf.org/html/rfc6749#section-10.12">Oauth2 Documentation.</a><br><br> Example : state=DCEeFWf45A53sdfKef424</td>
+        <td>Optional</td>
+    </tr>
+    <tr>
+        <td>scope</td>
+        <td>A URL-encoded,space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
+        <td>Optional</td>
+    </tr>
+</table>
+
+<p>Once the request is processed one of the following will occur.</p>
+<h4 id="1-bgl-login-page">1. BGL Login Page</h4>
+<p>If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log into to BGL.</p>
+<p>Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.</p>
+<p><img src="/images/BGLAuthenticationScreen.png" alt="logo" title="BGL Authentication Page"></p>
+<h4 id="2-authorization-page">2. Authorization Page</h4>
+<p>If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API&#39;s authorization screen as displayed below.</p>
+<p><img src="/images/APIAuthorizationScreen.png" alt="logo" title="API Authorization Page"></p>
+<h4 id="3-redirect-url">3. Redirect URL</h4>
+<p>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.</p>
+<p>If a valid granted permission exists for the client, the authorization screen is by-passed and the user is immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request.</p>
+<p>Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" target="_blank">http://www.client-url.com.au/oauth/authCode?code=LqAx2wO</a></p>
+<p>For security reasons, the authorization code has a very short lifespan ( <strong>about 5 - 10 mins</strong> ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL API, as explained above.</p>
+<p>Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that has somehow slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack.</p>
+<p>There may be instances where the request for a Authorization Code may fail/be denied.  The below table illustrates the causes of a bad request and the outcome the client sees.</p>
+<table>
+    <tr>
+        <th>Cause</th>
+        <th>Description</th>
+        <th>Error</th>
+        <th>Error Description</th>
+    </tr>
+    <tr>
+        <td>Invalid Client Id</td>
+        <td>When an invalid client id is passed as a query parameter</td>
+        <td>INVALID CLIENT</td>
+        <td>BAD CLIENT CREDENTIALS</td>
+    </tr>
+    <tr>
+        <td>Invalid Response Type</td>
+        <td>If response type parameter contains anything apart from &quot;code&quot;</td>
+        <td>UNSUPPORTED_RESPONSE_TYPE</td>
+        <td>UNSUPPORTED RESPONSE TYPE &lt;The passed invalid code&gt;</td>
+    </tr>
+    <tr>
+        <td>Invalid scope</td>
+        <td>The current valid scope are &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;. Appart from these, if the client passes anything else as scope BGL will return an error</td>
+        <td>INVALID_SCOPE</td>
+        <td>Invalid scope : &lt;The invalid scope passed&gt;</td>
+    </tr>
+    <tr>
+        <td>Invalid redirect URI</td>
+        <td>The client should pass the redirect uri that was registered with BGL, as explained in Section - <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a>. If an invalid redirect uri is passed as the redirect_uri parameter, the BGL system will respond with an error</td>
+        <td>INVALID GRANT</td>
+        <td>INVALID REDIRECT: &lt;passed invalid uri&gt; DOES NOT MATCH ONE OF THE REGISTERED VALUES: [&lt;the url that is registered with the system&gt;]</td>
+    </tr>
+
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../getting_started/obtaining_bgl_api_credentials.html" class="navigation navigation-prev " aria-label="Previous page: Obtaining BGL API Credentials"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../getting_started/obtaining_request_token.html" class="navigation navigation-next " aria-label="Next page: Obtaining Access Token"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
