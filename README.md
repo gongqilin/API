@@ -23,3 +23,6 @@ https://api-staging.bgl360.com.au
 
 **Authors :**
 * BGL API Team
+
+**Feedback/Issue in Github**
+* https://github.com/BGLCorp/API
