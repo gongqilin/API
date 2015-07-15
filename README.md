@@ -1,4 +1,6 @@
-<div align="center">![logo](/images/bglapilogo.png "API Authorization Page")</div>
+<div align="center">
+  <img src="/images/bglapilogo.png" alt="BGL API Logo"/>
+</div>
 
 #BGL API - Version 1.0.1
 
