@@ -1,7 +1,0 @@
-# Chart of Accounts
-
-```
-
-
-
-```
