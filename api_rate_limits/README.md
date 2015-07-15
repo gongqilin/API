@@ -11,7 +11,7 @@ The response header "**X-Rate-Daily-Limit-Remaining**" will indicate the remaini
 
 ![logo](/images/XRateDailyLimitRemain.png "Remaining Daily Limit")
 
-By any means if we exceed the given limit we will receive the following error, with status - 429 Too Many Requests.
+By any means if we exceed the given limit we will receive the following error, with status - **429 Too Many Requests**.
 
 ```javascript
 
@@ -32,7 +32,7 @@ Please not, that any requests that will return an error response will not reduce
 
 This is a value that indicates how many requests that could be made within a given time frame. Currently this is set to 100 per 10 minute period in the staging envoirnment (https://api-staging.bgl360.com.au).
 
-By any mean if the client makes requests more than the specified X limit, BGL API will return an error response as follows, with status - 429 Too Many Requests..
+By any mean if the client makes requests more than the specified X limit, BGL API will return an error response as follows, with status - **429 Too Many Requests**.
 
 
 ```javascript
@@ -46,6 +46,4 @@ By any mean if the client makes requests more than the specified X limit, BGL AP
 }
 
 ```
-
-
 
