@@ -22,7 +22,7 @@ https://api.bgl360.com.au
 https://api-staging.bgl360.com.au
 
 **Contact Us/Support:**
-*  [BGL API Team](wtan@bglcorp.com.au)
+*  [BGL API Team](mailto:wtan@bglcorp.com.au)
 
 **Feedback/Issue in Github**
 * https://github.com/BGLCorp/API
