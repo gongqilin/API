@@ -1,6 +1,6 @@
 # Grant Refresh Token
 
-The refresh token grant is performed by exchanging a Refresh Token received during a previous authorization request for an access token  (see [Obtaining Access Token](../getting_started/obtaining_request_token.md)), using the token endpoint.
+The Refresh Token grant is performed by exchanging a Refresh Token received during a previous authorization request for an access token  (see [Obtaining Access Token](../getting_started/obtaining_request_token.md)), using the token endpoint.
 
 There are two ways of performing this request
 
@@ -19,7 +19,7 @@ There are two ways of performing this request
                 </tr>
             </table>
 
-Following are the request parameters
+The request parameters are as follows:
 
 <table>
     <tr>
@@ -34,7 +34,7 @@ Following are the request parameters
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>refresh token obtained previously. see [Obtaining Access Token](../getting_started/obtaining_request_token.md) </td>
+        <td>Refresh Token obtained previously. See [Obtaining Access Token](../getting_started/obtaining_request_token.md) </td>
         <td>Mandatory</td>
     </tr>
     <tr>
@@ -44,7 +44,7 @@ Following are the request parameters
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>A URL-encoded, space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
         <td>Mandatory</td>
     </tr>
 </table>
@@ -85,7 +85,7 @@ Following are the request parameters
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>refresh token obtained previously. see [Obtaining Access Token](../getting_started/obtaining_request_token.md) </td>
+        <td>Refresh Token obtained previously. See [Obtaining Access Token](../getting_started/obtaining_request_token.md) </td>
         <td>Mandatory</td>
     </tr>
     <tr>
@@ -95,12 +95,12 @@ Following are the request parameters
     </tr>
      <tr>
         <td>client_secret</td>
-        <td>The client secret provided by BGL<br><br>See [Obtaining BGL API Credentials](../getting_started/obtaining_bgl_api_credentials.md) on how to obtain Client Secret.</td>
+        <td>The Client Secret provided by BGL<br><br>See [Obtaining BGL API Credentials](../getting_started/obtaining_bgl_api_credentials.md) on how to obtain Client Secret.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>A URL-encoded, space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
         <td>Mandatory</td>
     </tr>
 </table>
@@ -113,7 +113,7 @@ curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=refresh_to
 
 ```
 
-Both of the above requests should return a response similar to example provided below.
+Both of the above requests should return a response similar to the example provided below.
 
 ```javascript
 
