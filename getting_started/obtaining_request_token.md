@@ -66,7 +66,7 @@ curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=authorizat
 
 Example **B** (**Not recommended for production**) of a request  for the Request Token is as follows.
 
-Basic authorization Header is  base64 encoded of <API Client Id>:<API Client Secret>
+Basic authorization Header is base64 encoded of <API Client Id>:<API Client Secret>
 
 ```javascript
 
