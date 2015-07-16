@@ -32,7 +32,7 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>code</td>
-        <td>The Authorization Code obtained from BGL API</td>
+        <td>The Authorization Code obtained from the BGL API.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
