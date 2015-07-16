@@ -1,9 +1,9 @@
-# Request : User Detail
+# Request : User Details
 
 <table>
     <tr>
         <td>Description</td>
-        <td>Allows you to retrieve the details of the user</td>
+        <td>Allows you to retrieve the details of a user</td>
     </tr>
     <tr>
         <td>Request URI</td>
@@ -37,7 +37,7 @@ The following parameters can be added in the http request.
     </tr>
 <table>
 
-If the format parameter is not set, the returned result will always be JSON.
+If the format parameter is not set, the default returned result will be JSON.
 
 
 ### Sample Request and Response
