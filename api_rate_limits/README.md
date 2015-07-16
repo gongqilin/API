@@ -18,14 +18,14 @@ By any means if we exceed the given limit we will receive the following error, w
 {
     "message": "Too Many Requests",
     "errors": [
-        "You have exceeded your daily limit"
+        "You had too many requests today, the rate limit ceiling per day is 1000"
     ],
     "status": 429
 }
 
 ```
 
-Please not, that any requests that will return an error response will not reduce the daily limit threshold.
+Please note that any request returned with http code(status) 401 or 429 will not reduce the daily limit threshold.
 
 #### 2. X-Rate Limit
 

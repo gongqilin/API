@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="3" data-basepath=".." data-revision="1437012226718">
+    <div class="book"  data-level="3" data-basepath=".." data-revision="1437021354066">
     
 
 <div class="book-summary">
@@ -821,7 +821,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_819">
+                    <section class="normal" id="section-gitbook_1523">
                     
                         <h1 id="api-rate-limits">API Rate Limits</h1>
 <p>In order to manage the high volume of requests, the BGL API will limit the number of requests a client application can make to BGL API.  This constraints are based on two aspects, which is explained below.</p>
@@ -834,12 +834,12 @@
 {
     <span class="hljs-string">"message"</span>: <span class="hljs-string">"Too Many Requests"</span>,
     <span class="hljs-string">"errors"</span>: [
-        <span class="hljs-string">"You have exceeded your daily limit"</span>
+        <span class="hljs-string">"You had too many requests today, the rate limit ceiling per day is 1000"</span>
     ],
     <span class="hljs-string">"status"</span>: <span class="hljs-number">429</span>
 }
 </code></pre>
-<p>Please not, that any requests that will return an error response will not reduce the daily limit threshold.</p>
+<p>Please note that any request returned with http code(status) 401 or 429 will not reduce the daily limit threshold.</p>
 <h4 id="2-x-rate-limit">2. X-Rate Limit</h4>
 <p>This is a value that indicates how many requests that could be made within a given time frame. Currently this is set to <strong>100 per 10 minutes</strong> period in the staging envoirnment (<a href="https://api-staging.bgl360.com.au" target="_blank">https://api-staging.bgl360.com.au</a>).</p>
 <p>By any mean if the client makes requests more than the specified X limit, BGL API will return an error response as follows, with status - <strong>429 Too Many Requests</strong>.</p>
