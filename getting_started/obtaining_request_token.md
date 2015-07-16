@@ -47,7 +47,7 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded, space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>A URL-encoded, space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a></td>
         <td>Optional</td>
     </tr>
 </table>
