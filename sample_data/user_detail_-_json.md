@@ -1,4 +1,4 @@
-# User Detail - JSON
+# User Details - JSON
 
 #### cURL Request :
 
