@@ -1,6 +1,6 @@
-# Making Requests for Data ( Step 4/4 )
+# Making Requests for Data (Step 4/4)
 
-In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see [Obtaining Access Token](obtaining_request_token.md)), the client could use the below URI to make the request for data.
+In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see [Obtaining Access Token](obtaining_request_token.md)), the client can use the below URI to make the request for data.
 
 <table>
     <tr>
@@ -13,9 +13,9 @@ In order for the client to make a request for the data, the client needs to have
     </tr>
 </table>
 
-The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in detail in the [Resource Requests section](../resource_requests/README.md).
+The above URI will return the list of all available funds.  There are different variations in retrieving data.  This will be explained in more detail in the [Resource Requests section](../resource_requests/README.md).
 
-However, the client application needs to pass in the access token and token type as header information in the request, as per the following table:
+However, the client application needs to pass the access token and token type as header information in the request, as per the following table:
 
 <table>
     <tr>
@@ -30,7 +30,7 @@ However, the client application needs to pass in the access token and token type
     </tr>
 </table>
 
-By any mean if the client application passes an invalid access token or an invalid token type, the BGL API will provide an error, which is illustrated in the below table.
+If the client application passes an invalid access token or an invalid token type, the BGL API will return an error, illustrated in the table below.
 
 <table>
     <tr>
@@ -41,13 +41,13 @@ By any mean if the client application passes an invalid access token or an inval
     </tr>
     <tr>
         <td>Invalid Access Token</td>
-        <td>When an invalid or expired Access token is set in header</td>
+        <td>When an invalid or expired Access Token is set in header</td>
         <td>INVALID_TOKEN</td>
         <td>Invalid access token: &lt;passed access token&gt;</td>
     </tr>
     <tr>
         <td>Invalid Token Type</td>
-        <td>When an invalid token type is set in header</td>
+        <td>When an invalid Token Type is set in header</td>
         <td>INVALID_TOKEN</td>
         <td>Invalid access token: &lt;passed access token&gt;</td>
     </tr>
