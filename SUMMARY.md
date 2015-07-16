@@ -5,7 +5,7 @@
    * [Obtaining BGL API Credentials](getting_started/obtaining_bgl_api_credentials.md)
    * [Request for an Authorization Code](getting_started/request_for_an_authorization_code.md)
    * [Obtaining Access Token](getting_started/obtaining_request_token.md)
-   * [Making Requests for Data](getting_started/making_requests_for_data.md)
+   * [Making requests for data](getting_started/making_requests_for_data.md)
 * [Grant Refresh Token](grant_refresh_token/README.md)
 * [API Rate Limits](api_rate_limits/README.md)
 * [Resource Requests](resource_requests/README.md)

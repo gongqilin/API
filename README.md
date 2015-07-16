@@ -12,17 +12,28 @@ The objective of this document is to provide a BGL API to developers where they 
 
 
 **Current Version**
-* 1.0.1 - See [Change Log](change_log/README.md) for document history.
+* 1.0.1 - See [Release Log](https://github.com/BGLCorp/API/releases)
 
 
 **Envoirnment(s)**
-
-* Pre-production :
+* Production:
+https://api.bgl360.com.au
+* Pre-production/Sandbox:
 https://api-staging.bgl360.com.au
 
-
-**Authors :**
-* BGL API Team
+**Contact Us/Support:**
+*  [BGL API Team](wtan@bglcorp.com.au)
 
 **Feedback/Issue in Github**
 * https://github.com/BGLCorp/API
+
+
+
+
+
+<br>
+---
+###### BGL Corporate Solutions Pty
+######LtdSuite 2, 606-608 Hawthorn Road, Brighton East, Victoria, 3187, Australia
+######Phone: 1300 654 401 / +61 (0)3 9530 6077ACN: 054 355 243
+
