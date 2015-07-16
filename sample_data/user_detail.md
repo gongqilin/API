@@ -1,2 +1,2 @@
-# User Detail
+# User Details
 
