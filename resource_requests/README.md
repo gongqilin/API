@@ -1,3 +1,3 @@
 # Resource Requests
 
-This section illustrates the currently available resources that could be utilized to obtain data.
+This section lists the currently available resources that can be used to obtain data through the BGL API.
