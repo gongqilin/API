@@ -37,7 +37,7 @@ The following parameters can be added in the http request.
     </tr>
 <table>
 
-If the format parameter is not set, the default returned result will be JSON.
+If the format parameter is not set, the returned result will always be JSON.
 
 
 ### Sample Request and Response
