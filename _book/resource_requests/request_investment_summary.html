@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.4" data-basepath=".." data-revision="1437021354066">
+    <div class="book"  data-level="4.4" data-basepath=".." data-revision="1437117766390">
     
 
 <div class="book-summary">
@@ -821,7 +821,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1537">
+                    <section class="normal" id="section-gitbook_158">
                     
                         <h1 id="request--investment-summary">Request : Investment Summary</h1>
 <table>
@@ -859,7 +859,7 @@
     </tr>
     <tr>
         <td align="center">end</td>
-        <td>End date of Investment.  Expected Format : yyyy-mm-dd</td>
+        <td>End date of Investment.  Expected format : yyyy-mm-dd</td>
         <td  align="center">Optional</td>
     </tr>
     <tr>
@@ -881,7 +881,7 @@
 <h4 id="xml">XML</h4>
 <p>See section <a href="../sample_data/investment_summary_-_xml.html">Investment Summary - XML</a> for sample request and xml response.</p>
 <h4 id="error-messages">Error Messages</h4>
-<p>If the provided fund id is not found in BGL data, the following error will be returned.</p>
+<p>If the provided fund id is not found in the BGL data, the following error will be returned.</p>
 <pre><code class="lang-javascript">
 {
     <span class="hljs-string">"message"</span>: <span class="hljs-string">"The fund is not found/accessible"</span>,
@@ -889,7 +889,7 @@
     <span class="hljs-string">"status"</span>: <span class="hljs-number">401</span>
 }
 </code></pre>
-<p>If Start and End Date are not valid dates, the following error will be returned.</p>
+<p>If Start and End Dates are not valid dates, the following error will be returned.</p>
 <pre><code class="lang-javascript">
 {
     <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,
@@ -905,7 +905,7 @@
     <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
 }
 </code></pre>
-<p>If end date is greater than the start date, the following error will be returned.</p>
+<p>If End Date is after the Start Date, the following error will be returned.</p>
 <pre><code class="lang-javascript">
 {
     <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call investmentSummary"</span>,

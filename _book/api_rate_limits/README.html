@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="3" data-basepath=".." data-revision="1437021354066">
+    <div class="book"  data-level="3" data-basepath=".." data-revision="1437117766390">
     
 
 <div class="book-summary">
@@ -821,15 +821,15 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1523">
+                    <section class="normal" id="section-gitbook_145">
                     
                         <h1 id="api-rate-limits">API Rate Limits</h1>
-<p>In order to manage the high volume of requests, the BGL API will limit the number of requests a client application can make to BGL API.  This constraints are based on two aspects, which is explained below.</p>
+<p>In order to manage the high volume of requests, the BGL API will limit the number of requests a client application can make to the BGL API based on two aspects, as per explained below.</p>
 <h4 id="1-x-rate-daily-limit">1. X-Rate Daily Limit</h4>
-<p>This is a value that will be enforced on the number of requests a client could make on a given day. Currently this is set to unlimtted in the staging envoirnment (<a href="https://api-staging.bgl360.com.au" target="_blank">https://api-staging.bgl360.com.au</a>).</p>
-<p>The response header &quot;<strong>X-Rate-Daily-Limit-Remaining</strong>&quot; will indicate the remaining number of requests available.  For every valid request we make this indicator will reduce it&#39;s count by one. Zero means we have hit the available threshold. -1 indicates that unlimited requests could be made.</p>
+<p>This value indicates the number of requests a client can make on a given day. Currently this is set to unlimited in the staging envoirnment (<a href="https://api-staging.bgl360.com.au" target="_blank">https://api-staging.bgl360.com.au</a>).</p>
+<p>The response header &quot;<strong>X-Rate-Daily-Limit-Remaining</strong>&quot; indicates the remaining number of requests available.  For every valid request made, this indicator will reduce its count by one. Zero means the available daily limit has been reached. -1 indicates that unlimited requests can be made.</p>
 <p><img src="../images/XRateDailyLimitRemain.png" alt="logo" title="Remaining Daily Limit"></p>
-<p>By any means if we exceed the given limit we will receive the following error, with status - <strong>429 Too Many Requests</strong>.</p>
+<p>If the daily limit has been exceeded, the following error will display with status - <strong>429 Too Many Requests</strong>.</p>
 <pre><code class="lang-javascript">
 {
     <span class="hljs-string">"message"</span>: <span class="hljs-string">"Too Many Requests"</span>,
@@ -841,8 +841,8 @@
 </code></pre>
 <p>Please note that any request returned with http code(status) 401 or 429 will not reduce the daily limit threshold.</p>
 <h4 id="2-x-rate-limit">2. X-Rate Limit</h4>
-<p>This is a value that indicates how many requests that could be made within a given time frame. Currently this is set to <strong>100 per 10 minutes</strong> period in the staging envoirnment (<a href="https://api-staging.bgl360.com.au" target="_blank">https://api-staging.bgl360.com.au</a>).</p>
-<p>By any mean if the client makes requests more than the specified X limit, BGL API will return an error response as follows, with status - <strong>429 Too Many Requests</strong>.</p>
+<p>This value indicates the number of requests that can be made within a given time frame. Currently this is set to <strong>100 per 10 minutes</strong> period in the staging envoirnment (<a href="https://api-staging.bgl360.com.au" target="_blank">https://api-staging.bgl360.com.au</a>).</p>
+<p>If the number of requests a client makes exceeds the specified X limit, the BGL API will return an error response as follows, with status - <strong>429 Too Many Requests</strong>.</p>
 <pre><code class="lang-javascript">
 {
     <span class="hljs-string">"message"</span>: <span class="hljs-string">"Too Many Requests"</span>,

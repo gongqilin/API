@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1437021354066">
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1437117766390">
     
 
 <div class="book-summary">
@@ -821,11 +821,11 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1530">
+                    <section class="normal" id="section-gitbook_151">
                     
                         <h1 id="request-for-an-authorization-code--step-24-">Request for an Authorization Code ( Step 2/4 )</h1>
-<p>An Authorization Code is necessary to retrieve an Access Token from BGL API.  Obtaining an Authorization token is an imporantant step, as it provides assuarance to the client that appropriate permission is being granted to access the BGL API.</p>
-<p>To request an authorization code, the client application must send a HTTP request to the BGL API in the following manner.</p>
+<p>An Authorization Code is necessary to retrieve an Access Token from the BGL API.  Obtaining an Authorization token is an imporantant step, as it provides assurance to the client that appropriate permission is being granted to access the BGL API.</p>
+<p>To request an Authorization Code, the client application must send an HTTP request to the BGL API in the following manner.</p>
 <table>
     <tr>
         <th>Method</th>
@@ -857,7 +857,7 @@
     </tr>
     <tr>
         <td>redirect_uri</td>
-        <td>The URI that will be used to redirect after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration. <br><br>As described in <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2">Oauth2 Documentation.</a>  See <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a> on how to set redirect uri.</td>
+        <td>The URI that will be used to redirect after authorization.  This value must match one of the defined OAuth 2.0 Redirect URLs in your application configuration, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.1.2">Oauth2 Documentation.</a>  See <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a> on how to set redirect uri.</td>
         <td>Optional</td>
     </tr>
     <tr>
@@ -867,26 +867,26 @@
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
+        <td>A URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, the default member permissions you defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
         <td>Optional</td>
     </tr>
 </table>
 
-<p>Once the request is processed one of the following will occur.</p>
+<p>Once the request is processed, one of the following will occur.</p>
 <h4 id="1-bgl-login-page">1. BGL Login Page</h4>
-<p>If the user has not logged into any BGL system prior to requesting an Authorization code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log into to BGL.</p>
-<p>Once the user logs into the BGL System, the user will be redirected to the API Authroization Page as explained below.</p>
+<p>If the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log in to to BGL.</p>
+<p>Once the user logs in to the BGL System, the user will be redirected to the API Authroization Page as explained below.</p>
 <p><img src="../images/BGLAuthenticationScreen.png" alt="logo" title="BGL Authentication Page"></p>
-<h4 id="2-authorization-page">2. Authorization Page</h4>
-<p>If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to API&#39;s authorization screen as displayed below.</p>
+<h4 id="2-authorisation-page">2. Authorisation Page</h4>
+<p>If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to the API&#39;s authorisation screen as displayed below.</p>
 <p><img src="../images/APIAuthorizationScreen.png" alt="logo" title="API Authorization Page"></p>
 <h4 id="3-redirect-url">3. Redirect URL</h4>
-<p>When the user completes the authorization process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in your API setup, with the authorization code.</p>
-<p>If a valid granted permission exists for the client, the authorization screen is by-passed and the user is immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request.</p>
+<p>When the user completes the authorisation process, the browser is redirected to the URL  provided in the redirect_uri query parameter or default redirect_uri in the API setup, with the authorization code.</p>
+<p>If a valid granted permission exists for the client, the authorisation screen will be bypassed and the user will be immediately redirected to the URL provided in the redirect_uri query parameter, which will contain the authorization code and a state if a state parameter was sent in the original request.</p>
 <p>Example : <a href="http://www.client-url.com.au/oauth/authCode?code=LqAx2wO" target="_blank">http://www.client-url.com.au/oauth/authCode?code=LqAx2wO</a></p>
-<p>For security reasons, the authorization code has a very short lifespan ( <strong>about 5 - 10 mins</strong> ) and must be used within moments of receiving it.  By any means if the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL API, as explained above.</p>
-<p>Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that has somehow slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack.</p>
-<p>There may be instances where the request for a Authorization Code may fail/be denied.  The below table illustrates the causes of a bad request and the outcome the client sees.</p>
+<p>For security reasons, the authorization code has a very short lifespan ( <strong>about 5 - 10 mins</strong> ) and must therefore be used as soon as it is received.  If the authorization code expires, the client needs to re-request a new authorization token by performing a request to the BGL API, as explained above.</p>
+<p>Before the client application accepts the authorization code, the client application should ensure that the value returned in the state parameter matches the state value from the original authorization code request made to BGL with the state parameter. This ensures that you are dealing with the real original user and not a malicious script that may have slipped into the middle of your authentication flow.  If the state values do not match, you are likely the victim of a CSRF attack.</p>
+<p>There may be instances where the request for a Authorization Code may fail or be denied.  The table below illustrates the causes of a bad request and the outcome the client sees.</p>
 <table>
     <tr>
         <th>Cause</th>
@@ -902,19 +902,19 @@
     </tr>
     <tr>
         <td>Invalid Response Type</td>
-        <td>If response type parameter contains anything apart from &quot;code&quot;</td>
+        <td>If response type parameter contains anything except &quot;code&quot;</td>
         <td>UNSUPPORTED_RESPONSE_TYPE</td>
         <td>UNSUPPORTED RESPONSE TYPE &lt;The passed invalid code&gt;</td>
     </tr>
     <tr>
         <td>Invalid scope</td>
-        <td>The current valid scope are &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;. Appart from these, if the client passes anything else as scope BGL will return an error</td>
+        <td>The current valid list of scope is &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;. If the client passes anything else as scope, BGL will return an error</td>
         <td>INVALID_SCOPE</td>
         <td>Invalid scope : &lt;The invalid scope passed&gt;</td>
     </tr>
     <tr>
         <td>Invalid redirect URI</td>
-        <td>The client should pass the redirect uri that was registered with BGL, as explained in Section - <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a>. If an invalid redirect uri is passed as the redirect_uri parameter, the BGL system will respond with an error</td>
+        <td>The client should pass the redirect uri that was registered with BGL, as explained in Section - <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a>. If an invalid redirect uri is passed as the redirect_uri parameter, BGL will respond with an error</td>
         <td>INVALID GRANT</td>
         <td>INVALID REDIRECT: &lt;passed invalid uri&gt; DOES NOT MATCH ONE OF THE REGISTERED VALUES: [&lt;the url that is registered with the system&gt;]</td>
     </tr>

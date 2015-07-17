@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2" data-basepath=".." data-revision="1437021354066">
+    <div class="book"  data-level="2" data-basepath=".." data-revision="1437117766390">
     
 
 <div class="book-summary">
@@ -821,10 +821,10 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1531">
+                    <section class="normal" id="section-gitbook_152">
                     
                         <h1 id="grant-refresh-token">Grant Refresh Token</h1>
-<p>The refresh token grant is performed by exchanging a Refresh Token received during a previous authorization request for an access token  (see <a href="../getting_started/obtaining_request_token.html">Obtaining Access Token</a>), using the token endpoint.</p>
+<p>The Refresh Token grant is performed by exchanging a Refresh Token received during a previous authorization request for an access token  (see <a href="../getting_started/obtaining_request_token.html">Obtaining Access Token</a>), using the token endpoint.</p>
 <p>There are two ways of performing this request</p>
 <p><strong>Request A :</strong> Refresh Token with Authorization Header (Recommended)</p>
  <table>
@@ -840,7 +840,7 @@
                 </tr>
             </table>
 
-<p>Following are the request parameters</p>
+<p>The request parameters are as follows:</p>
 <table>
     <tr>
         <th>Parameter</th>
@@ -854,7 +854,7 @@
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>refresh token obtained previously. see <a href="../getting_started/obtaining_request_token.html">Obtaining Access Token</a> </td>
+        <td>Refresh Token obtained previously. See <a href="../getting_started/obtaining_request_token.html">Obtaining Access Token</a> </td>
         <td>Mandatory</td>
     </tr>
     <tr>
@@ -864,7 +864,7 @@
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>A URL-encoded, space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
         <td>Mandatory</td>
     </tr>
 </table>
@@ -899,7 +899,7 @@ curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/oauth/
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>refresh token obtained previously. see <a href="../getting_started/obtaining_request_token.html">Obtaining Access Token</a> </td>
+        <td>Refresh Token obtained previously. See <a href="../getting_started/obtaining_request_token.html">Obtaining Access Token</a> </td>
         <td>Mandatory</td>
     </tr>
     <tr>
@@ -909,12 +909,12 @@ curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/oauth/
     </tr>
      <tr>
         <td>client_secret</td>
-        <td>The client secret provided by BGL<br><br>See <a href="../getting_started/obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a> on how to obtain Client Secret.</td>
+        <td>The Client Secret provided by BGL<br><br>See <a href="../getting_started/obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a> on how to obtain Client Secret.</td>
         <td>Mandatory</td>
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>A URL-encoded, space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
         <td>Mandatory</td>
     </tr>
 </table>
@@ -923,7 +923,7 @@ curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/oauth/
 <pre><code class="lang-javascript">
 curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/oauth/token?grant_type=refresh_token&amp;refresh_token=&lt;refresh token&gt;&amp;client_id=&lt;client id&gt;&amp;client_secret=&lt;client secret&gt;&amp;scope=&lt;scope&gt;</span>
 </code></pre>
-<p>Both of the above requests should return a response similar to example provided below.</p>
+<p>Both of the above requests should return a response similar to the example provided below.</p>
 <pre><code class="lang-javascript">
 {
     <span class="hljs-string">"access_token"</span>: <span class="hljs-string">"a3da52c7-4bd2-4d42-a58d-efa64b4de453"</span>,
