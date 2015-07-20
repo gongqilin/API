@@ -13,7 +13,7 @@ In order for the client to obtain an Access Token, the client application should
     </tr>
     <tr>
         <td>POST</td>
-        <td>https://api-staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code=&lt;Auth-Code&gt;&scope=&lt;fundList&gt;&client_id=&lt;API-Client-ID&gt;&client_secret=&lt;API-Client-Secret &gt;</td>
+        <td>https://api-staging.bgl360.com.au/oauth/token?grant_type=authorization_code&code=&lt;Auth-Code&gt;&scope=&lt;Scope&gt;&client_id=&lt;API-Client-ID&gt;&client_secret=&lt;API-Client-Secret &gt;</td>
     </tr>
 </table>
 
@@ -65,8 +65,6 @@ curl -X POST https://api-staging.bgl360.com.au/oauth/token?grant_type=authorizat
 ```
 
 Example **B** (**Not recommended for production**) of a request  for the Request Token is as follows.
-
-Basic authorization Header is  base64 encoded of <API Client Id>:<API Client Secret>
 
 ```javascript
 
