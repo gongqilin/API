@@ -1,4 +1,4 @@
-# User Detail - XML
+# User Details - XML
 
 #### cURL Request :
 

@@ -37,7 +37,7 @@ The following parameters can be added in the http request.
     </tr>
     <tr>
         <td align="center">end</td>
-        <td>End date of Investment.  Expected Format : yyyy-mm-dd</td>
+        <td>End date of Investment.  Expected format : yyyy-mm-dd</td>
         <td  align="center">Optional</td>
     </tr>
     <tr>
@@ -67,7 +67,7 @@ See section [Investment Summary - XML](../sample_data/investment_summary_-_xml.m
 #### Error Messages
 
 
-If the provided fund id is not found in BGL data, the following error will be returned.
+If the provided fund id is not found in the BGL data, the following error will be returned.
 
 ```javascript
 
@@ -79,7 +79,7 @@ If the provided fund id is not found in BGL data, the following error will be re
 
 ```
 
-If Start and End Date are not valid dates, the following error will be returned.
+If Start and End Dates are not valid dates, the following error will be returned.
 
 ```javascript
 
@@ -103,7 +103,7 @@ If only one date is present, the following error will be returned.
 
 ```
 
-If end date is greater than the start date, the following error will be returned.
+If End Date is after the Start Date, the following error will be returned.
 
 ```javascript
 

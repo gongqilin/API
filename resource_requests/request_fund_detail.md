@@ -55,7 +55,7 @@ See section - [Fund Detail - JSON](../sample_data/fund_detail_-_json.md) for sam
 See section [Fund Detail - XML](../sample_data/fund_detail_-_xml.md) for sample request and xml response.
 
 
-If the url does not contain the fundId parameter BGL API will notify us with the following error.
+If the url does not contain the fundId parameter, the BGL API will return the following error.
 
 #### Error Messages
 
@@ -69,7 +69,7 @@ If the url does not contain the fundId parameter BGL API will notify us with the
 
 ```
 
-If the provided fund id is not found in BGL data, the following error will be returned.
+If the provided fund id is not found in the BGL data, the following error will be returned.
 
 ```javascript
 

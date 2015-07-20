@@ -1,9 +1,9 @@
-# Request : User Detail
+# Request : User Details
 
 <table>
     <tr>
         <td>Description</td>
-        <td>Allows you to retrieve the details of the user</td>
+        <td>Allows you to retrieve the details of a user</td>
     </tr>
     <tr>
         <td>Request URI</td>

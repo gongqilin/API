@@ -3,7 +3,7 @@
 <table>
     <tr>
         <td>Description</td>
-        <td>Allows you to retrieve a list of fund owned by the resource owner (BGL User), which also returns the fund id, which could be used for subsequent API requests</td>
+        <td>Allows you to retrieve a list of funds owned by the resource owner (BGL User), which also returns the fund id, which can be used for subsequent API requests</td>
     </tr>
     <tr>
         <td>Request URI</td>

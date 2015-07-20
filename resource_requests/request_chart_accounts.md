@@ -59,7 +59,7 @@ See section [Chart of Accounts - XML](../sample_data/chart_of_accounts_-_xml.md)
 #### Error Messages
 
 
-If the provided fund id is not found in BGL data, the following error will be returned.
+If the provided fund id is not found in the BGL data, the following error will be returned.
 
 ```javascript
 

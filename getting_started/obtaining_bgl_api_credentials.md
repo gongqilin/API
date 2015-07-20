@@ -1,6 +1,6 @@
 # Obtaining BGL API Credentials ( Step 1/4 )
 
-In order to consume BGL API, the consuming application needs to register it self with BGL.  BGL will provide the following information.
+In order to consume the BGL API, the consuming application needs to register itself with BGL first.  BGL will provide the following information.
 
 <table>
     <tr>
@@ -13,16 +13,17 @@ In order to consume BGL API, the consuming application needs to register it self
     </tr>
     <tr>
         <td>Client Secret</td>
-        <td>An app requesting an access token has to know the Client Secret in order to gain the token. The Client Secret will provide authorization to request the Access Token.  <br><br> <strong>Client Secret must be protected at all costs; if the secret is compromised, a new one must be generated and all authorized apps will have to be updated with the new Client Secret.</strong></td>
+        <td>An app requesting an access token has to know the Client Secret first in order to gain access to the token. The Client Secret will provide authorisation to request the Access Token.  <br><br> <strong>Client Secret must be protected at all cost. If the Client Secret is compromised, a new one must be generated and all authorised apps will have to be updated with the new Client Secret.</strong>
+        <br><br> <strong>In any manner, if you feel the Client Secret is compromised, please contact [BGL API Team](mailto:wtan@bglcorp.com.au) immediately. </strong></td>
     </tr>
     <tr>
         <td>Redirect URI</td>
-        <td>The URI that will be used for forwarding - based on the authorization or denial. This will be part of your application that will handle authorization or access tokens.</td>
+        <td>The URI that will be used for forwarding - based on the authorisation or denial. This will be part of your application that will handle authorisation or access tokens.</td>
     </tr>
     <tr>
         <td>Simple Fund 360 - Demo Account</td>
-        <td>This Demo user account could be used to authenticate the client application</td>
+        <td>This Demo Account can be used to authenticate the client application</td>
     </tr>
 </table>
 
-As of now, the system to provide these information are still work-in-progress.  Please do send an email requesting for the above information to wtan@bglcorp.com.au
+The system from which you can retrieve the above information is currently still work-in-progress.  If you want to request the above information, please send an email to wtan@bglcorp.com.au.
