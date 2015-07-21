@@ -11,7 +11,7 @@ To request an Authorization Code, the client application must send an HTTP reque
     </tr>
     <tr>
         <td>GET</td>
-        <td>https://api-staging.bgl360.com.au/oauth/authorize?response_type=code&client_id=&lt;API-Client-ID&gt;&scope=&lt;fundList &gt;</td>
+        <td>https://api-staging.bgl360.com.au/oauth/authorize?response_type=code&client_id=&lt;API-Client-ID&gt;&scope=&lt;Scope &gt;</td>
     </tr>
 </table>
 
