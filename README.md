@@ -15,7 +15,7 @@ The objective of this document is to provide information on the BGL API set-up a
 * 1.0.1 - See [Release Log](https://github.com/BGLCorp/API/releases)
 
 
-**Envoirnment(s)**
+**Environment(s)**
 * Production:
 https://api.bgl360.com.au
 * Pre-production/Sandbox:
