@@ -15,7 +15,7 @@
    * [Request : Investment Summary](resource_requests/request_investment_summary.md)
    * [Request : Chart of Accounts](resource_requests/request_chart_accounts.md)
    * [Request : General Ledger](resource_requests/request_general_ledger.md)
-   * [Request : Trial Balance](resource_requests/request__trial_balance.md)
+   * [Request : Trial Balance](resource_requests/request_trial_balance.md)
    * [Request : User Detail](resource_requests/request_user_detail.md)
 * [Sample Data](sample_data/README.md)
    * [Fund List](sample_data/fund_list.md)
