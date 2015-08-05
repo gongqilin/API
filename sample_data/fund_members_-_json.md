@@ -14,39 +14,54 @@ curl -X POST https://api-staging.bgl360.com.au/fund/members?fundId=0000000048f24
 ```javascript
 
 {
-  "fundId": "8a009e3048f2773f0148f28fb4ca002e",
   "members": [
     {
-      "firstName": "ore garagJJoe",
-      "lastName": "hMhtliMl",
-      "title": null,
-      "dob": "1952-10-19",
+      "firstName": "Rogger",
+      "lastName": "Ross",
+      "title": "Mr",
+      "dob": "2015-07-29",
       "address": {
-        "streetLine1": "B2uao2BuveoB o n5o ",
-        "streetLine2": null,
-        "city": "Highton",
-        "state": "VICTORIA",
-        "country": "AU",
-        "postCode": "3216"
+        "streetLine1": "608",
+        "streetLine2": "Hawthorn Rd",
+        "city": "Brighton",
+        "state": "VIC",
+        "country": "Australia",
+        "postCode": "3522"
       },
-      "email": null,
+      "email": "rogger.ross@xdc.com.au",
       "gender": "Male"
     },
     {
-      "firstName": " RBRnRRBteru",
-      "lastName": "MteMteii",
-      "title": null,
-      "dob": "1947-07-02",
+      "firstName": "Margret",
+      "lastName": "Ross",
+      "title": "Mrs",
+      "dob": "2015-08-02",
       "address": {
-        "streetLine1": "B2uao2BuveoB o n5o ",
-        "streetLine2": null,
-        "city": "Highton",
-        "state": "VICTORIA",
-        "country": "AU",
-        "postCode": "3216"
+        "streetLine1": "2005",
+        "streetLine2": "xyz street",
+        "city": "Boxhill",
+        "state": "VIC",
+        "country": "Australia",
+        "postCode": "5447"
       },
-      "email": null,
+      "email": "margret.ross@xsc.com.au",
       "gender": "Female"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Mercy",
+      "title": "Mr",
+      "dob": "2015-07-31",
+      "address": {
+        "streetLine1": "z",
+        "streetLine2": "xtt",
+        "city": "Perth",
+        "state": "WA",
+        "country": "Australia",
+        "postCode": "7889"
+      },
+      "email": "nyh.eee@dse.com.au",
+      "gender": "Nonspecified"
     }
   ]
 }

@@ -14,39 +14,54 @@ curl -X POST https://api-staging.bgl360.com.au/fund/members.xml?fundId=000000004
 ```xml
 
 <root xmlns='http://www.bglcorp.com.au'>
-  <FundId>8a009e3048f2773f0148f28fb4ca002e</FundId>
   <Members>
     <Member>
-      <FirstName>ore garagJJoe</FirstName>
-      <LastName>hMhtliMl</LastName>
-      <Title />
-      <Dob>1952-10-19</Dob>
+      <FirstName>Rogger</FirstName>
+      <LastName>Ross</LastName>
+      <Title>Mr</Title>
+      <Dob>2015-07-29</Dob>
       <Address>
-        <StreetLine1>B2uao2BuveoB o n5o </StreetLine1>
-        <StreetLine2 />
-        <City>Highton</City>
-        <State>VICTORIA</State>
-        <Country>AU</Country>
-        <PostCode>3216</PostCode>
+        <StreetLine1>608</StreetLine1>
+        <StreetLine2>Hawthorn Road</StreetLine2>
+        <City>Brighton</City>
+        <State>VIC</State>
+        <Country>Australia</Country>
+        <PostCode>25522</PostCode>
       </Address>
-      <Email />
+      <Email>rogger.ross@reee.com.au</Email>
       <Gender>Male</Gender>
     </Member>
     <Member>
-      <FirstName> RBRnRRBteru</FirstName>
-      <LastName>MteMteii</LastName>
-      <Title />
-      <Dob>1947-07-02</Dob>
+      <FirstName>Margret</FirstName>
+      <LastName>Ross</LastName>
+      <Title>Mrs</Title>
+      <Dob>2015-08-02</Dob>
       <Address>
-        <StreetLine1>B2uao2BuveoB o n5o </StreetLine1>
-        <StreetLine2 />
-        <City>Highton</City>
-        <State>VICTORIA</State>
-        <Country>AU</Country>
-        <PostCode>3216</PostCode>
+        <StreetLine1>2005</StreetLine1>
+        <StreetLine2>xyz street</StreetLine2>
+        <City>Boxhill</City>
+        <State>VIC</State>
+        <Country>Australia</Country>
+        <PostCode>5447</PostCode>
       </Address>
-      <Email />
+      <Email>margret.ross@reer.com.au</Email>
       <Gender>Female</Gender>
+    </Member>
+    <Member>
+      <FirstName>Tom</FirstName>
+      <LastName>Mercy</LastName>
+      <Title>Mr</Title>
+      <Dob>2015-07-31</Dob>
+      <Address>
+        <StreetLine1>232</StreetLine1>
+        <StreetLine2>abc</StreetLine2>
+        <City>Perth</City>
+        <State>WA</State>
+        <Country>Austrlia</Country>
+        <PostCode>7889</PostCode>
+      </Address>
+      <Email>nyh.eee@dse.com.au</Email>
+      <Gender>Nonspecified</Gender>
     </Member>
   </Members>
 </root>
