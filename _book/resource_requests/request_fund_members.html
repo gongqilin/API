@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>User Detail - JSON | BGL API</title>
+        <title>Request : Fund Members | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../sample_data/user_detail_-_xml.html" />
+    <link rel="next" href="../resource_requests/request_user_detail.html" />
     
     
-    <link rel="prev" href="../sample_data/user_detail.html" />
+    <link rel="prev" href="../resource_requests/request_trial_balance.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.9.1" data-basepath=".." data-revision="1438744878883">
+    <div class="book"  data-level="4.8" data-basepath=".." data-revision="1438744878883">
     
 
 <div class="book-summary">
@@ -312,7 +312,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.8" data-path="resource_requests/request_fund_members.html">
+        <li class="chapter active" data-level="4.8" data-path="resource_requests/request_fund_members.html">
             
                 
                     <a href="../resource_requests/request_fund_members.html">
@@ -815,7 +815,7 @@
                 
     
         
-        <li class="chapter active" data-level="5.9.1" data-path="sample_data/user_detail_-_json.html">
+        <li class="chapter " data-level="5.9.1" data-path="sample_data/user_detail_-_json.html">
             
                 
                     <a href="../sample_data/user_detail_-_json.html">
@@ -961,24 +961,70 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_136">
+                    <section class="normal" id="section-gitbook_102">
                     
-                        <h1 id="user-details---json">User Details - JSON</h1>
-<h4 id="curl-request-">cURL Request :</h4>
-<pre><code class="lang-javascript">
-curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/user/detail --header "Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b"</span>
-</code></pre>
-<h4 id="response-">Response :</h4>
+                        <h1 id="request--fund-members">Request : Fund Members</h1>
+<table>
+    <tr>
+        <td>Description</td>
+        <td>Allows you to retrieve the members attached to a Fund Id</td>
+    </tr>
+    <tr>
+        <td>Request URI</td>
+        <td>/fund/members</td>
+    </tr>
+    <tr>
+        <td>Method</td>
+        <td>GET | POST</td>
+    </tr>
+</table>
+
+<h3 id="parameters">Parameters</h3>
+<p>The following parameters can be added in the http request.</p>
+<p><table>
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <td align="center">fundId</td>
+        <td>The unique fund id</td>
+        <td  align="center">Mandatory</td>
+    </tr>
+    <tr>
+        <td align="center">format=json <br> or <br> .json</td>
+        <td>This is the default. Will return the data in JSON format</td>
+        <td  align="center">Optional</td>
+    </tr>
+    <tr>
+        <td align="center">format=xml  <br> or <br> .xml</td>
+        <td>Will return the data in XML format</td>
+        <td  align="center">Optional</td>
+    </tr></p>
+<table>
+
+<p>If the format parameter is not set, the returned result will always be JSON.</p>
+<h3 id="sample-request-and-response">Sample Request and Response</h3>
+<h4 id="json">JSON</h4>
+<p>See section - <a href="../sample_data/fund_members_-_json.html">Fund Members - JSON</a> for sample request and json response.</p>
+<h4 id="xml">XML</h4>
+<p>See section <a href="../sample_data/fund_members_-_xml.html">Fund Members - XML</a> for sample request and xml response.</p>
+<p>If the url does not contain the fundId parameter, the BGL API will return the following error.</p>
+<h4 id="error-messages">Error Messages</h4>
 <pre><code class="lang-javascript">
 {
-    <span class="hljs-string">"userDetail"</span>: {
-        <span class="hljs-string">"username"</span>: <span class="hljs-string">"xyz@bglcorp.com.au"</span>,
-        <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Ronaldinho"</span>,
-        <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Assis Moreira"</span>,
-        <span class="hljs-string">"firm"</span>: <span class="hljs-string">"bgltestapi1"</span>,
-        <span class="hljs-string">"role"</span>: <span class="hljs-string">"Admin"</span>,
-        <span class="hljs-string">"title"</span>: <span class="hljs-literal">null</span>
-    }
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"Failed to call members"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"Fund Id is required"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">400</span>
+}
+</code></pre>
+<p>If the provided fund id is not found in the BGL data, the following error will be returned.</p>
+<pre><code class="lang-javascript">
+{
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"The fund is not found/accessible"</span>,
+    <span class="hljs-string">"errors"</span>: [<span class="hljs-string">"The fund is not found/accessible"</span>],
+    <span class="hljs-string">"status"</span>: <span class="hljs-number">401</span>
 }
 </code></pre>
 
@@ -991,10 +1037,10 @@ curl -X POST https:<span class="hljs-comment">//api-staging.bgl360.com.au/user/d
         </div>
 
         
-        <a href="../sample_data/user_detail.html" class="navigation navigation-prev " aria-label="Previous page: User Detail"><i class="fa fa-angle-left"></i></a>
+        <a href="../resource_requests/request_trial_balance.html" class="navigation navigation-prev " aria-label="Previous page: Request : Trial Balance"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../sample_data/user_detail_-_xml.html" class="navigation navigation-next " aria-label="Next page: User Detail - XML"><i class="fa fa-angle-right"></i></a>
+        <a href="../resource_requests/request_user_detail.html" class="navigation navigation-next " aria-label="Next page: Request : User Detail"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
