@@ -11,8 +11,8 @@ The objective of this document is to provide information on the BGL API set-up a
 
 
 
-**Current Version**
-* 1.0.1 - See [Release Log](https://github.com/BGLCorp/API/releases)
+**Version**
+* 1.0.2 pre-release - See [Release Log](https://github.com/BGLCorp/API/releases)
 
 
 **Environment(s)**

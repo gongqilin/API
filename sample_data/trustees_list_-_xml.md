@@ -60,6 +60,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-21</Dob>
+                                <Position>Director</Position>
                             </Contact>
                             <Contact>
                                 <FirstName>firstname</FirstName>
@@ -67,6 +68,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-14</Dob>
+                                <Position>Director</Position>
                             </Contact>
                         </Contacts>
                     </Detail>
@@ -138,6 +140,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-14</Dob>
+                                <Position>Director</Position>
                             </Contact>
                             <Contact>
                                 <FirstName>firstname</FirstName>
@@ -145,6 +148,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-24</Dob>
+                                <Position>Director</Position>
                             </Contact>
                         </Contacts>
                     </Detail>
@@ -192,6 +196,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-20</Dob>
+                                <Position>Director</Position>
                             </Contact>
                             <Contact>
                                 <FirstName>firstname</FirstName>
@@ -199,6 +204,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-19</Dob>
+                                <Position>Director</Position>
                             </Contact>
                             <Contact>
                                 <FirstName>firstname</FirstName>
@@ -206,6 +212,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-20</Dob>
+                                <Position>Director</Position>
                             </Contact>
                             <Contact>
                                 <FirstName>firstname</FirstName>
@@ -213,6 +220,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees.xml --header "Autho
                                 <IsUser>false</IsUser>
                                 <Title>title</Title>
                                 <Dob>2015-07-18</Dob>
+                                <Position>Director</Position>
                             </Contact>
                         </Contacts>
                     </Detail>

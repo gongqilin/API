@@ -60,14 +60,16 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees --header "Authoriza
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-21"
+                "dob": "2015-07-21",
+                "position": "Director"
               },
               {
                 "firstName": "firstname",
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-14"
+                "dob": "2015-07-14",
+                "position": "Director"
               }
             ]
           }
@@ -144,14 +146,16 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees --header "Authoriza
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-14"
+                "dob": "2015-07-14",
+                "position": "Director"
               },
               {
                 "firstName": "firstname",
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-24"
+                "dob": "2015-07-24",
+                "position": "Director"
               }
             ]
           }
@@ -198,28 +202,32 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trustees --header "Authoriza
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-20"
+                "dob": "2015-07-20",
+                "position": "Director"
               },
               {
                 "firstName": "firstname",
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-19"
+                "dob": "2015-07-19",
+                "position": "Director"
               },
               {
                 "firstName": "firstname",
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-20"
+                "dob": "2015-07-20",
+                "position": "Director"
               },
               {
                 "firstName": "firstname",
                 "lastName": "surname",
                 "isUser": false,
                 "title": "title",
-                "dob": "2015-07-18"
+                "dob": "2015-07-18",
+                "position": "Director"
               }
             ]
           }
