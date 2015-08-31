@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>User Detail - XML | BGL API</title>
+        <title>API Application Type(s) | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../change_log/README.html" />
+    <link rel="next" href="../my_application/application_status.html" />
     
     
-    <link rel="prev" href="../sample_data/user_detail_-_json.html" />
+    <link rel="prev" href="../api_rate_limits/README.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="9.9.2" data-basepath=".." data-revision="1441001485928">
+    <div class="book"  data-level="6" data-basepath=".." data-revision="1441001485928">
     
 
 <div class="book-summary">
@@ -285,7 +285,7 @@
         </li>
     
         
-        <li class="chapter " data-level="6" data-path="application_types/README.html">
+        <li class="chapter active" data-level="6" data-path="application_types/README.html">
             
                 
                     <a href="../application_types/README.html">
@@ -965,7 +965,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="9.9.2" data-path="sample_data/user_detail_-_xml.html">
+        <li class="chapter " data-level="9.9.2" data-path="sample_data/user_detail_-_xml.html">
             
                 
                     <a href="../sample_data/user_detail_-_xml.html">
@@ -1095,25 +1095,43 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_448">
+                    <section class="normal" id="section-gitbook_398">
                     
-                        <h1 id="user-details---xml">User Details - XML</h1>
-<h4 id="curl-request-">cURL Request :</h4>
-<pre><code>
-curl -X POST https://api-staging.bgl360.com.au/user/detail.xml --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response-">Response :</h4>
-<pre><code class="lang-xml">
-<span class="hljs-tag">&lt;<span class="hljs-title">root</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">'http://www.bglcorp.com.au'</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">UserDetail</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Username</span>&gt;</span>xyz@bglcorp.com.au<span class="hljs-tag">&lt;/<span class="hljs-title">Username</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>Ronaldinho<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>Assis Moreira<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Role</span>&gt;</span>Admin<span class="hljs-tag">&lt;/<span class="hljs-title">Role</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Title</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">UserDetail</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">root</span>&gt;</span>
-</code></pre>
+                        <h1 id="api-application-types">API Application Type(s)</h1>
+<p>The Application Type, defines;</p>
+<ol>
+<li>What an Application can access.</li>
+<li>What is the X-Rate Daily limit.</li>
+<li>What is the X-Rate limit.</li>
+<li>Payment terms.</li>
+</ol>
+<p>The following table illustrates the Application/Client types that are currently supported and their role in the System.</p>
+<table>
+    <tr>
+        <th>Application Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Developer</td>
+        <td>To be added.</td>
+    </tr>
+    <tr>
+        <td>Partner</td>
+        <td>To be added.</td>
+    </tr>
+    <tr>
+        <td>Internal</td>
+        <td>To be added.</td>
+    </tr>
+    <tr>
+        <td>Trial</td>
+        <td>To be added.</td>
+    </tr>
+    <tr>
+        <td>Paid Partner</td>
+        <td>To be added.</td>
+    </tr>
+</table>
 
                     
                     </section>
@@ -1124,10 +1142,10 @@ curl -X POST https://api-staging.bgl360.com.au/user/detail.xml --header &quot;Au
         </div>
 
         
-        <a href="../sample_data/user_detail_-_json.html" class="navigation navigation-prev " aria-label="Previous page: User Detail - JSON"><i class="fa fa-angle-left"></i></a>
+        <a href="../api_rate_limits/README.html" class="navigation navigation-prev " aria-label="Previous page: API Rate Limits"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../change_log/README.html" class="navigation navigation-next " aria-label="Next page: Change Log"><i class="fa fa-angle-right"></i></a>
+        <a href="../my_application/application_status.html" class="navigation navigation-next " aria-label="Next page: API Application Status"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

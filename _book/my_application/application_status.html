@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>User Detail - XML | BGL API</title>
+        <title>API Application Status | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../change_log/README.html" />
+    <link rel="next" href="../resource_requests/README.html" />
     
     
-    <link rel="prev" href="../sample_data/user_detail_-_json.html" />
+    <link rel="prev" href="../application_types/README.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="9.9.2" data-basepath=".." data-revision="1441001485928">
+    <div class="book"  data-level="7" data-basepath=".." data-revision="1441001485928">
     
 
 <div class="book-summary">
@@ -301,7 +301,7 @@
         </li>
     
         
-        <li class="chapter " data-level="7" data-path="my_application/application_status.html">
+        <li class="chapter active" data-level="7" data-path="my_application/application_status.html">
             
                 
                     <a href="../my_application/application_status.html">
@@ -965,7 +965,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="9.9.2" data-path="sample_data/user_detail_-_xml.html">
+        <li class="chapter " data-level="9.9.2" data-path="sample_data/user_detail_-_xml.html">
             
                 
                     <a href="../sample_data/user_detail_-_xml.html">
@@ -1095,25 +1095,29 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_448">
+                    <section class="normal" id="section-gitbook_408">
                     
-                        <h1 id="user-details---xml">User Details - XML</h1>
-<h4 id="curl-request-">cURL Request :</h4>
-<pre><code>
-curl -X POST https://api-staging.bgl360.com.au/user/detail.xml --header &quot;Authorization:bearer df2f0e40-606f-4311-8066-590732fd126b&quot;
-</code></pre><h4 id="response-">Response :</h4>
-<pre><code class="lang-xml">
-<span class="hljs-tag">&lt;<span class="hljs-title">root</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">'http://www.bglcorp.com.au'</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">UserDetail</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Username</span>&gt;</span>xyz@bglcorp.com.au<span class="hljs-tag">&lt;/<span class="hljs-title">Username</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">FirstName</span>&gt;</span>Ronaldinho<span class="hljs-tag">&lt;/<span class="hljs-title">FirstName</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">LastName</span>&gt;</span>Assis Moreira<span class="hljs-tag">&lt;/<span class="hljs-title">LastName</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Firm</span>&gt;</span>bgltestapi1<span class="hljs-tag">&lt;/<span class="hljs-title">Firm</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Role</span>&gt;</span>Admin<span class="hljs-tag">&lt;/<span class="hljs-title">Role</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">Title</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">UserDetail</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">root</span>&gt;</span>
-</code></pre>
+                        <h1 id="application-status">Application Status</h1>
+<p>The Application Status defines what the Application/Client could do based on the status.</p>
+<p>The following table illustrates the currently available Application/Client statuses and their role in the System.</p>
+<table>
+    <tr>
+        <th>Status</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Active</td>
+        <td>The Application is active and can access API end points.  <br>Displayed and Editable in My Applications.</td>
+    </tr>
+    <tr>
+        <td>Inactive</td>
+        <td>The Application is inactive and cannot access API end points. <br>Displayed and Editable in My Applications.</td>
+    </tr>
+    <tr>
+        <td>Deleted</td>
+        <td>The Application is deleted and cannot access API end points. <br>Not Displayed and Not Editable in My Applications.</td>
+    </tr>
+</table>
 
                     
                     </section>
@@ -1124,10 +1128,10 @@ curl -X POST https://api-staging.bgl360.com.au/user/detail.xml --header &quot;Au
         </div>
 
         
-        <a href="../sample_data/user_detail_-_json.html" class="navigation navigation-prev " aria-label="Previous page: User Detail - JSON"><i class="fa fa-angle-left"></i></a>
+        <a href="../application_types/README.html" class="navigation navigation-prev " aria-label="Previous page: API Application Type(s)"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../change_log/README.html" class="navigation navigation-next " aria-label="Next page: Change Log"><i class="fa fa-angle-right"></i></a>
+        <a href="../resource_requests/README.html" class="navigation navigation-next " aria-label="Next page: Resource Requests"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

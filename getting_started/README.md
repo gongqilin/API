@@ -1,4 +1,4 @@
-# Getting Started
+# API Setup
 
 This section takes you through the necessary steps to get you started with the BGL API.
 
