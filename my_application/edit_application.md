@@ -1,6 +1,6 @@
 # Edit Application
 
-The Edit Application Details page allows you to make changes to the application information you have previously entered.
+The Edit Application Details page allows you to make changes to the application information you have previously entered.  
 
 <table>
     <tr>
