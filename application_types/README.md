@@ -4,7 +4,7 @@ The Application Type, defines;
 
 1. What an Application can access.
 2. What is the X-Rate Daily limit.
-3. What is the X-Rate limit.
+3. What is the X-Rate 10mins limit.
 4. Payment terms.
 
 The following table illustrates the Application/Client types that are currently supported and their role in the System.
@@ -12,6 +12,11 @@ The following table illustrates the Application/Client types that are currently 
 <table>
     <tr>
         <th>Application Type</th>
+        <th>Daily limit</th>
+        <th>10mins limit</th>
+        <th>Allowed Scopes</th>
+        <th>Description</th>
+        <th>Description</th>
         <th>Description</th>
     </tr>
     <tr>
