@@ -10,8 +10,8 @@ The following table illustrates the currently available Application/Client statu
         <th>Description</th>
     </tr>
     <tr>
-        <td>Active</td>[Obtaining Access Token](../getting_started/obtaining_request_token.md)
-        <td>End-user can assign new [authorization code](../getting_started/request_for_an_authorization_code.md) and new access token to the application/client.  <br>The application/client can access user data with the access token</td>
+        <td>Active</td>[Obtaining Access Token](obtaining_request_token.md)
+        <td>End-user can assign new [[authorization code](../getting_started/obtaining_request_token.md)](../getting_started/request_for_an_authorization_code.md) and new access token to the application/client.  <br>The application/client can access user data with the access token</td>
     </tr>
     <tr>
         <td>Inactive</td>
