@@ -30,8 +30,8 @@ The following table illustrates the Application/Client types that are currently 
     </tr>
     <tr>
         <td>Paid Partner</td>
-        <th>1000</th>
         <th>Unlimited</th>
+        <th>1000</th>
         <th>all scopes</th>
     </tr>
 </table>
