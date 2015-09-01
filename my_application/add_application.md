@@ -6,7 +6,7 @@ Select **Add Application** in the Application List page as displayed below.
 
 This will redirect the user to the 'Setup New Application' Page as shown below.
 
-
+![Setup New Application](SetupNewApplication.png)
 
 
 
@@ -42,9 +42,13 @@ Following are the details that needs to be added to create an API Application/Cl
 
 Once you have entered the necessary information, ensure you have read and agreed to the the Terms and Conditions.
 
-Select 'Save' to add the API Application/client. The Application will be added and you will be redirected to the Edit Application Details page.
+![Save New Application](SaveNewApplication.png)
 
-The **Close** button will discard any information you have added and take the user to the Application List page.
+Select 'Save' as displayed above to add the API Application/client. The Application will be added and you will be redirected to the Edit Application Details page.
+
+![Close New Application](CloseNewApplication.png)
+
+The **Close** button, as displayed above will discard any information you have added and take the user to the Application List page.
 
 
 ####Success Messages
