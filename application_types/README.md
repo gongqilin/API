@@ -37,4 +37,4 @@ The following table illustrates the Application/Client types that are currently 
 </table>
 
 **Please contact to change your application type**
-*  [BGL API Team](mailto:wtan@bglcorp.com.au)
+*  [Email](mailto:wtan@bglcorp.com.au)
