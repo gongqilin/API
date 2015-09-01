@@ -3,35 +3,39 @@
 The Application Type, defines;
 
 1. What an Application can access.
-2. What is the X-Rate Daily limit.
-3. What is the X-Rate limit.
-4. Payment terms.
+2. What is the Daily Rate Limit.
+3. What is the 10mins Rate Limit.
+
 
 The following table illustrates the Application/Client types that are currently supported and their role in the System.
 
 <table>
     <tr>
-        <th>Application Type</th>
-        <th>Description</th>
+        <th>Application/Client Type</th>
+        <th>[Daily Rate Limit](../api_rate_limites/README.md)</th>
+        <th>[10mins Rate Limit](../api_rate_limites/README.md)</th>
+        <th>[Allowed Scopes](../api_scopes/README.md)</th>
     </tr>
     <tr>
         <td>Developer</td>
-        <td>To be added.</td>
+        <th>1000</th>
+        <th>100</th>
+        <th>developer</th>
     </tr>
     <tr>
         <td>Partner</td>
-        <td>To be added.</td>
-    </tr>
-    <tr>
-        <td>Internal</td>
-        <td>To be added.</td>
-    </tr>
-    <tr>
-        <td>Trial</td>
-        <td>To be added.</td>
+        <th>Unlimited</th>
+        <th>500</th>
+        <th>developer, audit, investment</th>
     </tr>
     <tr>
         <td>Paid Partner</td>
-        <td>To be added.</td>
+        <th>Unlimited</th>
+        <th>1000</th>
+        <th>all scopes</th>
     </tr>
 </table>
+
+
+**To change your application/client type, [please contact us](mailto:wtan@bglcorp.com.au)**
+

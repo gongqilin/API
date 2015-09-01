@@ -5,24 +5,18 @@ The API Scope defines what end points are accessible for a given scope.  The bel
 <table>
     <tr>
         <th>End Point</th>
-        <th>Developer</th>
-        <th>Fund List</th>
-        <th>Investment</th>
-        <th>Selfwealth</th>
-        <th>Audit</th>
+        <th>developer</th>
+        <th>investment</th>
+        <th>audit</th>
     </tr>
     <tr>
         <th>User Detail</th>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>Fund List</th>
-        <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
@@ -32,14 +26,10 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>Fund Members</th>
         <td></td>
-        <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
     </tr>
@@ -48,14 +38,10 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td></td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>Chart of Accounts</th>
         <td></td>
-        <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
     </tr>
@@ -64,23 +50,20 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td></td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>General Ledger</th>
         <td></td>
         <td></td>
-        <td></td>
-        <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>Trial Balance</th>
         <td></td>
         <td></td>
-        <td></td>
-        <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
     </tr>
 </table>
+
+**To change the scope, [please contact us](mailto:wtan@bglcorp.com.au)**
+

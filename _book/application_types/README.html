@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="6" data-basepath=".." data-revision="1441001485928">
+    <div class="book"  data-level="6" data-basepath=".." data-revision="1441071799187">
     
 
 <div class="book-summary">
@@ -1095,43 +1095,45 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_398">
+                    <section class="normal" id="section-gitbook_634">
                     
                         <h1 id="api-application-types">API Application Type(s)</h1>
 <p>The Application Type, defines;</p>
 <ol>
 <li>What an Application can access.</li>
-<li>What is the X-Rate Daily limit.</li>
-<li>What is the X-Rate limit.</li>
-<li>Payment terms.</li>
+<li>What is the Daily Rate Limit.</li>
+<li>What is the 10mins Rate Limit.</li>
 </ol>
 <p>The following table illustrates the Application/Client types that are currently supported and their role in the System.</p>
 <table>
     <tr>
-        <th>Application Type</th>
-        <th>Description</th>
+        <th>Application/Client Type</th>
+        <th><a href="../api_rate_limites/README.html">Daily Rate Limit</a></th>
+        <th><a href="../api_rate_limites/README.html">10mins Rate Limit</a></th>
+        <th><a href="../api_scopes/README.html">Allowed Scopes</a></th>
     </tr>
     <tr>
         <td>Developer</td>
-        <td>To be added.</td>
+        <th>1000</th>
+        <th>100</th>
+        <th>developer</th>
     </tr>
     <tr>
         <td>Partner</td>
-        <td>To be added.</td>
-    </tr>
-    <tr>
-        <td>Internal</td>
-        <td>To be added.</td>
-    </tr>
-    <tr>
-        <td>Trial</td>
-        <td>To be added.</td>
+        <th>Unlimited</th>
+        <th>500</th>
+        <th>developer, audit, investment</th>
     </tr>
     <tr>
         <td>Paid Partner</td>
-        <td>To be added.</td>
+        <th>Unlimited</th>
+        <th>1000</th>
+        <th>all scopes</th>
     </tr>
 </table>
+
+
+<p><strong>To change your application/client type, <a href="mailto:wtan@bglcorp.com.au" target="_blank">please contact us</a></strong></p>
 
                     
                     </section>

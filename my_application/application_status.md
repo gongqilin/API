@@ -10,15 +10,20 @@ The following table illustrates the currently available Application/Client statu
         <th>Description</th>
     </tr>
     <tr>
-        <td>Active</td>
-        <td>The Application is active and can access API end points.  <br>Displayed and Editable in My Applications.</td>
+        <td>Active
+        <td>1.
+End-user can assign new [authorization code](../getting_started/request_for_an_authorization_code.md) and new [access token](../getting_started/obtaining_request_token.md) to the application/client.  <br><br>2. The application/client can access data with the access token<br><br>3. Owner can see and edit the general details of the application/client</td>
     </tr>
     <tr>
         <td>Inactive</td>
-        <td>The Application is inactive and cannot access API end points. <br>Displayed and Editable in My Applications.</td>
+        <td>1.
+End-user can **NOT** assign new [authorization code](../getting_started/request_for_an_authorization_code.md) and new [access token](../getting_started/obtaining_request_token.md) to the application/client.  <br><br>2. The application/client can access data with the access token
+<br><br>3. Owner can see and edit the general details of the application/client</td>
     </tr>
     <tr>
         <td>Deleted</td>
-        <td>The Application is deleted and cannot access API end points. <br>Not Displayed and Not Editable in My Applications.</td>
+        <td>1.
+End-user can **NOT** assign new [authorization code](../getting_started/request_for_an_authorization_code.md) and new [access token](../getting_started/obtaining_request_token.md) to the application/client.  <br><br>2. The application/client can **NOT** access data with the access token<br><br>3. Owner can **NOT** see and edit the general details of the application/client<br><br>4. All existing access token(s) will be removed</td>
     </tr>
 </table>
+**To change your application/client status, [please contact us](mailto:wtan@bglcorp.com.au)**
