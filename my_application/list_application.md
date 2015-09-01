@@ -2,7 +2,7 @@
 
 Select the **'MY APPLICATION'** from the main menu.  This will take the user to the Application Listing page, as shown below.
 
-![Application Listing](ApplicationListing.png)
+![Application Listing](../images/ApplicationListing.png)
 
 
 The Application List displays the applications that are currently available under the logged in user's account.  The details that are displayed are as follows;

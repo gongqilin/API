@@ -1,6 +1,8 @@
 # Edit Application
 
-The Edit Application Details page allows you to make changes to the application information you have previously entered.  
+The Edit Application Details page as displayed below, allows you to make changes to the application information you have previously entered.
+
+![Edit Application](../images/EditApplication.png)
 
 <table>
     <tr>
@@ -25,28 +27,44 @@ The Edit Application Details page allows you to make changes to the application 
     </tr>
     <tr>
         <td>Logo in Authorization Page</td>
-        <td>The Logo that will be displayed in the Authorization Page.  Enter a valid url that points to the Organization Logo.  <br><br>Select 'Preview' to preview the entered logo URL.</td>
+        <td>The Logo that will be displayed in the Authorization Page.  Enter a valid url that points to the Organization Logo.  <br><br>Select 'Preview' to preview the entered logo URL as displayed below.
+        <br><br>
+        ![Preview Logo](../images/PreviewLogo.png)
+        </td>
         <td>No</td>
     </tr>
     <tr>
         <td>Authorize URL</td>
-        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to this URL to copy this URL to the clip board.  <br><br>Please see Request for Authorization section for more details.  </td>
+        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to this URL to copy this URL to the clip board, as shown below.
+        <br><br>
+        ![Copy Authorization URL](../images/CopyAuthorizationUrl.png)
+        <br><br>Please see Request for Authorization section for more details.  </td>
         <td>No</td>
     </tr>
     <tr>
         <td>Access Token URL</td>
-        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to this URL to copy this URL to the clip board.  <br><br>Please see Obtain Access Token section for more details.  Replace '%3CAUTHCODE%3E' with the actual Authorization code before using this URL.  </td>
+        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to this URL to copy this URL to the clip board, as shown below.  <br><br>
+        ![Copy Access Token URL](../images/CopyAccessTokenURL.png)
+        <br><br>Please see Obtain Access Token section for more details.  Replace '%3CAUTHCODE%3E' with the actual Authorization code before using this URL.  </td>
         <td>No</td>
     </tr>
     <tr>
         <td>Consumer Key</td>
-        <td>This is a read-only field, displaying the unique Client Id.</td>
+        <td>This is a read-only field, displaying the unique Client Id. Select the copy button next to this to copy this URL to the clip board, as shown below.  <br><br>
+        ![Copy Consumer Key](../images/CopyConsumerKey.png)</td>
         <td>Yes</td>
     </tr>
     <tr>
         <td>Conumer Secret</td>
         <td>This is a read-only field.  When the Application/Client is loaded into the Edit Application screen, the Client Secret is displayed in the encrypted format.
-        <br><br>Select **Regenerate Secret** to regenerate the Consumer Secret.  Once the Consumer Secret is regenerated it will be displayed in raw format.  This should be copied and safe guarded. When the Consume Secret is regenerated, the user will be displayed a copy button next to the generated secret.  You could select the copy button to copy the Consumer Secret to the clip board.
+        <br><br>Select **Regenerate Secret** as shown below, to regenerate the Consumer Secret.
+        <br><br>
+        ![Regenerate Secret](../images/RegenerateSecret.png)
+        <br><br>
+        Once the Consumer Secret is regenerated it will be displayed in raw format.  This should be copied and safe guarded. When the Consume Secret is regenerated, the user will be displayed a copy button next to the generated secret as shown below.<br><br>
+        ![Copy Secret](../images/CopySecret.png)
+        <br><br>
+        You could select the copy button to copy the Consumer Secret to the clip board.
         <br><br>Once the Application is saved this secret will be encrypted. BGL does not store the raw form and there is no way of retrieving the raw form.  </td>
         <td>Yes</td>
     </tr>
@@ -62,7 +80,10 @@ The Edit Application Details page allows you to make changes to the application 
     </tr>
 </table>
 
-Select 'Save' to update the API Application/client. The Application will be updated and you will be redirected to the List Application page.
+Select 'Save' as shown below, to update the API Application/client. The Application will be updated and you will be redirected to the List Application page.
+
+![Update Existing Application](../images/UpdateExistingApplication.png)
+
 
 ####Success Messages
 

@@ -2,11 +2,11 @@
 
 Select **Add Application** in the Application List page as displayed below.
 
-![Add Application](AddApplication.png)
+![Add Application](../images/AddApplication.png)
 
 This will redirect the user to the 'Setup New Application' Page as shown below.
 
-![Setup New Application](SetupNewApplication.png)
+![Setup New Application](../images/SetupNewApplication.png)
 
 
 
@@ -36,11 +36,6 @@ Following are the details that needs to be added to create an API Application/Cl
     <tr>
         <td>Scope</td>
         <td>The API Application/Client Scope. Please see Application/Client Scopes for more details.  Currently the supported type is 'Developer'.
-        
-        
-        <br>
-        [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md)
-        
         </td>
         <td>Yes</td>
     </tr>
@@ -48,11 +43,11 @@ Following are the details that needs to be added to create an API Application/Cl
 
 Once you have entered the necessary information, ensure you have read and agreed to the the Terms and Conditions.
 
-![Save New Application](SaveNewApplication.png)
+![Save New Application](../images/SaveNewApplication.png)
 
 Select 'Save' as displayed above to add the API Application/client. The Application will be added and you will be redirected to the Edit Application Details page.
 
-![Close New Application](CloseNewApplication.png)
+![Close New Application](../images/CloseNewApplication.png)
 
 The **Close** button, as displayed above will discard any information you have added and take the user to the Application List page.
 
