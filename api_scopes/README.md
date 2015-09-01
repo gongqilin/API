@@ -5,9 +5,9 @@ The API Scope defines what end points are accessible for a given scope.  The bel
 <table>
     <tr>
         <th>End Point</th>
-        <th>Developer</th>
-        <th>Investment</th>
-        <th>Audit</th>
+        <th>developer</th>
+        <th>investment</th>
+        <th>audit</th>
     </tr>
     <tr>
         <th>User Detail</th>
