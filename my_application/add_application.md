@@ -35,7 +35,13 @@ Following are the details that needs to be added to create an API Application/Cl
     </tr>
     <tr>
         <td>Scope</td>
-        <td>The API Application/Client Scope. Please see Application/Client Scopes for more details.  Currently the supported type is 'Developer'.</td>
+        <td>The API Application/Client Scope. Please see Application/Client Scopes for more details.  Currently the supported type is 'Developer'.
+        
+        
+        <br>
+        [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md)
+        
+        </td>
         <td>Yes</td>
     </tr>
 </table>
