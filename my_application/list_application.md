@@ -2,9 +2,7 @@
 
 Select the **'MY APPLICATION'** from the main menu.  This will take the user to the Application Listing page, as shown below.
 
-![logo](../images/ApplicationListing.png "API Authorization Page")
-
-
+![Application Listing](ApplicationListing.png)
 
 
 The Application List displays the applications that are currently available under the logged in user's account.  The details that are displayed are as follows;
@@ -37,6 +35,8 @@ The Application List displays the applications that are currently available unde
         <td>Yes (Default - the listing will be sorted in Descending order).</td>
     </tr>
 </table>
+
+For the convenience of the user, Newly created Applications/Clients within the last 05 minutes will be labeled as !['New'](new-flag.png) and the Applictions/Clients that are updated within the last 05 minutes will be labeled as !['Update'](update-flag.png).
 
 **Note :** Only Active and In-active Application(s)/Client(s) will be displayed.
 
