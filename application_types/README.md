@@ -26,7 +26,7 @@ The following table illustrates the Application/Client types that are currently 
         <td>Partner</td>
         <th>Unlimited</th>
         <th>500</th>
-        <th>developer, audit, invest</th>
+        <th>developer, audit, investment</th>
     </tr>
     <tr>
         <td>Paid Partner</td>
