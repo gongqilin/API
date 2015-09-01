@@ -64,3 +64,6 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td align="center">&#10004;</td>
     </tr>
 </table>
+
+**Please contact to change your application type**
+*  [Email](mailto:wtan@bglcorp.com.au)
