@@ -1,6 +1,14 @@
 # Add Application
 
-Select **Add Application** in the Application List page, and the user will be redirected to the 'Setup New Application' Page.
+Select **Add Application** in the Application List page as displayed below.
+
+![Add Application](AddApplication.png)
+
+This will redirect the user to the 'Setup New Application' Page as shown below.
+
+
+
+
 
 Following are the details that needs to be added to create an API Application/Client.
 
