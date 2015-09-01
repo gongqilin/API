@@ -36,5 +36,6 @@ The following table illustrates the Application/Client types that are currently 
     </tr>
 </table>
 
-**Please contact to change your application type**
-*  [Email](mailto:wtan@bglcorp.com.au)
+
+**To change your application/client type, [please contact us](mailto:wtan@bglcorp.com.au)**
+
