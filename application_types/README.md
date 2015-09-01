@@ -15,28 +15,23 @@ The following table illustrates the Application/Client types that are currently 
         <th>Daily limit</th>
         <th>10mins limit</th>
         <th>Allowed Scopes</th>
-        <th>Description</th>
-        <th>Description</th>
-        <th>Description</th>
     </tr>
     <tr>
         <td>Developer</td>
-        <td>To be added.</td>
+        <th>1000</th>
+        <th>100</th>
+        <th>developer</th>
     </tr>
     <tr>
         <td>Partner</td>
-        <td>To be added.</td>
-    </tr>
-    <tr>
-        <td>Internal</td>
-        <td>To be added.</td>
-    </tr>
-    <tr>
-        <td>Trial</td>
-        <td>To be added.</td>
+        <th>Daily limit</th>
+        <th>10mins limit</th>
+        <th>Allowed Scopes</th>
     </tr>
     <tr>
         <td>Paid Partner</td>
-        <td>To be added.</td>
+        <th>Daily limit</th>
+        <th>10mins limit</th>
+        <th>Allowed Scopes</th>
     </tr>
 </table>
