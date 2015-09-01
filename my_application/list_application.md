@@ -1,6 +1,6 @@
 # Application List
 
-Select the **'MY APPLICATION'** from the main menu.  This will take the user to the Application Listing page, as shown below.
+Select the **'MY APPLICATION'** from the Main menu.  This will take the user to the Application Listing page, as shown below.
 
 ![Application Listing](../images/ApplicationListing.png)
 
@@ -21,12 +21,12 @@ The Application List displays the applications that are currently available unde
     </tr>
     <tr>
         <td>Type</td>
-        <td>The API Application Type.  Please see Application/Client Types for more details.</td>
+        <td>The API Application Type.  Please see [API Application Type(s)](../application_types/README.md) for more details.</td>
         <td>Yes</td>
     </tr>
     <tr>
         <td>Status</td>
-        <td>The current status of the Appliction/Client.  Please see Application.Client Statuses for more details.</td>
+        <td>The current status of the Appliction/Client.  Please see [API Application Status](application_status.md) for more details.</td>
         <td>Yes</td>
     </tr>
     <tr>
@@ -36,8 +36,8 @@ The Application List displays the applications that are currently available unde
     </tr>
 </table>
 
-For the convenience of the user, Newly created Applications/Clients within the last 05 minutes will be labeled as 'New'  and the Applictions/Clients that are updated within the last 05 minutes will be labeled as 'Update'.
+For the convenience of the user, Newly created Applications/Clients within the last 05 minutes will be labeled as '**New**'  and the Applictions/Clients that are updated within the last 05 minutes will be labeled as '**Update**'.
 
-**Note :** Only Active and In-active Application(s)/Client(s) will be displayed.
+**Note :** Only  [Active](application_status.md#activeStatus) and [Inactive](application_status.md#inactiveStatus) Application(s)/Client(s) will be displayed.
 
-Each of the application that are displayed in the listing are clickable, which will take the User to the Application Edit Page.
+Each of the application that are displayed in the listing are clickable, which will take the User to the [Edit Application Details](edit_application.md) Page.

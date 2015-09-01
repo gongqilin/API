@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1441071799187">
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1441083535438">
     
 
 <div class="book-summary">
@@ -1095,10 +1095,13 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_639">
+                    <section class="normal" id="section-gitbook_73">
                     
                         <h1 id="add-application">Add Application</h1>
-<p>Select <strong>Add Application</strong> in the Application List page, and the user will be redirected to the &#39;Setup New Application&#39; Page.</p>
+<p>Select <strong>Add Application</strong> in the <a href="list_application.html">Application List</a> page as displayed below.</p>
+<p><img src="../images/AddApplication.png" alt="Add Application"></p>
+<p>This will redirect the user to the &#39;<strong>Setup New Application</strong>&#39; Page as shown below.</p>
+<p><img src="../images/SetupNewApplication.png" alt="Setup New Application"></p>
 <p>Following are the details that needs to be added to create an API Application/Client.</p>
 <table>
     <tr>
@@ -1107,30 +1110,33 @@
         <th>Required</th>
     </tr>
     <tr>
-        <td>Name</td>
+        <td><a name="applicationName">Name</a></td>
         <td>The API Application/Client Name.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td>Type</td>
-        <td>The API Application/Client Type. Please see Application/Client Types for more details.  Currently the supported type is &#39;Developer&#39;.</td>
+        <td><a name="applicationType">Type</a></td>
+        <td>The API Application/Client Type. Please see Please see <a href="../application_types/README.html">API Application Type(s)</a> for more details.  Currently the supported type is &#39;Developer&#39;.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td>Redirect URLs</td>
-        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the request for authorization code url.  Please see Request For an Authorization Code for more details.  <br><br>Atleast one Redicrect URL should be added to this field.  You can add upto 05 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
+        <td><a name="applicationRedirectURL">Redirect URLs</a></td>
+        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the <a href="../getting_started/request_for_an_authorization_code.html">Request for Authorization Code</a>.  <br><br>Atleast one Redirect URL should be added to this field.  You can add upto 05 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td>Scope</td>
-        <td>The API Application/Client Scope. Please see Application/Client Scopes for more details.  Currently the supported type is &#39;Developer&#39;.</td>
+        <td><a name="applicationScope">Scope</a></td>
+        <td>The API Application/Client Scope. Please see <a href="../api_scopes/README.html">API Scopes</a> for more details.  Currently the supported type is &#39;Developer&#39;.
+        </td>
         <td>Yes</td>
     </tr>
 </table>
 
 <p>Once you have entered the necessary information, ensure you have read and agreed to the the Terms and Conditions.</p>
-<p>Select &#39;Save&#39; to add the API Application/client. The Application will be added and you will be redirected to the Edit Application Details page.</p>
-<p>The <strong>Close</strong> button will discard any information you have added and take the user to the Application List page.</p>
+<p><img src="../images/SaveNewApplication.png" alt="Save New Application"></p>
+<p>Select &#39;<strong>Save</strong>&#39; as displayed above to add the API Application/client. The Application will be added and you will be redirected to the <a href="edit_application.html">Edit Application Details</a> page.</p>
+<p><img src="../images/CloseNewApplication.png" alt="Close New Application"></p>
+<p>The <strong>Close</strong> button, as displayed above will discard any information you have added and take the user to the Application List page.</p>
 <h4 id="success-messages">Success Messages</h4>
 <table>
     <tr>

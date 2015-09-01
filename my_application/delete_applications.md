@@ -1,6 +1,6 @@
 # Delete Application(s)
 
-In order to delete an Application/Client the user should tick on the check boxes of the Applications/Client he/she would want to delete and then select the 'Delete' button, as shown below.
+User should navigate to  [Application List](list_application.md) page.  In order to delete an Application/Client the user should tick on the check boxes of the Applications/Client he/she would want to delete and then select the '**Delete**' button, as shown below.
 
 ![Delete Application](../images/DeleteApplications.png)
 

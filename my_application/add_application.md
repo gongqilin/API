@@ -1,10 +1,10 @@
 # Add Application
 
-Select **Add Application** in the Application List page as displayed below.
+Select **Add Application** in the [Application List](list_application.md) page as displayed below.
 
 ![Add Application](../images/AddApplication.png)
 
-This will redirect the user to the 'Setup New Application' Page as shown below.
+This will redirect the user to the '**Setup New Application**' Page as shown below.
 
 ![Setup New Application](../images/SetupNewApplication.png)
 
@@ -19,23 +19,23 @@ Following are the details that needs to be added to create an API Application/Cl
         <th>Required</th>
     </tr>
     <tr>
-        <td>Name</td>
+        <td><a name="applicationName">Name</a></td>
         <td>The API Application/Client Name.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td>Type</td>
-        <td>The API Application/Client Type. Please see Application/Client Types for more details.  Currently the supported type is 'Developer'.</td>
+        <td><a name="applicationType">Type</a></td>
+        <td>The API Application/Client Type. Please see Please see [API Application Type(s)](../application_types/README.md) for more details.  Currently the supported type is 'Developer'.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td>Redirect URLs</td>
-        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the request for authorization code url.  Please see Request For an Authorization Code for more details.  <br><br>Atleast one Redicrect URL should be added to this field.  You can add upto 05 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
+        <td><a name="applicationRedirectURL">Redirect URLs</a></td>
+        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the [Request for Authorization Code](../getting_started/request_for_an_authorization_code.md).  <br><br>Atleast one Redirect URL should be added to this field.  You can add upto 05 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td>Scope</td>
-        <td>The API Application/Client Scope. Please see Application/Client Scopes for more details.  Currently the supported type is 'Developer'.
+        <td><a name="applicationScope">Scope</a></td>
+        <td>The API Application/Client Scope. Please see [API Scopes](../api_scopes/README.md) for more details.  Currently the supported type is 'Developer'.
         </td>
         <td>Yes</td>
     </tr>
@@ -45,7 +45,7 @@ Once you have entered the necessary information, ensure you have read and agreed
 
 ![Save New Application](../images/SaveNewApplication.png)
 
-Select 'Save' as displayed above to add the API Application/client. The Application will be added and you will be redirected to the Edit Application Details page.
+Select '**Save**' as displayed above to add the API Application/client. The Application will be added and you will be redirected to the [Edit Application Details](edit_application.md) page.
 
 ![Close New Application](../images/CloseNewApplication.png)
 
