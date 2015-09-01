@@ -1,6 +1,6 @@
 # Edit Application
 
-The Edit Application Details page as displayed below, allows you to make changes to the application information you have previously entered.
+The **Edit Application Details** page, as shown below, allows you to make changes to the application information you have previously entered.
 
 ![Edit Application](../images/EditApplication.png)
 
@@ -22,12 +22,12 @@ The Edit Application Details page as displayed below, allows you to make changes
     </tr>
     <tr>
         <td>Web Site</td>
-        <td>The Web Site URL of the Organization using this Application/Client.  The entered URL should be a valid, well formed URL.</td>
+        <td>The Web Site URL of the Organisation using this Application/Client.  The entered URL should be a valid, well formed URL.</td>
         <td>No</td>
     </tr>
     <tr>
         <td>Logo in Authorization Page</td>
-        <td>The Logo that will be displayed in the Authorization Page.  Enter a valid url that points to the Organization Logo.  <br><br>Select 'Preview' to preview the entered logo URL as displayed below.
+        <td>The Logo that will be displayed in the Authorization Page.  Enter a valid url that points to the Organisation Logo.  <br><br>Select 'Preview' to preview the entered logo URL as displayed below.
         <br><br>
         ![Preview Logo](../images/PreviewLogo.png)
         </td>
@@ -35,7 +35,7 @@ The Edit Application Details page as displayed below, allows you to make changes
     </tr>
     <tr>
         <td>Authorize URL</td>
-        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to this URL to copy this URL to the clip board, as shown below.
+        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to this URL to copy it to the clipboard, as shown below.
         <br><br>
         ![Copy Authorization URL](../images/CopyAuthorizationUrl.png)
         <br><br>Please see Request for Authorization section for more details.  </td>
@@ -43,14 +43,14 @@ The Edit Application Details page as displayed below, allows you to make changes
     </tr>
     <tr>
         <td>Access Token URL</td>
-        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to this URL to copy this URL to the clip board, as shown below.  <br><br>
+        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to this URL to copy it to the clipboard, as shown below.  <br><br>
         ![Copy Access Token URL](../images/CopyAccessTokenURL.png)
         <br><br>Please see Obtain Access Token section for more details.  Replace '%3CAUTHCODE%3E' with the actual Authorization code before using this URL.  </td>
         <td>No</td>
     </tr>
     <tr>
         <td>Consumer Key</td>
-        <td>This is a read-only field, displaying the unique Client Id. Select the copy button next to this to copy this URL to the clip board, as shown below.  <br><br>
+        <td>This is a read-only field, displaying the unique Client Id. Select the copy button next to the key to copy it to the clipboard, as shown below.  <br><br>
         ![Copy Consumer Key](../images/CopyConsumerKey.png)</td>
         <td>Yes</td>
     </tr>
@@ -61,26 +61,26 @@ The Edit Application Details page as displayed below, allows you to make changes
         <br><br>
         ![Regenerate Secret](../images/RegenerateSecret.png)
         <br><br>
-        Once the Consumer Secret is regenerated it will be displayed in raw format.  This should be copied and safe guarded. When the Consume Secret is regenerated, the user will be displayed a copy button next to the generated secret as shown below.<br><br>
+        Once the Consumer Secret is regenerated it will be displayed in raw format.  This should be copied and safeguarded. When the Consumer Secret is regenerated, a copy button will display next to the generated secret as shown below.<br><br>
         ![Copy Secret](../images/CopySecret.png)
         <br><br>
-        You could select the copy button to copy the Consumer Secret to the clip board.
-        <br><br>Once the Application is saved this secret will be encrypted. BGL does not store the raw form and there is no way of retrieving the raw form.  </td>
+        You can select the copy button to copy the Consumer Secret to the clipboard.
+        <br><br>Once the Application is saved, this secret will be encrypted. Ensure you copy and safeguard the secret in the raw format as BGL does not store the secret in the raw format.  </td>
         <td>Yes</td>
     </tr>
     <tr>
         <td>Redirect URLs</td>
-        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the request for authorization code url.  Please see Request For an Authorization Code for more details.  <br><br>Atleast one Redicrect URL should be added to this field.  You can add upto 05 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
+        <td>The URL that will be used to redirect the user after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the request for authorization code url.  Please see Request For an Authorization Code for more details.  <br><br>Atleast one Redicrect URL should be added to this field.  You can add upto 05 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
         <td>Yes</td>
     </tr>
     <tr>
         <td>Scope</td>
-        <td>The API Application/Client Scope. Please see Application/Client Scopes for more details.  Currently the supported type is 'Developer'.</td>
+        <td>The API Application/Client Scope. Please see Application/Client Scopes for more details.  Currently the only supported type is 'Developer'.</td>
         <td>Yes</td>
     </tr>
 </table>
 
-Select 'Save' as shown below, to update the API Application/client. The Application will be updated and you will be redirected to the List Application page.
+Select **Save**, as shown below, to update the API Application/client. The Application will be updated and you will be redirected to the **Application List** page.
 
 ![Update Existing Application](../images/UpdateExistingApplication.png)
 

@@ -1,11 +1,11 @@
 # Application List
 
-Select the **'MY APPLICATION'** from the main menu.  This will take the user to the Application Listing page, as shown below.
+Select the **MY APPLICATION** from the main menu.  This will take the user to the **Application Listing** page, as shown below.
 
 ![Application Listing](../images/ApplicationListing.png)
 
 
-The Application List displays the applications that are currently available under the logged in user's account.  The details that are displayed are as follows;
+The **Application List** displays the applications that are currently available under the logged in user's account.  The details that are displayed are as follows;
 
 
 <table>
@@ -36,8 +36,8 @@ The Application List displays the applications that are currently available unde
     </tr>
 </table>
 
-For the convenience of the user, Newly created Applications/Clients within the last 05 minutes will be labeled as 'New'  and the Applictions/Clients that are updated within the last 05 minutes will be labeled as 'Update'.
+For the convenience of the user, newly created Applications/Clients within the last five minutes will be labelled as **New** and the Applictions/Clients that are updated within the last five minutes will be labeled as **Update**.
 
-**Note :** Only Active and In-active Application(s)/Client(s) will be displayed.
+**Note :** Only Active and Inactive Application(s)/Client(s) will be displayed.
 
-Each of the application that are displayed in the listing are clickable, which will take the User to the Application Edit Page.
+Each application displayed in the list are clickable and this will take the User to the **Application Edit** page.
