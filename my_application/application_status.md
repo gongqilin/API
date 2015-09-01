@@ -11,7 +11,7 @@ The following table illustrates the currently available Application/Client statu
     </tr>
     <tr>
         <td>Active</td>
-        <td>End-user can assign new auth-code and new access token to the application/client.  <br>Displayed and Editable in My Applications.</td>
+        <td>End-user can assign new auth-code and new access token to the application/client.  <br>The application/client can access user data with the access token</td>
     </tr>
     <tr>
         <td>Inactive</td>
