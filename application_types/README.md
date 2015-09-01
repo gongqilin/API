@@ -12,8 +12,8 @@ The following table illustrates the Application/Client types that are currently 
 <table>
     <tr>
         <th>Application Type</th>
-        <th>Daily limit</th>
-        <th>10mins limit</th>
+        <th>Daily Rate Limit</th>
+        <th>10mins Rate Limit</th>
         <th>Allowed Scopes</th>
     </tr>
     <tr>
