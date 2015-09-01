@@ -30,7 +30,7 @@ Following are the details that needs to be added to create an API Application/Cl
     </tr>
     <tr>
         <td><a name="applicationRedirectURL">Redirect URLs</a></td>
-        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the [Request for Authorization Code](../getting_started/request_for_an_authorization_code.md).  <br><br>Atleast one Redirect URL should be added to this field.  You can add upto 05 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
+        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the [Request for Authorization Code](../getting_started/request_for_an_authorization_code.md).  <br><br>Atleast one Redirect URL should be added to this field.  You can add upto 5 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
         <td>Yes</td>
     </tr>
     <tr>

@@ -36,7 +36,7 @@ The Application List displays the applications that are currently available unde
     </tr>
 </table>
 
-For the convenience of the user, Newly created Applications/Clients within the last 05 minutes will be labeled as '**New**'  and the Applictions/Clients that are updated within the last 05 minutes will be labeled as '**Update**'.
+For the convenience of the user, Newly created Applications/Clients within the last 5 minutes will be labeled as '**New**'  and the Applictions/Clients that are updated within the last 5 minutes will be labeled as '**Update**'.
 
 **Note :** Only  [Active](application_status.md#activeStatus) and [Inactive](application_status.md#inactiveStatus) Application(s)/Client(s) will be displayed.
 

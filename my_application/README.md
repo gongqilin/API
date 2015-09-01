@@ -6,6 +6,10 @@ Before you can use My Application, you need a Simple Fund 360 username and passw
 
 <OL type=0>
 <LI>Go to the API website and select **MY APPLICATION** from the menu at the top.
-<LI>Input the Simple Fund 360 Username and Password.
+<br><br>
+![Application Listing](../images/LinkToMyApplication.png)
+
+</LI>
+<LI>Input the Simple Fund 360 Username and Password.</LI>
 </OL>
 
