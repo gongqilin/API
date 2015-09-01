@@ -6,9 +6,7 @@ The API Scope defines what end points are accessible for a given scope.  The bel
     <tr>
         <th>End Point</th>
         <th>Developer</th>
-        <th>Fund List</th>
         <th>Investment</th>
-        <th>Selfwealth</th>
         <th>Audit</th>
     </tr>
     <tr>
@@ -17,7 +15,6 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>Fund List</th>
@@ -25,11 +22,9 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>Fund Detail</th>
-        <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
@@ -49,12 +44,10 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>Chart of Accounts</th>
         <td></td>
-        <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
@@ -65,11 +58,9 @@ The API Scope defines what end points are accessible for a given scope.  The bel
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
         <td align="center">&#10004;</td>
-        <td align="center">&#10004;</td>
     </tr>
     <tr>
         <th>General Ledger</th>
-        <td></td>
         <td></td>
         <td></td>
         <td align="center">&#10004;</td>
@@ -77,7 +68,6 @@ The API Scope defines what end points are accessible for a given scope.  The bel
     </tr>
     <tr>
         <th>Trial Balance</th>
-        <td></td>
         <td></td>
         <td></td>
         <td align="center">&#10004;</td>
