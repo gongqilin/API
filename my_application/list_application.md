@@ -2,7 +2,8 @@
 
 Select the **'MY APPLICATION'** from the main menu.  This will take the user to the Application Listing page, as shown below.
 
-ApplicationListing.png
+![logo](../images/ApplicationListing.png "API Authorization Page")
+
 
 
 
