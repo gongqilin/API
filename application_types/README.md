@@ -12,9 +12,9 @@ The following table illustrates the Application/Client types that are currently 
 <table>
     <tr>
         <th>Application/Client Type</th>
-        <th>Daily Rate Limit</th>
-        <th>10mins Rate Limit</th>
-        <th>Allowed Scopes</th>
+        <th>[Daily Rate Limit](../api_rate_limites/README.md)</th>
+        <th>[10mins Rate Limit](../api_rate_limites/README.md)</th>
+        <th>[Allowed Scopes](../api_scopes/README.md)</th>
     </tr>
     <tr>
         <td>Developer</td>
