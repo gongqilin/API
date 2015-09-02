@@ -11,28 +11,28 @@ The following table illustrates the Application/Client types that are currently 
 
 <table>
     <tr>
-        <th>Application/Client Type</th>
-        <th>[Daily Rate Limit](../api_rate_limits/README.md)</th>
-        <th>[10mins Rate Limit](../api_rate_limits/README.md)</th>
-        <th>[Allowed Scopes](../api_scopes/README.md)</th>
+        <th style="text-align:left">Application/Client Type</th>
+        <th style="text-align:center">[Daily Rate Limit](../api_rate_limits/README.md)</th>
+        <th style="text-align:center">[10mins Rate Limit](../api_rate_limits/README.md)</th>
+        <th style="text-align:center">[Allowed Scopes](../api_scopes/README.md)</th>
     </tr>
     <tr>
         <td>Developer</td>
-        <th>1000</th>
-        <th>100</th>
-        <th>developer</th>
+       <td style="text-align:center" >1000</td>
+        <td style="text-align:center">100</td>
+        <td style="text-align:center">developer</td>
     </tr>
     <tr>
         <td>Partner</td>
-        <th>Unlimited</th>
-        <th>500</th>
-        <th>developer, audit, investment</th>
+        <td style="text-align:center">Unlimited</td>
+        <td style="text-align:center">500</td>
+        <td style="text-align:center">developer, audit, investment</td>
     </tr>
     <tr>
-        <td>Paid Partner</td>
-        <th>Unlimited</th>
-        <th>1000</th>
-        <th>all scopes</th>
+        <td>Premium Partner</td>
+        <td style="text-align:center">Unlimited</td>
+        <td style="text-align:center">1000</td>
+        <td style="text-align:center">all scopes</td>
     </tr>
 </table>
 
