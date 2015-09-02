@@ -34,7 +34,7 @@ The request parameters are as follows:
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>Refresh Token obtained previously. See [Obtaining Access Token](../getting_started/obtaining_request_token.md) </td>
+        <td>Refresh Token obtained previously. See [Obtaining Access Token](../getting_started/obtaining_request_token.md). </td>
         <td>Mandatory</td>
     </tr>
     <tr>
@@ -85,7 +85,7 @@ Following are the request parameters
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>Refresh Token obtained previously. See [Obtaining Access Token](../getting_started/obtaining_request_token.md) </td>
+        <td>Refresh Token obtained previously. See [Obtaining Access Token](../getting_started/obtaining_request_token.md). </td>
         <td>Mandatory</td>
     </tr>
     <tr>

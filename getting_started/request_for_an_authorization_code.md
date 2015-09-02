@@ -1,6 +1,6 @@
 # Request for an Authorization Code ( Step 2/4 )
 
-An Authorization Code is necessary to retrieve an Access Token from the BGL API.  Obtaining an Authorization token is an imporantant step, as it provides assurance to the client that appropriate permission is being granted to access the BGL API.
+An Authorization Code is necessary to retrieve an Access Token from the BGL API.  Obtaining an Authorization token is an important step, as it provides assurance to the client that appropriate permission is being granted to access the BGL API.
 
 To request an Authorization Code, the client application must send an HTTP request to the BGL API in the following manner.
 
@@ -55,9 +55,9 @@ Once the request is processed, one of the following will occur.
 
 #### 1. BGL Login Page
 
-If the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log in to to BGL.
+If the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page.  The user needs to input a username and password (Simple Fund 360 Demo Account can be used here) and log in to BGL.
 
-Once the user logs in to the BGL System, the user will be redirected to the API Authroization Page as explained below.
+Once the user has succesfully logged in to BGL, the user will be redirected to the API Authroisation Page as explained below.
 
 ![logo](../images/BGLAuthenticationScreen.png "BGL Authentication Page")
 
@@ -91,25 +91,25 @@ There may be instances where the request for a Authorization Code may fail or be
     </tr>
     <tr>
         <td>Invalid Client Id</td>
-        <td>When an invalid client id is passed as a query parameter</td>
+        <td>When an invalid client id is passed as a query parameter.</td>
         <td>INVALID CLIENT</td>
         <td>BAD CLIENT CREDENTIALS</td>
     </tr>
     <tr>
         <td>Invalid Response Type</td>
-        <td>If response type parameter contains anything except "code"</td>
+        <td>If response type parameter contains anything except "code".</td>
         <td>UNSUPPORTED_RESPONSE_TYPE</td>
         <td>UNSUPPORTED RESPONSE TYPE &lt;The passed invalid code&gt;</td>
     </tr>
     <tr>
         <td>Invalid scope</td>
-        <td>The current valid list of scope is 'fundList','investment','audit' and 'selfwealth'. If the client passes anything else as scope, BGL will return an error</td>
+        <td>The current valid list of scope is 'fundList','investment','audit' and 'selfwealth'. If the client passes anything else as scope, BGL will return an error.</td>
         <td>INVALID_SCOPE</td>
         <td>Invalid scope : &lt;The invalid scope passed&gt;</td>
     </tr>
     <tr>
         <td>Invalid redirect URI</td>
-        <td>The client should pass the redirect uri that was registered with BGL, as explained in Section - [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md). If an invalid redirect uri is passed as the redirect_uri parameter, BGL will respond with an error</td>
+        <td>The client should pass the redirect uri that was registered with BGL, as explained in [Obtaining BGL API Credentials](obtaining_bgl_api_credentials.md). If an invalid redirect uri is passed as the redirect_uri parameter, BGL will respond with an error.</td>
         <td>INVALID GRANT</td>
         <td>INVALID REDIRECT: &lt;passed invalid uri&gt; DOES NOT MATCH ONE OF THE REGISTERED VALUES: [&lt;the url that is registered with the system&gt;]</td>
     </tr>

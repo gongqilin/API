@@ -7,7 +7,7 @@ The Application Type, defines;
 3. What is the 10mins Rate Limit.
 
 
-The following table illustrates the Application/Client types that are currently supported and their role in the System.
+The following table illustrates the Application/Client types that are currently supported and their roles in the System.
 
 <table>
     <tr>
@@ -37,5 +37,5 @@ The following table illustrates the Application/Client types that are currently 
 </table>
 
 
-**To change your application/client type, [please contact us](mailto:wtan@bglcorp.com.au)**
+**To change your application/client type, [please contact us](mailto:wtan@bglcorp.com.au)**.
 

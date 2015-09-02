@@ -7,7 +7,7 @@
    * [Obtaining Access Token](getting_started/obtaining_request_token.md)
    * [Making requests for data](getting_started/making_requests_for_data.md)
 * [My Application](my_application/README.md)
-   * [List Application](my_application/list_application.md)
+   * [Application List](my_application/list_application.md)
    * [Add Application](my_application/add_application.md)
    * [Edit Application](my_application/edit_application.md)
    * [Delete Application(s)](my_application/delete_applications.md)

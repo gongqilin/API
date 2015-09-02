@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1441088701194">
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1441159327135">
     
 
 <div class="book-summary">
@@ -176,7 +176,7 @@
                         
                             <b>2.1.</b>
                         
-                         List Application
+                         Application List
                     </a>
                 
             
@@ -1095,10 +1095,10 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_561">
+                    <section class="normal" id="section-gitbook_1922">
                     
                         <h1 id="request-for-an-authorization-code--step-24-">Request for an Authorization Code ( Step 2/4 )</h1>
-<p>An Authorization Code is necessary to retrieve an Access Token from the BGL API.  Obtaining an Authorization token is an imporantant step, as it provides assurance to the client that appropriate permission is being granted to access the BGL API.</p>
+<p>An Authorization Code is necessary to retrieve an Access Token from the BGL API.  Obtaining an Authorization token is an important step, as it provides assurance to the client that appropriate permission is being granted to access the BGL API.</p>
 <p>To request an Authorization Code, the client application must send an HTTP request to the BGL API in the following manner.</p>
 <table>
     <tr>
@@ -1148,8 +1148,8 @@
 
 <p>Once the request is processed, one of the following will occur.</p>
 <h4 id="1-bgl-login-page">1. BGL Login Page</h4>
-<p>If the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page.  The user needs to add his credentials (Simple Fund 360 Demo Account can be used here) and log in to to BGL.</p>
-<p>Once the user logs in to the BGL System, the user will be redirected to the API Authroization Page as explained below.</p>
+<p>If the user has not logged in to any BGL system prior to requesting an Authorization Code, the user will be redirected to the BGL Login Page.  The user needs to input a username and password (Simple Fund 360 Demo Account can be used here) and log in to BGL.</p>
+<p>Once the user has succesfully logged in to BGL, the user will be redirected to the API Authroisation Page as explained below.</p>
 <p><img src="../images/BGLAuthenticationScreen.png" alt="logo" title="BGL Authentication Page"></p>
 <h4 id="2-authorisation-page">2. Authorisation Page</h4>
 <p>If the user has not previously accepted the application&#39;s permission request, the grant has expired or been manually revoked by the user, the system will be redirected to the API&#39;s authorisation screen as displayed below.</p>
@@ -1170,25 +1170,25 @@
     </tr>
     <tr>
         <td>Invalid Client Id</td>
-        <td>When an invalid client id is passed as a query parameter</td>
+        <td>When an invalid client id is passed as a query parameter.</td>
         <td>INVALID CLIENT</td>
         <td>BAD CLIENT CREDENTIALS</td>
     </tr>
     <tr>
         <td>Invalid Response Type</td>
-        <td>If response type parameter contains anything except &quot;code&quot;</td>
+        <td>If response type parameter contains anything except &quot;code&quot;.</td>
         <td>UNSUPPORTED_RESPONSE_TYPE</td>
         <td>UNSUPPORTED RESPONSE TYPE &lt;The passed invalid code&gt;</td>
     </tr>
     <tr>
         <td>Invalid scope</td>
-        <td>The current valid list of scope is &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;. If the client passes anything else as scope, BGL will return an error</td>
+        <td>The current valid list of scope is &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;. If the client passes anything else as scope, BGL will return an error.</td>
         <td>INVALID_SCOPE</td>
         <td>Invalid scope : &lt;The invalid scope passed&gt;</td>
     </tr>
     <tr>
         <td>Invalid redirect URI</td>
-        <td>The client should pass the redirect uri that was registered with BGL, as explained in Section - <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a>. If an invalid redirect uri is passed as the redirect_uri parameter, BGL will respond with an error</td>
+        <td>The client should pass the redirect uri that was registered with BGL, as explained in <a href="obtaining_bgl_api_credentials.html">Obtaining BGL API Credentials</a>. If an invalid redirect uri is passed as the redirect_uri parameter, BGL will respond with an error.</td>
         <td>INVALID GRANT</td>
         <td>INVALID REDIRECT: &lt;passed invalid uri&gt; DOES NOT MATCH ONE OF THE REGISTERED VALUES: [&lt;the url that is registered with the system&gt;]</td>
     </tr>

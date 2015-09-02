@@ -2,9 +2,9 @@
 
 Once the client application has the [Authorization code](request_for_an_authorization_code.md), then the client application can obtain an Access Token.
 
-The Access Token will contain vital information that will be need to access the BGL API.
+The Access Token will contain vital information that is required to access the BGL API.
 
-In order for the client to obtain an Access Token, the client application should send a request to BGL API as follows.
+In order for the client to obtain an Access Token, the client application should send a request to the BGL API as follows.
 
 <table>
     <tr>
@@ -32,7 +32,7 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>code</td>
-        <td>The Authorization Code obtained from BGL API</td>
+        <td>The Authorization Code obtained from the BGL API</td>
         <td>Mandatory</td>
     </tr>
     <tr>
@@ -47,12 +47,12 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, we will fall back to using the default member permissions you defined in your application configuration. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
+        <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions you defined in your application configuration will be used. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
         <td>Optional</td>
     </tr>
 </table>
 
-If the request was successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.
+If the request is successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.
 
 Example **A** of a request with basic authorization header for the Access Token is as follows.
 
@@ -95,23 +95,23 @@ The below table illustrates the content of a valid Request Token
     </tr>
     <tr>
         <td>access_token</td>
-        <td>The access token that is mandatory for requesting data from BGL API. This value must be kept secure</td>
+        <td>The access token that is mandatory for requesting data from BGL API. This value must be kept secure.</td>
     </tr>
     <tr>
         <td>refresh_token</td>
-        <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access</td>
+        <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access.</td>
     </tr>
     <tr>
         <td>expires_in</td>
-        <td>The number of seconds remaining, from the time it was requested, before the token will expire. Currently, all access tokens are issued with a 7 days lifespan</td>
+        <td>The number of seconds remaining, from the time it was requested, before the token will expire. Currently, all access tokens are issued with a 7-day lifespan.</td>
     </tr>
     <tr>
         <td>token_type</td>
-        <td>Identifies the type of token returned. At this time, this field will always have the value Bearer</td>
+        <td>Identifies the type of token returned. At this time, this field will always have the value Bearer.</td>
     </tr>
     <tr>
         <td>scope</td>
-        <td>The scope of this access token - what data could be accessed</td>
+        <td>The scope of this access token - what data can be accessed.</td>
     </tr>
 </table>
 
