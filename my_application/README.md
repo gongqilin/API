@@ -8,8 +8,11 @@ Before you can use My Application, you need a Simple Fund 360 username and passw
 <LI>Go to the API website and select **MY APPLICATION** from the main menu.
 <br><br>
 ![Application Listing](../images/LinkToMyApplication.png)
-
+<br><br>
 </LI>
-<LI>Input the Simple Fund 360 Username and Password.</LI>
+<LI>Input the Simple Fund 360 Username and Password.
+<br><br>
+![logo](../images/BGLAuthenticationScreen.png "BGL Authentication Page")
+</LI>
 </OL>
 
