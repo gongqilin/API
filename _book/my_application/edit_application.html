@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1441159327135">
+    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1441167976933">
     
 
 <div class="book-summary">
@@ -1095,10 +1095,10 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1929">
+                    <section class="normal" id="section-gitbook_970">
                     
                         <h1 id="edit-application">Edit Application</h1>
-<p>The <strong>Edit Application Details</strong> page as displayed below, allows you to make changes to the application information you have previously entered.</p>
+<p>The Edit Application Details page as displayed below, allows you to make changes to the application information you have previously entered.</p>
 <p><img src="../images/EditApplication.png" alt="Edit Application"></p>
 <table>
     <tr>
@@ -1107,76 +1107,76 @@
         <th>Required</th>
     </tr>
     <tr>
-        <td><a name="applicationName">Name</a></td>
+        <td id="applicationName">Name</td>
         <td>The API Application/Client Name.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationOwner">Owner</a></td>
+        <td id="applicationOwner">Owner</td>
         <td>Username who owns/created the application.  This is a read-only field.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationWebsite">Web Site</a></td>
-        <td>The Web Site URL of the Organisation using this Application/Client.  The entered URL should be a valid, well formed URL.</td>
+        <td id="applicationWebsite">Web Site</td>
+        <td>The Web Site URL of the Organization using this Application/Client.  The entered URL should be a valid, well formed URL.</td>
         <td>No</td>
     </tr>
     <tr>
-        <td><a name="applicationLogo">Logo in Authorization Page</a></td>
-        <td>The Logo that will be displayed in the Authorization Page.  Enter a valid url that points to the Organisation Logo.  <br><br>Select <strong>Preview</strong> to display the image of the entered logo URL as shown below.
+        <td id="applicationLogo">Logo in Authorization Page</td>
+        <td>The Logo that will be displayed in the Authorization Page.  Enter a valid url that points to the Organization Logo.  <br><br>Select &#39;<strong>Preview</strong>&#39; to preview the entered logo URL as displayed below.
         <br><br>
         <img src="../images/PreviewLogo.png" alt="Preview Logo">
         </td>
         <td>No</td>
     </tr>
     <tr>
-        <td><a name="applicationAuthURL">Authorize URL</a></td>
-        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to the URL to copy the URL to the clipboard, as shown below.
+        <td id="applicationAuthURL">Authorize URL</td>
+        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to this URL to copy this URL to the clip board, as shown below.
         <br><br>
         <img src="../images/CopyAuthorizationUrl.png" alt="Copy Authorization URL">
         <br><br>Please see <a href="../getting_started/request_for_an_authorization_code.html">Request for an Authorization Code</a> for more details.  </td>
         <td>No</td>
     </tr>
     <tr>
-        <td><a name="applicationAccessTokenURL">Access Token URL</a></td>
-        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to the URL to copy the URL to the clipboard, as shown below.  <br><br>
+        <td id="applicationAccessTokenURL">Access Token URL</td>
+        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to this URL to copy this URL to the clip board, as shown below.  <br><br>
         <img src="../images/CopyAccessTokenURL.png" alt="Copy Access Token URL">
         <br><br>Please see <a href="../getting_started/obtaining_request_token.html">Obtaining Access Token</a> for more details.  Replace &#39;<strong>%3CAUTHCODE%3E</strong>&#39; with the actual Authorization code before using this URL.  </td>
         <td>No</td>
     </tr>
     <tr>
-        <td><a name="applicationClientId">Application/Client Id</a></td>
-        <td>This is a read-only field, displaying the unique Client Id. Select the copy button next to the ID to copy this ID to the clipboard, as shown below.  <br><br>
+        <td id="applicationClientId">Application/Client Id</td>
+        <td>This is a read-only field, displaying the unique Client Id. Select the copy button next to this, to copy this URL to the clip board, as shown below.  <br><br>
         <img src="../images/CopyConsumerKey.png" alt="Copy Consumer Key"></td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationClientSecret">Application/Client Secret</a></td>
+        <td id="applicationClientSecret">Application/Client Secret</td>
         <td>This is a read-only field.  When the Application/Client is loaded into the Edit Application screen, the Client Secret is displayed in the encrypted format.
         <br><br>Select <strong>Regenerate Secret</strong> as shown below, to regenerate the Application/Client Secret.
         <br><br>
         <img src="../images/RegenerateSecret.png" alt="Regenerate Secret">
         <br><br>
-        Once the Application/Client Secret is regenerated it will be displayed in &#39;<em>Raw Format</em>&#39;.  <strong>This should be copied and safeguarded</strong>. When the Application/Client Secret is regenerated, a copy button will display next to the generated secret as shown below.<br><br>
+        Once the Application/Client Secret is regenerated it will be displayed in &#39;<em>Raw Format</em>&#39;.  <strong>This should be copied and safe guarded</strong>. When the Application/Client Secret is regenerated, the user will be displayed a copy button next to the generated secret as shown below.<br><br>
         <img src="../images/CopySecret.png" alt="Copy Secret">
         <br><br>
-        You can select the copy button to copy the Application/Client Secret to the clipboard.
-        <br><br>Once the Application is saved, this secret will be encrypted. BGL does not store the <em>Raw Format</em> and it is not possible for BGL to retrieve the <em>Raw Format</em>.  </td>
+        You could select the copy button to copy the Application/Client Secret to the clip board.
+        <br><br>Once the Application is saved, this secret will be encrypted. BGL does not store the <em>Raw Format</em> and there is no way of retrieving the <em>Raw Format</em>.  </td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationRedirectURL">Redirect URLs</a></td>
-        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the <a href="../getting_started/request_for_an_authorization_code.html">Request for Authorization Code</a>.  <br><br>At least one Redicrect URL should be added to this field.  You can add up to 5 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
+        <td id="applicationRedirectURL">Redirect URLs</td>
+        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the <a href="../getting_started/request_for_an_authorization_code.html">Request for Authorization Code</a>.  <br><br>Atleast one Redicrect URL should be added to this field.  You can add upto 5 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationScope">Scope</a></td>
+        <td id="applicationScope">Scope</td>
         <td>The API Application/Client Scope. Please see <a href="../api_scopes/README.html">API Scopes</a> for more details.  Currently the supported type is &#39;Developer&#39;.</td>
         <td>Yes</td>
     </tr>
 </table>
 
-<p>Select <strong>Save</strong> as shown below, to update the API Application/Client. The Application will be updated and you will be redirected to the  <a href="list_application.html">Application List</a> page.</p>
+<p>Select &#39;<strong>Save</strong>&#39; as shown below, to update the API Application/client. The Application will be updated and you will be redirected to the  <a href="list_application.html">Application List</a> page.</p>
 <p><img src="../images/UpdateExistingApplication.png" alt="Update Existing Application"></p>
 <h4 id="success-messages">Success Messages</h4>
 <table>
@@ -1206,7 +1206,7 @@
         <td>If you have entered an invalid URL for the Web Site.</td>
     </tr>
     <tr>
-        <td>Application Logo should have a valid URL or should be left blank</td>
+        <td>ApplicationApplication Logo should have a valid URL or should be left blank</td>
         <td>If you have entered an invalid URL for the Application Logo URL.</td>
     </tr>
     <tr>

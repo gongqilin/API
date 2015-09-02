@@ -4,13 +4,13 @@ Select **Add Application** in the [Application List](list_application.md) page a
 
 ![Add Application](../images/AddApplication.png)
 
-This will redirect the user to the **Setup New Application** page as shown below.
+This will redirect the user to the '**Setup New Application**' Page as shown below.
 
 ![Setup New Application](../images/SetupNewApplication.png)
 
 
 
-The following is a list of the details required to create an API Application/Client.
+Following are the details that needs to be added to create an API Application/Client.
 
 <table>
     <tr>
@@ -19,37 +19,37 @@ The following is a list of the details required to create an API Application/Cli
         <th>Required</th>
     </tr>
     <tr>
-        <td><a name="applicationName">Name</a></td>
+        <td id="applicationName">Name</td>
         <td>The API Application/Client Name.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationType">Type</a></td>
-        <td>The API Application/Client Type. Please see [API Application Type(s)](../application_types/README.md) for more details.  Currently the supported type is 'Developer'.</td>
+        <td id="applicationType">Type</td>
+        <td>The API Application/Client Type. Please see Please see [API Application Type(s)](../application_types/README.md) for more details.  Currently the supported type is 'Developer'.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationRedirectURL">Redirect URLs</a></td>
+        <td id="applicationRedirectURL">Redirect URLs</td>
         <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be used as the Default Redirect URL (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other Redirect URL in the list that you have added, then you will need to provide this in the [Request for Authorization Code](../getting_started/request_for_an_authorization_code.md).  <br><br>Atleast one Redirect URL should be added to this field.  You can add upto 5 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
         <td>Yes</td>
     </tr>
     <tr>
-        <td><a name="applicationScope">Scope</a></td>
-        <td>The API Application/Client Scope. Please see [API Scopes](../api_scopes/README.md) for more details.  Currently the only supported type is 'Developer'.
+        <td id="applicationScope">Scope</td>
+        <td>The API Application/Client Scope. Please see [API Scopes](../api_scopes/README.md) for more details.  Currently the supported type is 'Developer'.
         </td>
         <td>Yes</td>
     </tr>
 </table>
 
-Once you have entered the necessary information, ensure you have read and agreed to the Terms and Conditions.
+Once you have entered the necessary information, ensure you have read and agreed to the the Terms and Conditions.
 
 ![Save New Application](../images/SaveNewApplication.png)
 
-Select **Save** as displayed above to add the API Application/Client. The Application will be added and you will be redirected to the [Edit Application Details](edit_application.md) page.
+Select '**Save**' as displayed above to add the API Application/client. The Application will be added and you will be redirected to the [Edit Application Details](edit_application.md) page.
 
 ![Close New Application](../images/CloseNewApplication.png)
 
-The **Close** button, as displayed above will discard any information you have added and take the user to the **Application List** page.
+The **Close** button, as displayed above will discard any information you have added and take the user to the Application List page.
 
 
 ####Success Messages
