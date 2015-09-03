@@ -30,6 +30,8 @@ However, the client application needs to pass the access token and token type as
     </tr>
 </table>
 
+####Error Messages
+
 Error messages returned by BGL API are listed in the table below.
 
 <table>
