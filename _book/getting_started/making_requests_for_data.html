@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1441189927751">
+    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1441238920358">
     
 
 <div class="book-summary">
@@ -1095,7 +1095,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_857">
+                    <section class="normal" id="section-gitbook_215">
                     
                         <h1 id="making-requests-for-data-step-44">Making Requests for Data (Step 4/4)</h1>
 <p>In order for the client to make a request for the data, the client needs to have a valid access token.  Once the client has a valid access token (see <a href="obtaining_request_token.html">Obtaining Access Token</a>), the client can use the below URI to make the request for data.</p>
@@ -1125,7 +1125,7 @@
     </tr>
 </table>
 
-<p>If the client application passes an invalid access token or an invalid token type, the BGL API will return an error, illustrated in the table below.</p>
+<p>Error messages returned by BGL API are listed in the table below.</p>
 <table>
     <tr>
         <th>Cause</th>
@@ -1144,6 +1144,12 @@
         <td>When an invalid Token Type is set in header</td>
         <td>INVALID_TOKEN</td>
         <td>Invalid access token: &lt;passed access token&gt;</td>
+    </tr>
+    <tr>
+        <td>Access Denied</td>
+        <td>Returned when trying to access endpoints that are not authorized for the provided scope.  See <a href="../api_scopes/README.html">API Scopes</a> for more details.</td>
+        <td>ACCESS_DENIED</td>
+        <td>access denied:&lt;End Point Name&gt;</td>
     </tr>
 </table>
 

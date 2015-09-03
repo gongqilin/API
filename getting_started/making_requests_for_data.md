@@ -30,7 +30,7 @@ However, the client application needs to pass the access token and token type as
     </tr>
 </table>
 
-If the client application passes an invalid access token or an invalid token type, the BGL API will return an error, illustrated in the table below.
+Error messages returned by BGL API are listed in the table below.
 
 <table>
     <tr>
@@ -50,6 +50,12 @@ If the client application passes an invalid access token or an invalid token typ
         <td>When an invalid Token Type is set in header</td>
         <td>INVALID_TOKEN</td>
         <td>Invalid access token: &lt;passed access token&gt;</td>
+    </tr>
+    <tr>
+        <td>Access Denied</td>
+        <td>Returned when trying to access endpoints that are not authorized for the provided scope.  See [API Scopes](../api_scopes/README.md) for more details.</td>
+        <td>ACCESS_DENIED</td>
+        <td>access denied:&lt;End Point Name&gt;</td>
     </tr>
 </table>
 
