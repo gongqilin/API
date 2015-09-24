@@ -50,6 +50,13 @@ The URL query parameters are as follows.
         <td>A URL-encoded,space delimitedlist of member permissions your application is requesting on behalf of the user. If you do not specify a scope in your call, the default member permissions you defined in your application configuration will be used. <br><br>As described by <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation</a></td>
         <td>Optional</td>
     </tr>
+    <tr>
+        <td>redirect_uri</td>
+        <td>
+        It should be **Mandatory** when you set redirect_uri in   [Request for an Anthorization Code](request_for_an_authorization_code.md).
+        </td>
+        <td>Optional</td>
+    </tr>
 </table>
 
 If the request is successful, the client should get a JSON object containing an access token, token type, refresh token, expiration period and scope.
