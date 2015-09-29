@@ -46,8 +46,8 @@ The URL query parameters are as follows.
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, the default member permissions you defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
-        <td>Optional</td>
+        <td>A URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  <br><br> Currently available scopes are listed in the [API Scopes](../api_scopes/README.md).</td>
+        <td>Mandatory</td>
     </tr>
 </table>
 
@@ -103,7 +103,7 @@ There may be instances where the request for a Authorization Code may fail or be
     </tr>
     <tr>
         <td>Invalid scope</td>
-        <td>The current valid list of scope is 'fundList','investment','audit' and 'selfwealth'. If the client passes anything else as scope, BGL will return an error.</td>
+        <td>Currently available scopes are listed in the [API Scopes](../api_scopes/README.md). If the client passes anything else as scope, BGL will return an error.</td>
         <td>INVALID_SCOPE</td>
         <td>Invalid scope : &lt;The invalid scope passed&gt;</td>
     </tr>
