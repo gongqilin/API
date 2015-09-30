@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1443056415815">
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1443590283637">
     
 
 <div class="book-summary">
@@ -1165,7 +1165,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_69">
+                    <section class="normal" id="section-gitbook_48">
                     
                         <h1 id="request-for-an-authorization-code--step-24-">Request for an Authorization Code ( Step 2/4 )</h1>
 <p>An Authorization Code is necessary to retrieve an Access Token from the BGL API.  Obtaining an Authorization token is an important step, as it provides assurance to the client that appropriate permission is being granted to access the BGL API.</p>
@@ -1211,8 +1211,8 @@
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, the default member permissions you defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
-        <td>Optional</td>
+        <td>A URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  <br><br> Currently available scopes are listed in the <a href="../api_scopes/README.html">API Scopes</a>.</td>
+        <td>Mandatory</td>
     </tr>
 </table>
 
@@ -1252,7 +1252,7 @@
     </tr>
     <tr>
         <td>Invalid scope</td>
-        <td>The current valid list of scope is &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;. If the client passes anything else as scope, BGL will return an error.</td>
+        <td>Currently available scopes are listed in the <a href="../api_scopes/README.html">API Scopes</a>. If the client passes anything else as scope, BGL will return an error.</td>
         <td>INVALID_SCOPE</td>
         <td>Invalid scope : &lt;The invalid scope passed&gt;</td>
     </tr>
