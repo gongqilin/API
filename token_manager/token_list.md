@@ -6,11 +6,13 @@ Select **Token Manager** from the main menu.  This will take the user to the **T
 
 Please select an application when you are at the **Token Manager** page.  The details that are displayed are as follows;
 
-![Token Select Application](../images/TokenSelectApplication.png)
+![Token Select Application](../images/AllTokensList.png)
 
-The **Token Detail** would be shown on the screen after you select the specific application if this application has the validate access token. The details that are displayed are as follows;
+The **Token Detail** would be shown on the screen after you select the specific application if this application has the validate access token. The details of all tokens assigned by current user that are displayed are as follows;
 
-![Token Select Application](../images/TokenDetail.png)
+![Token Select Application](../images/ApplicationTokenView.png)
+
+You can search the token by token and owner.
 
 The items in the detail are as follows.
 
