@@ -1,6 +1,6 @@
 # Edit Application
 
-The Edit Application Details page as displayed below, allows you to make changes to the application information you have previously entered.
+The **Edit Application Details** page, as displayed below, allows you to make changes to the application information you have previously entered.
 
 ![Edit Application](../images/EditApplication.png)
 
@@ -35,7 +35,7 @@ The Edit Application Details page as displayed below, allows you to make changes
     </tr>
     <tr>
         <td id="applicationAuthURL">Authorize URL</td>
-        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to this URL to copy this URL to the clip board, as shown below.
+        <td>This is an auto generated URL that could be used to obtain the Authorization Code. This is a read-only field.  Select the copy button next to this URL to copy this URL to the clipboard, as shown below.
         <br><br>
         ![Copy Authorization URL](../images/CopyAuthorizationUrl.png)
         <br><br>Please see [Request for an Authorization Code](../getting_started/request_for_an_authorization_code.md) for more details.  </td>
@@ -43,14 +43,14 @@ The Edit Application Details page as displayed below, allows you to make changes
     </tr>
     <tr>
         <td id="applicationAccessTokenURL">Access Token URL</td>
-        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to this URL to copy this URL to the clip board, as shown below.  <br><br>
+        <td>This is an auto generated URL that could be used to obtain the Access Token Code.  This is a read-only field. Select the copy button next to this URL to copy this URL to the clipboard, as shown below.  <br><br>
         ![Copy Access Token URL](../images/CopyAccessTokenURL.png)
         <br><br>Please see [Obtaining Access Token](../getting_started/obtaining_request_token.md) for more details.  Replace '**%3CAUTHCODE%3E**' with the actual Authorization code before using this URL.  </td>
         <td>No</td>
     </tr>
     <tr>
         <td id="applicationClientId">Application/Client Id</td>
-        <td>This is a read-only field, displaying the unique Client Id. Select the copy button next to this, to copy this URL to the clip board, as shown below.  <br><br>
+        <td>This is a read-only field, displaying the unique Client Id. Select the copy button next to this, to copy this URL to the clipboard, as shown below.  <br><br>
         ![Copy Consumer Key](../images/CopyConsumerKey.png)</td>
         <td>Yes</td>
     </tr>
@@ -61,16 +61,21 @@ The Edit Application Details page as displayed below, allows you to make changes
         <br><br>
         ![Regenerate Secret](../images/RegenerateSecret.png)
         <br><br>
-        Once the Application/Client Secret is regenerated it will be displayed in '_Raw Format_'.  **This should be copied and safe guarded**. When the Application/Client Secret is regenerated, the user will be displayed a copy button next to the generated secret as shown below.<br><br>
+        Once the Application/Client Secret is regenerated it will be displayed in '_Raw Format_'.  **This should be copied and safeguarded**. When the Application/Client Secret is regenerated, a copy button will display next to the generated secret as shown below.<br><br>
         ![Copy Secret](../images/CopySecret.png)
         <br><br>
-        You could select the copy button to copy the Application/Client Secret to the clip board.
-        <br><br>Once the Application is saved, this secret will be encrypted. BGL does not store the _Raw Format_ and there is no way of retrieving the _Raw Format_.  </td>
+        You can select the copy button to copy the Application/Client Secret to the clipboard.
+        <br><br>Once the Application is saved, this secret will be encrypted. BGL does not store the _Raw Format_ and there is no way of retrieving the _Raw Format_.
+        <br>If you need to regenerate the secret or view the encrypted format, select ... and the options will display as shown below.
+        ![Secret More Options1](../images/SecretMoreOptions1.png)
+        <br>
+        ![Secret More Options2](../images/SecretMoreOptions2.png)
+        </td>
         <td>Yes</td>
     </tr>
     <tr>
         <td id="applicationRedirectURL">Redirect URLs</td>
-        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the [Request for Authorization Code](../getting_started/request_for_an_authorization_code.md).  <br><br>Atleast one Redicrect URL should be added to this field.  You can add upto 5 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
+        <td>The URL that will be used to redirect after Authorization.  <br><br>The first URL entered in the list will be taken as the default redirect url (which will be displayed in a different colour in the list).  <br><br>However, if you wish to use any other call back url in the list that you have added, then you will need to provide this in the [Request for Authorization Code](../getting_started/request_for_an_authorization_code.md).  <br><br>At least one Redicrect URL should be added to this field.  You can add up to 5 Redicrect URLs.  Only valid URLs can be entered into this field.</td>
         <td>Yes</td>
     </tr>
     <tr>
