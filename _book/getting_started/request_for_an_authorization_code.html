@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1443056415815">
+    <div class="book"  data-level="1.2" data-basepath=".." data-revision="1444030770792">
     
 
 <div class="book-summary">
@@ -254,18 +254,56 @@
                 
     
         
-        <li class="chapter " data-level="3.1" data-path="token_manager/token_list.html">
+        <li class="chapter " data-level="3.1" data-path="token_manager/view_tokens.html">
             
                 
-                    <a href="../token_manager/token_list.html">
+                    <a href="../token_manager/view_tokens.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         View Token
+                         View Token(s)
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1.1" data-path="token_manager/view_applcation_tokens.html">
+            
+                
+                    <a href="../token_manager/view_applcation_tokens.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                         View Applcation Token(s)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.2" data-path="token_manager/view_my_tokens.html">
+            
+                
+                    <a href="../token_manager/view_my_tokens.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                         View My Token(s)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -286,18 +324,72 @@
         </li>
     
         
-        <li class="chapter " data-level="3.3" data-path="token_manager/fund_list.html">
+        <li class="chapter " data-level="3.3" data-path="token_manager/view_accessable_funds_by_token.html">
             
                 
-                    <a href="../token_manager/fund_list.html">
+                    <a href="../token_manager/view_accessable_funds_by_token.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
                         
-                         Fund List
+                         View Accessable Funds by Token
                     </a>
                 
             
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="token_manager/filter_function.html">
+            
+                
+                    <a href="../token_manager/filter_function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         Filter Function
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.4.1" data-path="token_manager/token_filter.html">
+            
+                
+                    <a href="../token_manager/token_filter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                         Token Filter
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4.2" data-path="token_manager/fund_filter.html">
+            
+                
+                    <a href="../token_manager/fund_filter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                         Fund Filter
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1165,7 +1257,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_69">
+                    <section class="normal" id="section-gitbook_5829">
                     
                         <h1 id="request-for-an-authorization-code--step-24-">Request for an Authorization Code ( Step 2/4 )</h1>
 <p>An Authorization Code is necessary to retrieve an Access Token from the BGL API.  Obtaining an Authorization token is an important step, as it provides assurance to the client that appropriate permission is being granted to access the BGL API.</p>
@@ -1211,8 +1303,8 @@
     </tr>
     <tr>
         <td>scope</td>
-        <td>A URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  If you do not specify a scope in your call, the default member permissions you defined in your application configuration will be used, as described in the <a href="http://tools.ietf.org/html/rfc6749#section-3.3">Oauth2 Documentation.</a><br><br> Currently available scopes are fundList, investment, audit and selfwealth.</td>
-        <td>Optional</td>
+        <td>A URL-encoded, space delimited list of member permissions your application is requesting on behalf of the user.  <br><br> Currently available scopes are listed in the <a href="../api_scopes/README.html">API Scopes</a>.</td>
+        <td>Mandatory</td>
     </tr>
 </table>
 
@@ -1252,7 +1344,7 @@
     </tr>
     <tr>
         <td>Invalid scope</td>
-        <td>The current valid list of scope is &#39;fundList&#39;,&#39;investment&#39;,&#39;audit&#39; and &#39;selfwealth&#39;. If the client passes anything else as scope, BGL will return an error.</td>
+        <td>Currently available scopes are listed in the <a href="../api_scopes/README.html">API Scopes</a>. If the client passes anything else as scope, BGL will return an error.</td>
         <td>INVALID_SCOPE</td>
         <td>Invalid scope : &lt;The invalid scope passed&gt;</td>
     </tr>

@@ -18,7 +18,6 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trialBalance.xml?fundId=0000
     <Start>Tue Jan 01 00:00:00 UTC 2013</Start>
     <End>Fri Jan 01 00:00:00 UTC 2016</End>
     <Data>
-        ...
         <Data>
             <AccountClass>S</AccountClass>
             <AccountCode>50010/ANWKSR00005P</AccountCode>
@@ -79,7 +78,6 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trialBalance.xml?fundId=0000
             <CreditsPrev>0</CreditsPrev>
             <BalancePrev>0</BalancePrev>
         </Data>
-        ...
     </Data>
   </TrialBalance>
 </root>

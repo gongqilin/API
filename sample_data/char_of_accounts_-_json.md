@@ -16,7 +16,36 @@ curl -X POST https://api-staging.bgl360.com.au/fund/chartAccounts?fundId=0000000
 
 {
   "chartAccounts": [
-        ...
+     {
+      "code": "59500",
+      "name": "Self-Insurance Reserve",
+      "subChartAccountCode": null,
+      "accountClass": "Control",
+      "securityId": null,
+      "securityCode": null,
+      "marketType": null,
+      "chartAccountType": {
+        "label": "Income - Member",
+        "minCode": 0,
+        "maxCode": 0,
+        "name": "IncomeMember"
+      }
+    },
+    {
+      "code": "48500",
+      "name": "Income Tax Expense",
+      "subChartAccountCode": null,
+      "accountClass": "Normal",
+      "securityId": null,
+      "securityCode": null,
+      "marketType": null,
+      "chartAccountType": {
+        "label": "Allocation",
+        "minCode": 48000,
+        "maxCode": 49999,
+        "name": "Allocation"
+      }
+    },
     {
       "code": "83000",
       "name": "James Hardie Industries Nv",
@@ -31,69 +60,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/chartAccounts?fundId=0000000
         "maxCode": 89999,
         "name": "Liability"
       }
-    },
-    {
-      "code": "77600",
-      "name": "Dioro Exploration Nl",
-      "subChartAccountCode": "DIO.AX",
-      "accountClass": "Sub Account",
-      "securityId": 848291,
-      "securityCode": null,
-      "marketType": null,
-      "chartAccountType": {
-        "label": "Investment",
-        "minCode": 70000,
-        "maxCode": 79999,
-        "name": "Investment"
-      }
-    },
-    {
-      "code": "62000",
-      "name": "Dioro Exploration Nl",
-      "subChartAccountCode": "DIO.AX",
-      "accountClass": "Sub Account",
-      "securityId": null,
-      "securityCode": null,
-      "marketType": null,
-      "chartAccountType": {
-        "label": "Asset",
-        "minCode": 60000,
-        "maxCode": 69999,
-        "name": "Asset"
-      }
-    },
-    {
-      "code": "37500",
-      "name": "Dioro Exploration Nl",
-      "subChartAccountCode": "DIO.AX",
-      "accountClass": "Sub Account",
-      "securityId": null,
-      "securityCode": null,
-      "marketType": null,
-      "chartAccountType": {
-        "label": "Expense",
-        "minCode": 30000,
-        "maxCode": 47999,
-        "name": "Expense"
-      }
-    },
-    {
-      "code": "23900",
-      "name": "Dioro Exploration Nl",
-      "subChartAccountCode": "DIO.AX",
-      "accountClass": "Sub Account",
-      "securityId": null,
-      "securityCode": null,
-      "marketType": null,
-      "chartAccountType": {
-        "label": "Income",
-        "minCode": 20000,
-        "maxCode": 29999,
-        "name": "Income"
-      }
-    },
-    ...
-
+    }
   ]
 }
 

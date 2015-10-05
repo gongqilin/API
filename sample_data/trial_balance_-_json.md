@@ -18,7 +18,6 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trialBalance?fundId=00000000
     "start": "2013-01-01T00:00:00Z",
     "end": "2016-01-01T00:00:00Z",
     "data": [
-      ...
       {
         "accountClass": "S",
         "accountCode": "50010/ANWKSR00005P",
@@ -72,8 +71,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/trialBalance?fundId=00000000
         "debitsPrev": 0,
         "creditsPrev": 0,
         "balancePrev": 0
-      },
-      ...
+      }
     ]
   }
 }

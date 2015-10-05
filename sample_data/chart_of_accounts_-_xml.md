@@ -14,7 +14,36 @@ curl -X POST https://api-staging.bgl360.com.au/fund/chartAccounts.xml?fundId=000
 ```xml
 <root xmlns='http://www.bglcorp.com.au'>
   <ChartAccounts>
-    ...
+    <ChartAccount>
+        <Code>59500</Code>
+        <Name>Self-Insurance Reserve</Name>
+        <SubChartAccountCode/>
+        <AccountClass>Control</AccountClass>
+        <SecurityId/>
+        <SecurityCode/>
+        <MarketType/>
+        <ChartAccountType>
+            <Label>Income - Member</Label>
+            <MinCode>0</MinCode>
+            <MaxCode>0</MaxCode>
+            <Name>IncomeMember</Name>
+        </ChartAccountType>
+    </ChartAccount>
+    <ChartAccount>
+        <Code>48500</Code>
+        <Name>Income Tax Expense</Name>
+        <SubChartAccountCode/>
+        <AccountClass>Normal</AccountClass>
+        <SecurityId/>
+        <SecurityCode/>
+        <MarketType/>
+        <ChartAccountType>
+            <Label>Allocation</Label>
+            <MinCode>48000</MinCode>
+            <MaxCode>49999</MaxCode>
+            <Name>Allocation</Name>
+        </ChartAccountType>
+    </ChartAccount>
     <ChartAccount>
       <Code>83000</Code>
       <Name>Autron Corporation Ltd</Name>
@@ -30,67 +59,7 @@ curl -X POST https://api-staging.bgl360.com.au/fund/chartAccounts.xml?fundId=000
         <Name>Liability</Name>
       </ChartAccountType>
     </ChartAccount>
-    <ChartAccount>
-      <Code>77600</Code>
-      <Name>Coles Myer Limited</Name>
-      <SubChartAccountCode>CML.AX</SubChartAccountCode>
-      <AccountClass>Sub Account</AccountClass>
-      <SecurityId>68385685</SecurityId>
-      <SecurityCode />
-      <MarketType />
-      <ChartAccountType>
-        <Label>Investment</Label>
-        <MinCode>70000</MinCode>
-        <MaxCode>79999</MaxCode>
-        <Name>Investment</Name>
-      </ChartAccountType>
-    </ChartAccount>
-    <ChartAccount>
-      <Code>62000</Code>
-      <Name>Coles Myer Limited</Name>
-      <SubChartAccountCode>CML.AX</SubChartAccountCode>
-      <AccountClass>Sub Account</AccountClass>
-      <SecurityId />
-      <SecurityCode />
-      <MarketType />
-      <ChartAccountType>
-        <Label>Asset</Label>
-        <MinCode>60000</MinCode>
-        <MaxCode>69999</MaxCode>
-        <Name>Asset</Name>
-      </ChartAccountType>
-    </ChartAccount>
-    <ChartAccount>
-      <Code>37500</Code>
-      <Name>Coles Myer Limited</Name>
-      <SubChartAccountCode>CML.AX</SubChartAccountCode>
-      <AccountClass>Sub Account</AccountClass>
-      <SecurityId />
-      <SecurityCode />
-      <MarketType />
-      <ChartAccountType>
-        <Label>Expense</Label>
-        <MinCode>30000</MinCode>
-        <MaxCode>47999</MaxCode>
-        <Name>Expense</Name>
-      </ChartAccountType>
-    </ChartAccount>
-    <ChartAccount>
-      <Code>23900</Code>
-      <Name>Coles Myer Limited</Name>
-      <SubChartAccountCode>CML.AX</SubChartAccountCode>
-      <AccountClass>Sub Account</AccountClass>
-      <SecurityId />
-      <SecurityCode />
-      <MarketType />
-      <ChartAccountType>
-        <Label>Income</Label>
-        <MinCode>20000</MinCode>
-        <MaxCode>29999</MaxCode>
-        <Name>Income</Name>
-      </ChartAccountType>
-    </ChartAccount>
-    ...
+
   </ChartAccounts>
 </root>
 

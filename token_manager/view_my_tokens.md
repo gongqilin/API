@@ -1,12 +1,10 @@
-# My Tokens
+# View My Token(s)
 
-Select **My Tokens** from the **Select Application** menu, and the details of all tokens assigned by the current user that are displayed are as follows;
+From the **Select Application** menu, select **My Tokens**.  This will list all the tokens that are owned by the current user, as displayed in the below image.
 
 ![Token Select Application](../images/MyTokenView.png)
 
-
-
-The items in the detail are as follows.
+Following are the details that each token will contain;
 
 <table>
     <tr>
@@ -16,11 +14,11 @@ The items in the detail are as follows.
     </tr>
     <tr>
         <td>Application Name</td>
-        <td>the application can access the data through its token</td>
+        <td>The name of the application that this token belongs to.</td>
     </tr>
     <tr>
         <td>Firm</td>
-        <td>the user login firm</td>
+        <td>The user login firm</td>
 
     </tr>
     <tr>
@@ -46,7 +44,7 @@ The items in the detail are as follows.
     </tr>
     <tr>
         <td>Funds</td>
-        <td>The total number of funds when the token generated</td>
+        <td>The total number of funds applicable for a given token</td>
 
     </tr>
      <tr>

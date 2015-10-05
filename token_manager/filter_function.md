@@ -1,17 +1,11 @@
 # Filter Function
 
-In Token manager, there are two filter functions: token filter and fund filter.
+Token Manager supports filtering of Tokens and Funds.
 
-![Token Filter](../images/TokenFilter.png)
+1. [Token Filter](token_filter.md)
+2. [Fund Filter](fund_filter.md)
 
-You can search the token by the following two input:
-    - token id
-    - owner/application name
 
-![Fund Filter](../images/FundFilter.png)
 
-Also, you can find the accessable funds for the selected token with the following input:
-    - fund id
-    - fund name
 
 

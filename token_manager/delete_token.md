@@ -1,9 +1,9 @@
 # Delete Token
 
 To delete the token:
-* Navigate to the [View Token](view_token.md) page
+* Navigate to the [View Token(s)](view_tokens.md) page
 * Select an Application
-* Select the **Delete** button, as shown below.
+* select the **Delete** button, for the token that needs to be deleted, as shown below.
 
 ![Delete Token](../images/DeleteToken.png)
 

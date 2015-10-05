@@ -1,9 +1,6 @@
-# View Application Token
-Select **Token Manager** from the main menu.  This will take the user to the **Token Manager** page, as shown below.
+# View Applcation Token(s)
 
-![Token Manager](../images/TokenManager.png)
-
-Please select an application when you are at the **Token Manager** page.  The **Token Detail** would be shown on the screen after you select the specific application if this application has validate (not expired) access token(s). The details that are displayed are as follows;
+Please select an application when you are at the **Token Manager** page.  The **Token Details** would be shown on the screen, after you select the specific application if this application has validate (not expired) access token(s). The details that are displayed are as follows;
 
 ![Token Select Application](../images/ApplicationTokenView.png)
 
@@ -22,7 +19,7 @@ The items in the detail are as follows.
     </tr>
     <tr>
         <td>Firm</td>
-        <td>the user login firm</td>
+        <td>The user login firm</td>
 
     </tr>
     <tr>
@@ -48,7 +45,7 @@ The items in the detail are as follows.
     </tr>
     <tr>
         <td>Funds</td>
-        <td>The total number of funds when the token generated</td>
+        <td>The total number of funds applicable for a given token</td>
 
     </tr>
      <tr>

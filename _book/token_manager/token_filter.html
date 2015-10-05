@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>View Token | BGL API</title>
+        <title>Token Filter | BGL API</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../token_manager/delete_token.html" />
+    <link rel="next" href="../token_manager/fund_filter.html" />
     
     
-    <link rel="prev" href="../token_manager/README.html" />
+    <link rel="prev" href="../token_manager/filter_function.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="3.1" data-basepath=".." data-revision="1443056415815">
+    <div class="book"  data-level="3.4.1" data-basepath=".." data-revision="1444030770792">
     
 
 <div class="book-summary">
@@ -254,18 +254,56 @@
                 
     
         
-        <li class="chapter active" data-level="3.1" data-path="token_manager/token_list.html">
+        <li class="chapter " data-level="3.1" data-path="token_manager/view_tokens.html">
             
                 
-                    <a href="../token_manager/token_list.html">
+                    <a href="../token_manager/view_tokens.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
                         
-                         View Token
+                         View Token(s)
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1.1" data-path="token_manager/view_applcation_tokens.html">
+            
+                
+                    <a href="../token_manager/view_applcation_tokens.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                         View Applcation Token(s)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.2" data-path="token_manager/view_my_tokens.html">
+            
+                
+                    <a href="../token_manager/view_my_tokens.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                         View My Token(s)
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -286,18 +324,72 @@
         </li>
     
         
-        <li class="chapter " data-level="3.3" data-path="token_manager/fund_list.html">
+        <li class="chapter " data-level="3.3" data-path="token_manager/view_accessable_funds_by_token.html">
             
                 
-                    <a href="../token_manager/fund_list.html">
+                    <a href="../token_manager/view_accessable_funds_by_token.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
                         
-                         Fund List
+                         View Accessable Funds by Token
                     </a>
                 
             
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="token_manager/filter_function.html">
+            
+                
+                    <a href="../token_manager/filter_function.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         Filter Function
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="3.4.1" data-path="token_manager/token_filter.html">
+            
+                
+                    <a href="../token_manager/token_filter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                         Token Filter
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4.2" data-path="token_manager/fund_filter.html">
+            
+                
+                    <a href="../token_manager/fund_filter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                         Fund Filter
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1165,60 +1257,15 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_120">
+                    <section class="normal" id="section-gitbook_5882">
                     
-                        <h1 id="view-token">View Token</h1>
-<p>Select <strong>Token Manager</strong> from the main menu.  This will take the user to the <strong>Token Manager</strong> page, as shown below.</p>
-<p><img src="../images/TokenManager.png" alt="Token Manager"></p>
-<p>Please select an application when you are at the <strong>Token Manager</strong> page.  The details that are displayed are as follows;</p>
-<p><img src="../images/TokenSelectApplication.png" alt="Token Select Application"></p>
-<p>The <strong>Token Detail</strong> would be shown on the screen after you select the specific application if this application has the validate access token. The details that are displayed are as follows;</p>
-<p><img src="../images/TokenDetail.png" alt="Token Select Application"></p>
-<p>The items in the detail are as follows.</p>
-<table>
-    <tr>
-        <th>Item</th>
-        <th>Description</th>
-
-    </tr>
-    <tr>
-        <td>Token Owner</td>
-        <td>The login user</td>
-
-    </tr>
-    <tr>
-        <td>Access Token</td>
-        <td>The access token that is mandatory for requesting data from BGL API. This value must be kept secure.</td>
-
-    </tr>
-    <tr>
-        <td>refresh_token</td>
-        <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access.</td>
-
-    </tr>
-    <tr>
-        <td>Firm</td>
-        <td></td>
-
-    </tr>
-    <tr>
-        <td>Expiration</td>
-        <td>The deadline of access token will be expired. Currently, all access tokens are issued with a 7-day lifespan.</td>
-
-    </tr>
-    <tr>
-        <td>Scope</td>
-        <td>The scope of this access token - what data can be accessed.</td>
-
-    </tr>
-    <tr>
-        <td>Funds</td>
-        <td>The total number of funds when the token generated</td>
-
-    </tr>
-
-</table>
-
+                        <h1 id="token-filter">Token Filter</h1>
+<p>The token filter displays as follows:</p>
+<p><img src="../images/TokenFilter.png" alt="Token Filter"></p>
+<p>You can search the token by the following two input:</p>
+<pre><code>- token id
+- owner/application name
+</code></pre>
                     
                     </section>
                 
@@ -1228,10 +1275,10 @@
         </div>
 
         
-        <a href="../token_manager/README.html" class="navigation navigation-prev " aria-label="Previous page: Token Manager"><i class="fa fa-angle-left"></i></a>
+        <a href="../token_manager/filter_function.html" class="navigation navigation-prev " aria-label="Previous page: Filter Function"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../token_manager/delete_token.html" class="navigation navigation-next " aria-label="Next page: Delete Token"><i class="fa fa-angle-right"></i></a>
+        <a href="../token_manager/fund_filter.html" class="navigation navigation-next " aria-label="Next page: Fund Filter"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
