@@ -1,11 +1,10 @@
-# View Application Token
-Select **Token Manager** from the main menu.  This will take the user to the **Token Manager** page, as shown below.
+# My Tokens
 
-![Token Manager](../images/TokenManager.png)
+Select **My Tokens** from the **Select Application** menu, and the details of all tokens assigned by the current user that are displayed are as follows;
 
-Please select an application when you are at the **Token Manager** page.  The **Token Detail** would be shown on the screen after you select the specific application if this application has validate (not expired) access token(s). The details that are displayed are as follows;
+![Token Select Application](../images/MyTokenView.png)
 
-![Token Select Application](../images/ApplicationTokenView.png)
+
 
 The items in the detail are as follows.
 
@@ -16,9 +15,8 @@ The items in the detail are as follows.
 
     </tr>
     <tr>
-        <td>Token Owner</td>
-        <td>The owner of the token</td>
-
+        <td>Application Name</td>
+        <td>the application can access the data through its token</td>
     </tr>
     <tr>
         <td>Firm</td>
