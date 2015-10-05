@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="3.1" data-basepath=".." data-revision="1443590283637">
+    <div class="book"  data-level="3.1" data-basepath=".." data-revision="1444030039073">
     
 
 <div class="book-summary">
@@ -1165,16 +1165,13 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_98">
+                    <section class="normal" id="section-gitbook_2237">
                     
-                        <h1 id="view-token">View Token</h1>
+                        <h1 id="view-application-token">View Application Token</h1>
 <p>Select <strong>Token Manager</strong> from the main menu.  This will take the user to the <strong>Token Manager</strong> page, as shown below.</p>
 <p><img src="../images/TokenManager.png" alt="Token Manager"></p>
-<p>Please select an application when you are at the <strong>Token Manager</strong> page.  The details that are displayed are as follows;</p>
-<p><img src="../images/TokenSelectApplication.png" alt="Token Select Application"></p>
-<p>The <strong>Token Detail</strong> would be shown on the screen after you select the specific application if this application has the validate access token. The details that are displayed are as follows;</p>
-<p><img src="../images/TokenDetail.png" alt="Token Select Application"></p>
-<p>The items in the detail are as follows.</p>
+<p>Select an application from the drop-down list next to <strong>Token Manager</strong>. If the selected application has valid (not expired) access token(s), the <strong>Token Detail</strong> for that token will show on-screen. The details displayed are as follows:</p>
+<p><img src="../images/ApplicationTokenView.png" alt="Token Select Application"></p>
 <table>
     <tr>
         <th>Item</th>
@@ -1183,41 +1180,55 @@
     </tr>
     <tr>
         <td>Token Owner</td>
-        <td>The login user</td>
-
-    </tr>
-    <tr>
-        <td>Access Token</td>
-        <td>The access token that is mandatory for requesting data from BGL API. This value must be kept secure.</td>
-
-    </tr>
-    <tr>
-        <td>refresh_token</td>
-        <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access.</td>
+        <td>The owner of the token</td>
 
     </tr>
     <tr>
         <td>Firm</td>
-        <td></td>
+        <td>The login used for that firm</td>
 
     </tr>
     <tr>
+        <td>Access Token</td>
+        <td>The access token that is mandatory for requesting data from the BGL API. This value must be kept secure.</td>
+
+    </tr>
+    <tr>
+        <td>Refresh Token</td>
+        <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access.</td>
+
+    </tr>
+
+    <tr>
         <td>Expiration</td>
-        <td>The deadline of access token will be expired. Currently, all access tokens are issued with a 7-day lifespan.</td>
+        <td>The date and time when the access token will expire. Currently, all access tokens are issued with a 7-day lifespan.</td>
 
     </tr>
     <tr>
         <td>Scope</td>
-        <td>The scope of this access token - what data can be accessed.</td>
+        <td>This defines what data can be accessed with the token.</td>
 
     </tr>
     <tr>
         <td>Funds</td>
-        <td>The total number of funds when the token generated</td>
+        <td>The total number of funds to which access was provided when the token was generated</td>
+
+    </tr>
+     <tr>
+        <td>Date</td>
+        <td>This specifies when the token was created</td>
 
     </tr>
 
 </table>
+
+<p>You can also use the <strong>Filter</strong> to sort the list of tokens.</p>
+<p><img src="../images/TokenManagerFilter.png" alt="Token Manager Filter"></p>
+<p>There is also a search feature available. For example, you can use it to search for a specific access token, as shown below.</p>
+<p>Type in the text or code you are searching for.</p>
+<p><img src="../images/TokenManagerSearch1.png" alt="Token Manager Search Box"></p>
+<p><img src="../images/TokenManagerSearch2.png" alt="Token Manager Search"></p>
+<p>Only the token with that access code will then display.</p>
 
                     
                     </section>

@@ -3,11 +3,10 @@ Select **Token Manager** from the main menu.  This will take the user to the **T
 
 ![Token Manager](../images/TokenManager.png)
 
-Please select an application when you are at the **Token Manager** page.  The **Token Detail** would be shown on the screen after you select the specific application if this application has validate (not expired) access token(s). The details that are displayed are as follows;
+Select an application from the drop-down list next to **Token Manager**. If the selected application has valid (not expired) access token(s), the **Token Detail** for that token will show on-screen. The details displayed are as follows:
 
 ![Token Select Application](../images/ApplicationTokenView.png)
 
-The items in the detail are as follows.
 
 <table>
     <tr>
@@ -22,39 +21,54 @@ The items in the detail are as follows.
     </tr>
     <tr>
         <td>Firm</td>
-        <td>the user login firm</td>
+        <td>The login used for that firm</td>
 
     </tr>
     <tr>
         <td>Access Token</td>
-        <td>The access token that is mandatory for requesting data from BGL API. This value must be kept secure.</td>
+        <td>The access token that is mandatory for requesting data from the BGL API. This value must be kept secure.</td>
 
     </tr>
     <tr>
-        <td>refresh_token</td>
+        <td>Refresh Token</td>
         <td>A token that may be used to obtain new access tokens. Refresh tokens are valid until the user revokes access.</td>
 
     </tr>
 
     <tr>
         <td>Expiration</td>
-        <td>The deadline of access token will be expired. Currently, all access tokens are issued with a 7-day lifespan.</td>
+        <td>The date and time when the access token will expire. Currently, all access tokens are issued with a 7-day lifespan.</td>
 
     </tr>
     <tr>
         <td>Scope</td>
-        <td>The scope of this access token - what data can be accessed.</td>
+        <td>This defines what data can be accessed with the token.</td>
 
     </tr>
     <tr>
         <td>Funds</td>
-        <td>The total number of funds when the token generated</td>
+        <td>The total number of funds to which access was provided when the token was generated</td>
 
     </tr>
      <tr>
         <td>Date</td>
-        <td>The created date of the token</td>
+        <td>This specifies when the token was created</td>
 
     </tr>
 
 </table>
+
+You can also use the **Filter** to sort the list of tokens.
+
+![Token Manager Filter](../images/TokenManagerFilter.png)
+
+There is also a search feature available. For example, you can use it to search for a specific access token, as shown below.
+
+Type in the text or code you are searching for.
+
+![Token Manager Search Box](../images/TokenManagerSearch1.png)
+
+![Token Manager Search](../images/TokenManagerSearch2.png)
+
+Only the token with that access code will then display.
+

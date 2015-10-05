@@ -1,13 +1,13 @@
 # Accessable Funds by Token
 
-When select a token, it would list all the avaliable funds for the selected token.
+When you click on a token, a list all the avaliable funds for the selected token will display.
 
 ![Go Token Fund List](../images/TokenFundView.png)
 
-Click the **Load More** button to load more funds.
+Click the **Load More** button to show more funds.
 
 ![Token Fund List View](../images/TokenFundListView.png)
 
-Click the **Arrow** located in the left boundary of the token box to view the token details.
+Click on the **Arrow** located on the left of the token box to view the token details.
 
 
