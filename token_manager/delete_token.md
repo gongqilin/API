@@ -5,7 +5,7 @@ To delete the token:
 * Select an Application
 * Select the **Delete** button, as shown below.
 
-![Delete Token](../images/ApplicationTokenView.png)
+![Delete Token](../images/DeleteToken.png)
 
 This will delete the selected token.  If the deletion is succesful, the Token Manager will refresh to display the currently available Tokens.
 
@@ -17,7 +17,7 @@ This will delete the selected token.  If the deletion is succesful, the Token Ma
         <th>Description</th>
     </tr>
     <tr>
-        <td>Removed &lt;Token&gt; Successfully</td>
+        <td>&lt;Token&gt; was deleted successfully.</td>
         <td>If deleting the Token was successful.</td>
     </tr>
 </table>
